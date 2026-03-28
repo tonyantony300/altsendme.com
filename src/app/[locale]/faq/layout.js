@@ -10,7 +10,8 @@ export async function generateMetadata({ params }) {
     fr: 'fr_FR',
     ja: 'ja_JP',
     zh: 'zh_CN',
-    ko: 'ko_KR'
+    ko: 'ko_KR',
+    km: 'km_KH'
   };
 
   return {
