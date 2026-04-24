@@ -88,7 +88,7 @@ export default function StructuredData({ locale }) {
     ],
     "screenshot": "https://altsendme.com/hero.png",
     "keywords": "file transfer, peer-to-peer, P2P, encrypted, secure, private, cross-platform, free, unlimited, open source, iroh, sendme",
-    "inLanguage": ["en", "fr", "th", "de", "zh", "ja", "ru", "ko"],
+    "inLanguage": ["en", "fr", "th", "de", "zh", "ja", "ru", "ko", "km"],
     "browserRequirements": "Requires desktop application installation",
     "softwareRequirements": "Windows 10+, macOS 10.13+, or Linux",
     "permissions": "File system access for sending and receiving files"
