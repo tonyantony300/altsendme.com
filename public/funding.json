@@ -71,7 +71,8 @@
         "frequency": "one-time",
         "channels": [
           "github-sponsors",
-          "buy-me-a-coffee"
+          "buy-me-a-coffee",
+          "bank-transfer"
         ]
       }
     ],
