@@ -1,5 +1,4 @@
 {
-  "$schema": "https://floss.fund/schema/v1.0.0/funding.schema.json#",
   "version": "v1.0.0",
   "entity": {
     "type": "individual",
@@ -9,8 +8,7 @@
     "phone": "",
     "description": "Solo maintainer of AltSendme, an open-source, cross-platform desktop app for frictionless peer-to-peer file transfer. The work focuses on practical privacy (QUIC + TLS 1.3), no accounts, and performance for large files and folders. There is no prior grant or sponsorship history; funding would go directly toward sustainable development and hardware.",
     "webpageUrl": {
-      "url": "https://altsendme.com",
-      "wellKnown": ""
+      "url": "https://altsendme.com"
     }
   },
   "projects": [
@@ -19,14 +17,15 @@
       "name": "AltSendme",
       "description": "AltSendme is a minimal cross-platform desktop application for sending files and directories peer-to-peer anywhere in the world. It is built around the Iroh networking stack and uses open public connection relays for NAT traversal and hole punching. Transfers use strong end-to-end encryption (TLS 1.3 over QUIC), with support for large files, folders, pause and resume, and verified streaming.",
       "webpageUrl": {
-        "url": "https://altsendme.com",
-        "wellKnown": ""
+        "url": "https://altsendme.com"
       },
       "repositoryUrl": {
         "url": "https://github.com/tonyantony300/alt-sendme",
         "wellKnown": "https://github.com/tonyantony300/alt-sendme/blob/main/.well-known/funding-manifest-urls"
       },
-      "licenses": ["spdx:AGPL-3.0"],
+      "licenses": [
+        "spdx:AGPL-3.0"
+      ],
       "tags": [
         "peer-to-peer",
         "file-sharing",
@@ -44,7 +43,7 @@
     "channels": [
       {
         "guid": "bank-transfer",
-        "type": "bank-transfer",
+        "type": "bank",
         "address": "tnyantny@protonmail.com",
         "description": "Support AltSendme via bank transfer (monthly or one-time)."
       },
@@ -70,8 +69,12 @@
         "amount": 175000,
         "currency": "INR",
         "frequency": "one-time",
-        "channels": ["github-sponsors", "buy-me-a-coffee"]
+        "channels": [
+          "github-sponsors",
+          "buy-me-a-coffee"
+        ]
       }
-    ]
+    ],
+    "history": null
   }
 }
