@@ -76,7 +76,8 @@ export async function generateMetadata({ params }) {
     fr: 'fr_FR',
     ja: 'ja_JP',
     zh: 'zh_CN',
-    ko: 'ko_KR'
+    ko: 'ko_KR',
+    km: 'km_KH'
   };
 
   return {
@@ -163,6 +164,7 @@ export async function generateMetadata({ params }) {
         ja: "https://altsendme.com/ja",
         zh: "https://altsendme.com/zh",
         ko: "https://altsendme.com/ko",
+        km: "https://altsendme.com/km",
       },
     },
   };
