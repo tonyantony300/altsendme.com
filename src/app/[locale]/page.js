@@ -13,21 +13,20 @@ import TallyPopup from '@/components/TallyPopup';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="absolute inset-x-0 mx-auto min-h-screen w-full bg-background flex flex-col">
       <Header />
-
       <main className="flex-1 flex flex-col w-full">
         <HeroSection />
         <HowItWorks />
         <FeaturesGrid />
-        <ComparisonTable />
+        <ComparisonTable /> 
         <Testimonial />
         {/* <PressReviews /> */}
         <DownloadSection />
       </main>
 
       <Footer />
-      <TallyPopup />
+      {/* <TallyPopup /> */}
     </div>
   );
 }

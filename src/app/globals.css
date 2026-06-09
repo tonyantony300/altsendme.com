@@ -35,6 +35,7 @@
   a {
     @apply text-inherit no-underline;
   }
+  
 
   /* Override browser autocomplete background colors */
   input:-webkit-autofill,

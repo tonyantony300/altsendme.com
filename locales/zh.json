@@ -14,7 +14,8 @@
     "downloadForMac": "下载 Mac 版",
     "downloadForWindows": "下载 Windows 版",
     "downloadForLinux": "下载 Linux 版",
-    "downloadForLinuxAppImage": "下载 Linux 版 (AppImage)"
+    "downloadForLinuxAppImage": "下载 Linux 版 (AppImage)",
+    "donationMessage": "您的捐赠让这个项目变得更好"
   },
   "howItWorks": {
     "title": "工作原理",

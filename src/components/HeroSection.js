@@ -47,7 +47,32 @@ export default function HeroSection() {
   ) || downloadOptions[0];
 
   return (
-    <section className="flex flex-col items-center py-10 px-5 w-full md:px-10 lg:px-[60px]">
+    <section className="flex flex-col lg:flex-row items-center justify-center py-10 px-5 mt-6 w-full md:px-10 lg:px-[60px]">
+      <div className="flex flex-col items-center">
+
+      <a
+        href="https://github.com/tonyantony300/alt-sendme"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center gap-2 font-fanwood-text text-sm text-background bg-dark px-4 py-1 rounded-full mb-4 hover:opacity-80 transition-opacity"
+      >
+        <svg
+          width={18}
+          height={18}
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          className="flex-shrink-0"
+          aria-hidden="true"
+        >
+          <path
+            fill="#ffffff"
+            d="M12 2c5.523 0 10 4.477 10 10 0 4.13-2.504 7.676-6.077 9.201l-2.518-6.55C14.354 14.148 15 13.15 15 12c0-1.657-1.343-3-3-3s-3 1.343-3 3c0 1.15.647 2.148 1.596 2.652l-2.518 6.55C4.504 19.675 2 16.13 2 12 2 6.477 6.477 2 12 2z"
+          />
+        </svg>
+        {t('common.freeAndOpenSource')}
+      </a>
+
+
       <h1 className="font-swear-display text-[41px] leading-[1.2] text-center text-foreground font-normal mb-6 max-w-[600px] md:text-[48px] md:mb-6 md:max-w-[800px] lg:mb-8 lg:max-w-[1000px]">
         {t('hero.title')}
       </h1>
@@ -62,29 +87,11 @@ export default function HeroSection() {
         </p>
       </div>
 
-      <div className="flex items-center justify-center gap-2 font-fanwood-text text-lg text-foreground mb-8">
-        <Image
-          src="/github.png"
-          alt="GitHub"
-          width={18}
-          height={18}
-          className="flex-shrink-0"
-        />
-        <a 
-          href="https://github.com/tonyantony300/alt-sendme" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-foreground hover:underline underline-offset-[3px] transition-opacity hover:opacity-70"
-        >
-          {t('common.freeAndOpenSource')}
-        </a>
-      </div>
-
       <div className="w-full max-w-[460px] lg:max-w-[660px] flex flex-col items-center">
         {/* Download Button */}
         <div className="relative w-full rounded-[20px] lg:w-auto download-container mb-8">
           {/* Button Group */}
-          <div className="flex group hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] shadow-[0px_3px_0px_0px_rgba(0,0,0,1)] rounded-2xl transition-all border-2 border-foreground bg-transparent w-full rounded-[20px] lg:w-auto">
+          <div className="flex group hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] rounded-xl transition-all border-2 border-foreground bg-transparent w-full lg:w-auto ">
             {/* Main Download Button */}
             <a
               href={primaryDownload.url}
@@ -108,7 +115,7 @@ export default function HeroSection() {
                 e.stopPropagation();
                 setIsDropdownOpen(!isDropdownOpen);
               }}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all h-16 rounded-[20px] px-3 rounded-l-none border-0 flex-shrink-0 shadow-none group-hover:shadow-none transform-none group-hover:transform-none bg-transparent hover:bg-transparent text-foreground border-l-2 border-foreground"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all h-16 px-3 rounded-l-none border-0 flex-shrink-0 shadow-none group-hover:shadow-none transform-none group-hover:transform-none bg-transparent hover:bg-transparent text-foreground border-l-2 border-foreground"
             >
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -130,7 +137,7 @@ export default function HeroSection() {
 
           {/* Dropdown Menu */}
           {isDropdownOpen && (
-            <div className="absolute top-full mt-2 right-0 w-full lg:w-[400px] bg-background rounded-[20px] overflow-hidden shadow-[0px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-foreground z-40">
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-full lg:w-[400px] bg-background rounded-[20px] overflow-hidden shadow-[0px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-foreground z-40">
               <div className="m-1 overflow-hidden">
                 {downloadOptions.map((option) => (
                   <a
@@ -157,15 +164,21 @@ export default function HeroSection() {
             </div>
           )}
         </div>
-
-        <Image
-          src="/hero.png"
-          alt="Hero image"
-          width={1200}
-          height={800}
-          className="w-full h-auto object-contain"
-          priority
-        />
+        </div>
+    
+      </div>
+      <div className="md:ml-6 w-full md:max-w-[500px] lg:max-w-[600px] rounded-[20px] border border-foreground/20 bg-white/30 backdrop-blur-md p-1.5 shadow-[2px_2px_12px_2px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.6)]">
+        <div className="rounded-[14px] overflow-hidden">
+          <Image
+            src="/altsendme-demo.gif"
+            alt="AltSendMe app demo"
+            width={1200}
+            height={800}
+            className="w-full h-auto object-contain"
+            priority
+            unoptimized
+          />
+        </div>
       </div>
     </section>
   );

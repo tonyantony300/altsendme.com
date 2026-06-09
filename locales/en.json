@@ -1,19 +1,21 @@
 {
   "common": {
     "logo": "AltSendme",
+    "donate": "Donate",
     "buyMeACoffee": "Buy me a coffee",
-    "freeAndOpenSource": "Free & Open source",
+    "freeAndOpenSource": "Free & Open Source",
     "contactUs": "Contact Us",
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "File transfer doesn't need to be complicated",
-    "description": "Direct, encrypted file transfers from your computer to anyone, anywhere — no signup, no cloud storage in between.",
-    "airdropQuote": "Think of it like AirDrop for everyone.",
+    "title": "Fastest file transfer on this planet",
+    "description": "Direct, encrypted file transfers from your devices to anyone, anywhere - no accounts, no cloud storage in between.",
+    "airdropQuote": "Think of it like AirDrop for any device, any network.",
     "downloadForMac": "Download for Mac",
     "downloadForWindows": "Download for Windows",
     "downloadForLinux": "Download for Linux",
-    "downloadForLinuxAppImage": "Download for Linux (AppImage)"
+    "downloadForLinuxAppImage": "Download for Linux (AppImage)",
+    "donationMessage": "Your donations make this project better"
   },
   "howItWorks": {
     "title": "How It Works",

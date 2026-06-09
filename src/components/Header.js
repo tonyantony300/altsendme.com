@@ -9,15 +9,15 @@ export default function Header() {
   const t = useTranslations();
 
   return (
-    <header className="w-full py-6 px-5 md:px-10 lg:px-[60px]">
+    <header className="w-full py-3 px-5 md:px-10 lg:px-[60px] border-b border-[#aeadad] sticky top-0 z-10 bg-background">
       <div className="flex justify-between items-center max-w-[1200px] mx-auto">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
             <Image
               src="/Altsendmelogo.png"
               alt="Altsendme logo"
-              width={36}
-              height={36}
+              width={32}
+              height={32}
               priority
             />
             <span className="font-federo text-2xl text-foreground font-light lg:text-[28px]">{t('common.logo')}</span>
@@ -26,14 +26,8 @@ export default function Header() {
             <LanguageSwitcher />
           </div>
         </div>
-        <nav className="hidden md:flex items-center gap-6">
-          <Link 
-            href="/faq" 
-            className="font-federo text-base text-foreground font-light hover:underline underline-offset-[3px]"
-          >
-            FAQ
-          </Link>
-          <div className="flex items-center gap-2">
+        <nav className="flex items-center gap-6">
+        <div className="flex items-center gap-2">
             <Image
               src="/bmclogo.png"
               alt="Buy me a coffee"
@@ -45,15 +39,29 @@ export default function Header() {
               href="https://buymeacoffee.com/tny_antny" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="font-federo text-base text-foreground font-light hover:underline underline-offset-[3px]"
+              className="font-federo text-sm text-foreground font-light hover:underline underline-offset-[3px]"
             >
-              {t('common.buyMeACoffee')}
+              {t('common.donate')}
             </a>
           </div>
+          <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-federo text-sm text-background bg-dark px-4 py-1 rounded-md font-light hover:underline underline-offset-[3px]">
+            <svg
+              width={14}
+              height={14}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="flex-shrink-0 text-white"
+              aria-hidden="true"
+            >
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            <span>8.2k</span>
+          </a>
         </nav>
-        <div className="md:hidden flex items-center gap-2">
-          <LanguageSwitcher />
-        </div>
       </div>
     </header>
   );

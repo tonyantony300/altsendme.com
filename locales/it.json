@@ -14,8 +14,9 @@
     "downloadForMac": "Scarica per Mac",  
     "downloadForWindows": "Scarica per Windows",  
     "downloadForLinux": "Scarica per Linux",  
-    "downloadForLinuxAppImage": "Scarica per Linux (AppImage)"  
-  },  
+    "downloadForLinuxAppImage": "Scarica per Linux (AppImage)",
+    "donationMessage": "Le tue donazioni rendono questo progetto migliore"
+  },
   "howItWorks": {  
     "title": "Come Funziona",  
     "subtitle": "Semplice. Sicuro. Istantaneo.",  

@@ -14,7 +14,8 @@
     "downloadForMac": "Mac용 다운로드",
     "downloadForWindows": "Windows용 다운로드",
     "downloadForLinux": "Linux용 다운로드",
-    "downloadForLinuxAppImage": "Linux용 다운로드 (AppImage)"
+    "downloadForLinuxAppImage": "Linux용 다운로드 (AppImage)",
+    "donationMessage": "여러분의 기부가 이 프로젝트를 더 좋게 만듭니다"
   },
   "howItWorks": {
     "title": "작동 방식",

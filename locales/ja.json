@@ -14,7 +14,8 @@
     "downloadForMac": "Mac用をダウンロード",
     "downloadForWindows": "Windows用をダウンロード",
     "downloadForLinux": "Linux用をダウンロード",
-    "downloadForLinuxAppImage": "Linux用をダウンロード (AppImage)"
+    "downloadForLinuxAppImage": "Linux用をダウンロード (AppImage)",
+    "donationMessage": "あなたの寄付がこのプロジェクトをより良くします"
   },
   "howItWorks": {
     "title": "使い方",

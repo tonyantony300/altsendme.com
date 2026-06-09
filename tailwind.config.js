@@ -13,6 +13,7 @@ module.exports = {
         "footer-bg": "#000000",
         "footer-text": "#ffffff",
         "yc-red": "#DC2626",
+        dark: "#0F0F0F",
       },
       fontFamily: {
         "federo": ["var(--font-federo)", "sans-serif"],

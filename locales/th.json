@@ -14,7 +14,8 @@
     "downloadForMac": "ดาวน์โหลดสำหรับ Mac",
     "downloadForWindows": "ดาวน์โหลดสำหรับ Windows",
     "downloadForLinux": "ดาวน์โหลดสำหรับ Linux",
-    "downloadForLinuxAppImage": "ดาวน์โหลดสำหรับ Linux (AppImage)"
+    "downloadForLinuxAppImage": "ดาวน์โหลดสำหรับ Linux (AppImage)",
+    "donationMessage": "การบริจาคของคุณทำให้โปรเจกต์นี้ดีขึ้น"
   },
   "howItWorks": {
     "title": "วิธีการทำงาน",
