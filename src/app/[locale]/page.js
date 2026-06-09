@@ -10,7 +10,7 @@ export default function Page() {
         src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
         data-id="tny_antny"
         data-description="Support me on Buy me a coffee!"
-        data-message="Help us make this better by donating to the project! ❤️"
+        data-message=""
         data-color="#FDD70C"
         data-position="left"
         data-x_margin="18"

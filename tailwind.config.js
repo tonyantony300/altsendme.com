@@ -16,9 +16,10 @@ module.exports = {
         dark: "#0F0F0F",
       },
       fontFamily: {
-        "federo": ["var(--font-federo)", "sans-serif"],
-        "swear-display": ["Times New Roman", "Times", "serif"],
-        "fanwood-text": ["Times New Roman", "Times", "serif"],
+        "geist": ["var(--font-geist-sans)", "sans-serif"],
+        "federo": ["var(--font-libre-franklin)", "sans-serif"],
+        "swear-display": ["var(--font-newsreader)", "serif"],
+        "fanwood-text": ["var(--font-newsreader)", "serif"],
       },
     },
   },

@@ -20,31 +20,26 @@ export default function Header() {
               height={32}
               priority
             />
-            <span className="font-federo text-2xl text-foreground font-light lg:text-[28px]">{t('common.logo')}</span>
+            <span className="font-geist text-2xl text-foreground font-medium tracking-tighter lg:text-[28px]">{t('common.logo')}</span>
           </Link>
           <div className="hidden md:block">
             <LanguageSwitcher />
           </div>
         </div>
         <nav className="flex items-center gap-6">
-        <div className="flex items-center gap-2">
-            <Image
-              src="/bmclogo.png"
-              alt="Buy me a coffee"
-              width={14}
-              height={14}
-              className="flex-shrink-0"
+          <a
+            href="https://www.buymeacoffee.com/tny_antny"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0"
+          >
+            <img
+              src="https://img.buymeacoffee.com/button-api/?text=Support Us&emoji=❤️&slug=tny_antny&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff"
+              alt="Buy us a coffee"
+              className="h-8 w-auto"
             />
-            <a 
-              href="https://buymeacoffee.com/tny_antny" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="font-federo text-sm text-foreground font-light hover:underline underline-offset-[3px]"
-            >
-              {t('common.donate')}
-            </a>
-          </div>
-          <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-federo text-sm text-background bg-dark px-4 py-1 rounded-md font-light hover:underline underline-offset-[3px]">
+          </a>
+          <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-geist text-sm font-normal text-background bg-dark px-4 py-1 rounded-md hover:underline underline-offset-[3px]">
             <svg
               width={14}
               height={14}

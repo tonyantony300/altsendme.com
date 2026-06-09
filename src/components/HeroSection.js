@@ -54,7 +54,7 @@ export default function HeroSection() {
         href="https://github.com/tonyantony300/alt-sendme"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-2 font-fanwood-text text-sm text-background bg-dark px-4 py-1 rounded-full mb-4 hover:opacity-80 transition-opacity"
+        className="flex items-center justify-center gap-2 font-geist text-sm text-background bg-dark px-4 py-1 rounded-full mb-6 hover:opacity-80 transition-opacity"
       >
         <svg
           width={18}
@@ -82,7 +82,7 @@ export default function HeroSection() {
       </p>
 
       <div className="flex flex-col items-center gap-3 mb-6 md:mb-8">
-        <p className="font-fanwood-text text-base text-center text-foreground italic max-w-[600px] md:text-lg">
+        <p className="font-geist text-sm text-center text-foreground italic max-w-[600px] md:text-base">
           {t('hero.airdropQuote')}
         </p>
       </div>

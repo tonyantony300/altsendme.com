@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Geist, Geist_Mono, Federo } from "next/font/google";
+import { Geist, Newsreader, Libre_Franklin } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
 import { routing } from '@/i18n/routing';
 import StructuredData from './StructuredData';
@@ -12,14 +12,13 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
 });
 
-const federo = Federo({
-  variable: "--font-federo",
-  weight: "400",
+const libreFranklin = Libre_Franklin({
+  variable: "--font-libre-franklin",
   subsets: ["latin"],
 });
 
@@ -187,7 +186,7 @@ export default async function LocaleLayout({ children, params }) {
         <meta name="format-detection" content="telephone=no" />
         <script src="https://tally.so/widgets/embed.js" async></script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} ${federo.variable}`}>
+      <body className={`${geistSans.variable} ${newsreader.variable} ${libreFranklin.variable}`}>
         <NextIntlClientProvider messages={messages}>
           <StructuredData locale={locale} />
           {children}
