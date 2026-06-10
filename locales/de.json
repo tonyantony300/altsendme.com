@@ -90,6 +90,25 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "Eine sehr unkomplizierte Dateiübertragungs-App. Großartig für schnelle, einfache Dateiübertragungen im Web."
   },
+  "availableAs": {
+    "title": "Verfügbar als",
+    "desktop": {
+      "title": "Desktop-Anwendungen",
+      "description": "Native Apps für Windows, macOS und Linux. Dateien per Drag & Drop sofort teilen — mit vollem Desktop-Erlebnis."
+    },
+    "android": {
+      "title": "Android-Anwendung",
+      "description": "Dateien unterwegs von Ihrem Android-Gerät senden und empfangen. Schnelle Peer-to-Peer-Übertragungen ohne Konto."
+    },
+    "cli": {
+      "title": "Kommandozeilen-Interface",
+      "description": "Skriptfähige CLI, kompatibel mit dem sendme-Tool. Tickets im Terminal erzeugen und mit der Desktop-App teilen."
+    },
+    "web": {
+      "title": "Web (Demnächst)",
+      "description": "Dateien und Ordner übertragen, ohne etwas zu installieren. Mit Desktop, Mobile oder CLI teilen."
+    }
+  },
   "download": {
     "title": "AltSendme jetzt ausprobieren",
     "subtitle": "Kostenlos, Open Source und für alle verfügbar"

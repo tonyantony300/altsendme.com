@@ -90,6 +90,25 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "매우 간단한 파일 전송 앱입니다. 웹에서 빠르고 간단한 파일 전송에 완벽합니다."
   },
+  "availableAs": {
+    "title": "지원 플랫폼",
+    "desktop": {
+      "title": "데스크톱 애플리케이션",
+      "description": "Windows, macOS, Linux용 네이티브 앱. 드래그 앤 드롭으로 즉시 파일을 공유하는 완전한 데스크톱 경험."
+    },
+    "android": {
+      "title": "Android 애플리케이션",
+      "description": "Android 기기에서 이동 중에도 파일을 주고받으세요. 계정 없이 빠른 P2P 전송."
+    },
+    "cli": {
+      "title": "명령줄 인터페이스",
+      "description": "sendme 도구와 호환되는 스크립트 가능 CLI. 터미널에서 티켓을 생성하고 데스크톱 앱과 공유하세요."
+    },
+    "web": {
+      "title": "웹 (출시 예정)",
+      "description": "설치 없이 파일과 폴더를 전송하세요. Desktop, Mobile 또는 CLI와 공유할 수 있습니다."
+    }
+  },
   "download": {
     "title": "지금 AltSendme를 사용해보세요",
     "subtitle": "무료, 오픈 소스, 모든 사람에게 제공"

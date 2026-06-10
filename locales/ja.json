@@ -90,6 +90,25 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "非常にシンプルなファイル転送アプリ。Web上での迅速で簡単なファイル転送に最適です。"
   },
+  "availableAs": {
+    "title": "対応プラットフォーム",
+    "desktop": {
+      "title": "デスクトップアプリケーション",
+      "description": "Windows、macOS、Linux向けのネイティブアプリ。ドラッグ＆ドロップで即座にファイルを共有できるフルデスクトップ体験。"
+    },
+    "android": {
+      "title": "Androidアプリケーション",
+      "description": "Androidデバイスから外出先でもファイルの送受信が可能。アカウント不要の高速P2P転送。"
+    },
+    "cli": {
+      "title": "コマンドラインインターフェース",
+      "description": "sendmeツールと互換性のあるスクリプト可能なCLI。ターミナルでチケットを生成し、デスクトップアプリと共有。"
+    },
+    "web": {
+      "title": "Web（近日公開）",
+      "description": "インストール不要でファイルやフォルダを転送。Desktop、Mobile、CLIと共有できます。"
+    }
+  },
   "download": {
     "title": "今すぐAltSendmeを試す",
     "subtitle": "無料、オープンソース、誰でも利用可能"

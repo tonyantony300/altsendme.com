@@ -90,6 +90,25 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "A very straightforward file transfer app. Great for quick, simple file transfers across the web."
   },
+  "availableAs": {
+    "title": "Available As",
+    "desktop": {
+      "title": "Desktop Applications",
+      "description": "Native apps for Windows, macOS, and Linux. Drag, drop, and share files instantly with a full desktop experience."
+    },
+    "android": {
+      "title": "Android Application",
+      "description": "Send and receive files on the go from your Android device with a minimalistic interface."
+    },
+    "cli": {
+      "title": "Command Line Interface",
+      "description": "Generate tickets in the terminal and share with the desktop app or mobile"
+    },
+    "web": {
+      "title": "Web (Coming Soon)",
+      "description": "Transfer files and folders without installing anything. Share with Desktop, Mobile or CLI"
+    }
+  },
   "download": {
     "title": "Try AltSendme now",
     "subtitle": "Free, Open Source, and Available for Everyone"

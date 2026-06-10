@@ -9,6 +9,7 @@ import ComparisonTable from '@/components/ComparisonTable';
 import Testimonial from '@/components/Testimonial';
 import PressReviews from '@/components/PressReviews';
 import DownloadSection from '@/components/DownloadSection';
+import AvailableAs from '@/components/AvailableAs';
 import TallyPopup from '@/components/TallyPopup';
 
 export default function HomePage() {
@@ -18,10 +19,12 @@ export default function HomePage() {
       <main className="flex-1 flex flex-col w-full">
         <HeroSection />
         <HowItWorks />
+        <AvailableAs />
         <FeaturesGrid />
         <ComparisonTable /> 
         <Testimonial />
         {/* <PressReviews /> */}
+
         <DownloadSection />
       </main>
 

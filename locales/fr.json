@@ -90,6 +90,25 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "Une application de transfert de fichiers très simple. Idéale pour des transferts de fichiers rapides et simples sur le Web."
   },
+  "availableAs": {
+    "title": "Disponible en",
+    "desktop": {
+      "title": "Applications de bureau",
+      "description": "Applications natives pour Windows, macOS et Linux. Glissez, déposez et partagez des fichiers instantanément."
+    },
+    "android": {
+      "title": "Application Android",
+      "description": "Envoyez et recevez des fichiers depuis votre appareil Android. Transferts peer-to-peer rapides sans compte."
+    },
+    "cli": {
+      "title": "Interface en ligne de commande",
+      "description": "CLI scriptable compatible avec l'outil sendme. Générez des tickets dans le terminal et partagez avec l'app de bureau."
+    },
+    "web": {
+      "title": "Web (Bientôt disponible)",
+      "description": "Transférez des fichiers et dossiers sans rien installer. Partagez avec Desktop, Mobile ou CLI."
+    }
+  },
   "download": {
     "title": "Essayez AltSendme maintenant",
     "subtitle": "Gratuit, Open Source et disponible pour tous"

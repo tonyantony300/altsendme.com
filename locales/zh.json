@@ -90,6 +90,25 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "一个非常直接的文件传输应用。非常适合在网络上快速、简单地传输文件。"
   },
+  "availableAs": {
+    "title": "支持平台",
+    "desktop": {
+      "title": "桌面应用程序",
+      "description": "适用于 Windows、macOS 和 Linux 的原生应用。拖放即可即时分享文件，提供完整桌面体验。"
+    },
+    "android": {
+      "title": "Android 应用程序",
+      "description": "在 Android 设备上随时随地发送和接收文件。无需账户，快速点对点传输。"
+    },
+    "cli": {
+      "title": "命令行界面",
+      "description": "可与 sendme 工具配合使用的可脚本化 CLI。在终端生成票据并与桌面应用共享。"
+    },
+    "web": {
+      "title": "Web（即将推出）",
+      "description": "无需安装即可传输文件和文件夹。可与 Desktop、Mobile 或 CLI 共享。"
+    }
+  },
   "download": {
     "title": "立即试用 AltSendme",
     "subtitle": "免费、开源，面向所有人开放"
