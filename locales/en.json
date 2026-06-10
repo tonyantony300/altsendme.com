@@ -98,7 +98,7 @@
     },
     "android": {
       "title": "Android Application",
-      "description": "Send and receive files on the go from your Android device with a minimalistic interface."
+      "description": "Send and receive files on the go from your Android device with a minimalistic interface. iOS coming soon. "
     },
     "cli": {
       "title": "Command Line Interface",

@@ -5,26 +5,34 @@ import { useTranslations } from 'next-intl';
 const PLATFORMS = [
   {
     key: 'desktop',
-    image: 'https://assets.testmuai.com/resources/images/about/SF.png',
+    image: '/desktop-ss.png',
     imageAlt: 'Desktop applications',
+    width: 1010,
+    height: 645,
     href: '#download-desktop',
   },
   {
     key: 'android',
-    image: 'https://assets.testmuai.com/resources/images/about/noida.png',
+    image: '/mobile-ss.png',
     imageAlt: 'Android application',
+    width: 601,
+    height: 448,
     href: '#download-android',
   },
   {
     key: 'cli',
-    image: 'https://assets.testmuai.com/resources/images/about/bangalore.png',
+    image: '/cli-ss.png',
     imageAlt: 'Command line interface',
+    width: 1214,
+    height: 739,
     href: '#download-cli',
   },
   {
     key: 'web',
-    image: 'https://assets.testmuai.com/resources/images/about/dubai.png',
+    image: '/browser-ss.png',
     imageAlt: 'Web application',
+    width: 1010,
+    height: 687,
     href: '#download-web',
   },
 ];
@@ -81,15 +89,15 @@ export default function AvailableAs() {
                 <div className="mb-4 flex justify-end md:mb-5">
                   <ArrowUpRightIcon className="w-5 h-5 text-foreground/35 transition-all duration-200 group-hover:text-foreground group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
-                <div className="mb-5">
+                <div className="mb-5 aspect-[3/2] w-full overflow-hidden">
                   <img
                     src={platform.image}
                     alt={platform.imageAlt}
-                    width={602}
-                    height={452}
+                    width={platform.width}
+                    height={platform.height}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-auto"
+                    className="h-full w-full object-contain object-center"
                   />
                 </div>
                 <h3 className="font-geist text-lg text-foreground font-semibold mb-2 md:text-xl">

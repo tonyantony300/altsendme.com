@@ -11,7 +11,7 @@ export default function Page() {
         data-id="tny_antny"
         data-description="Support me on Buy me a coffee!"
         data-message=""
-        data-color="#FC4E00"
+        data-color="#73411F"
         data-position="left"
         data-x_margin="18"
         data-y_margin="18"

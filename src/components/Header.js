@@ -34,7 +34,7 @@ export default function Header() {
             className="inline-flex shrink-0"
           >
             <img
-              src="https://img.buymeacoffee.com/button-api/?text=Support Us&emoji=❤️&slug=tny_antny&button_colour=FC4E00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff"
+              src="https://img.buymeacoffee.com/button-api/?text=Support Us&emoji=❤️&slug=tny_antny&button_colour=73411F&font_colour=fff&font_family=Lato&outline_colour=000000&coffee_colour=ffffff"
               alt="Buy us a coffee"
               className="h-8 w-auto"
             />
