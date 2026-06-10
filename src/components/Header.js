@@ -9,7 +9,7 @@ export default function Header() {
   const t = useTranslations();
 
   return (
-    <header className="w-full py-3 px-5 md:px-10 lg:px-[60px] border-b border-[#aeadad] sticky top-0 z-10 bg-background">
+    <header className="w-full py-3 px-5 md:px-10 lg:px-[60px] border-b border-[#aeadad] sticky top-0 z-[100] bg-background">
       <div className="flex justify-between items-center max-w-[1200px] mx-auto">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
