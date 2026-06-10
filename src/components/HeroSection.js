@@ -66,7 +66,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="relative w-full min-h-[559px] md:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[80vh] flex flex-col items-center lg:items-start justify-center overflow-hidden py-10 px-5 md:px-10 lg:px-[60px]">
+    <section className="relative w-full min-h-[559px] md:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[80vh] flex flex-col items-center lg:items-start justify-center overflow-hidden py-10 lg:pt-20 px-5 md:px-10 lg:px-[60px]">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div
           className="absolute inset-0 bg-[url('/testBg1.png')] bg-[length:auto_100%] lg:bg-cover bg-center bg-no-repeat"
@@ -75,13 +75,13 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center lg:items-center justify-center lg:justify-start gap-8 lg:gap-12">
         <div className="flex flex-col items-center lg:items-start">
           <a
             href="https://github.com/tonyantony300/alt-sendme"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center lg:justify-start gap-2 font-geist text-sm text-background bg-dark px-4 py-1 rounded-full mb-6 hover:opacity-80 transition-opacity"
+            className="flex items-center justify-center lg:justify-start gap-2 font-funnel-sans text-sm text-background bg-dark px-4 py-1 rounded-full mb-6 hover:opacity-80 transition-opacity"
           >
             <svg
               width={18}
@@ -99,16 +99,16 @@ export default function HeroSection() {
             {t('common.freeAndOpenSource')}
           </a>
 
-          <h1 className="font-geist text-[41px] leading-[1.2] text-center lg:text-left text-white font-semibold mb-6 max-w-[600px] md:text-[48px] md:mb-6 md:max-w-[800px] lg:mb-8 lg:max-w-[1000px]">
+          <h1 className="font-funnel-sans text-[41px] leading-[1.2] text-center lg:text-left text-white font-bold mb-6 max-w-[600px] md:text-[56px] md:mb-6 md:max-w-[800px] lg:mb-8 lg:max-w-[1000px] tracking-tight">
             {t('hero.title')}
           </h1>
 
-          <p className="font-geist text-base text-center lg:text-left text-white mb-6 max-w-[600px] md:text-lg md:mb-8">
+          <p className="font-funnel-sans text-base text-center lg:text-left text-white mb-6 max-w-[600px] md:text-lg md:mb-8">
             {t('hero.description')}
           </p>
 
           <div className="flex flex-col items-center lg:items-start gap-3 mb-6 md:mb-8">
-            <p className="font-geist text-sm text-center lg:text-left text-white italic max-w-[600px] md:text-base">
+            <p className="font-funnel-sans text-sm text-center lg:text-left text-white italic max-w-[600px] md:text-base">
               {t('hero.airdropQuote')}
             </p>
           </div>
@@ -209,7 +209,7 @@ export default function HeroSection() {
             <h2 className="font-federo text-sm md:text-base font-bold uppercase tracking-wide text-foreground mb-2">
               {heroFeatures[0].title}
             </h2>
-            <p className="font-geist text-sm md:text-base text-foreground/55 leading-relaxed">
+            <p className="font-funnel-sans text-sm md:text-base text-foreground/55 leading-relaxed">
               {heroFeatures[0].description}
             </p>
           </div>
@@ -224,10 +224,10 @@ export default function HeroSection() {
                     : ""
                 }`}
               >
-                <h3 className="font-geist text-sm md:text-base font-bold uppercase tracking-wide text-foreground mb-2">
+                <h3 className="font-funnel-sans text-sm md:text-base font-bold uppercase tracking-wide text-foreground mb-2">
                   {feature.title}
                 </h3>
-                <p className="font-geist text-sm md:text-base text-foreground/55 leading-relaxed">
+                <p className="font-funnel-sans text-sm md:text-base text-foreground/55 leading-relaxed">
                   {feature.description}
                 </p>
               </div>

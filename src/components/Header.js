@@ -20,7 +20,7 @@ export default function Header() {
               height={32}
               priority
             />
-            <span className="font-geist text-2xl text-foreground font-medium tracking-tighter lg:text-[28px]">{t('common.logo')}</span>
+            <span className="font-funnel-sans text-2xl text-foreground font-medium tracking-tighter lg:text-[28px]">{t('common.logo')}</span>
           </Link>
           <div className="hidden md:block">
             <LanguageSwitcher />
@@ -39,7 +39,7 @@ export default function Header() {
               className="h-8 w-auto"
             />
           </a>
-          <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-geist text-sm font-normal text-background bg-dark px-4 py-1.5 rounded-md ">
+          <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-funnel-sans text-sm font-normal text-background bg-dark px-4 py-1.5 rounded-md ">
             <svg
               width={14}
               height={14}

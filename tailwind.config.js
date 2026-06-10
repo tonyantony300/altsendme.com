@@ -13,11 +13,11 @@ module.exports = {
         "footer-bg": "#000000",
         "footer-text": "#ffffff",
         "yc-red": "#DC2626",
-        accent: "#FC4E00",
+        accent: "#E8D2B8",
         dark: "#0F0F0F",
       },
       fontFamily: {
-        "geist": ["var(--font-geist-sans)", "sans-serif"],
+        "funnel-sans": ["var(--font-funnel-sans)", "sans-serif"],
         "federo": ["var(--font-libre-franklin)", "sans-serif"],
         "koulen": ["var(--font-koulen)", "sans-serif"],
         "swear-display": ["var(--font-newsreader)", "serif"],

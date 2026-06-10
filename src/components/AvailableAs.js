@@ -100,10 +100,10 @@ export default function AvailableAs() {
                     className="h-full w-full object-contain object-center"
                   />
                 </div>
-                <h3 className="font-geist text-lg text-foreground font-semibold mb-2 md:text-xl">
+                <h3 className="font-funnel-sans text-lg text-foreground font-semibold mb-2 md:text-xl">
                   {t(`${platform.key}.title`)}
                 </h3>
-                <p className="font-geist text-sm text-foreground/55 font-normal leading-relaxed md:text-base">
+                <p className="font-funnel-sans text-sm text-foreground/55 font-normal leading-relaxed md:text-base">
                   {t(`${platform.key}.description`)}
                 </p>
               </a>

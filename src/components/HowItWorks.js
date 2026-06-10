@@ -100,10 +100,10 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <div key={step.title} className="md:w-1/3 p-5 pb-10">
               {step.mockup}
-              <h3 className="font-geist text-3xl font-bold text-zinc-100">
-                <span className="text-accent">{index + 1}.</span> {step.title}
+              <h3 className="font-funnel-sans text-3xl font-bold text-accent">
+              {index + 1}. {step.title}
               </h3>
-              <p className="mt-1 text-sm/6 text-zinc-400 font-geist">{step.description}</p>
+              <p className="mt-1 text-sm/6 text-zinc-400 font-funnel-sans">{step.description}</p>
             </div>
           ))}
         </div>
