@@ -39,7 +39,7 @@ export default function Header() {
               className="h-8 w-auto"
             />
           </a>
-          <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-geist text-sm font-normal text-background bg-dark px-4 py-1 rounded-md hover:underline underline-offset-[3px]">
+          <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-geist text-sm font-normal text-background bg-dark px-4 py-1.5 rounded-md hover:underline underline-offset-[3px]">
             <svg
               width={14}
               height={14}

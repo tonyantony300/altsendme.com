@@ -44,8 +44,29 @@ export default function HeroSection() {
     (detectedOS === "linux" && opt.id === "linux-appimage")
   ) || downloadOptions[0];
 
+  const heroFeatures = [
+    {
+      title: "Free, for files & folders of any size",
+      description:
+        "AltSendme works by connecting sender and receiver directly, so there's no need to upload to a server, which means no cost!",
+    },
+    {
+      title: "Fast",
+      description: "AltSendme can saturate a 4Gbps connection.",
+    },
+    {
+      title: "Resumable fetching",
+      description: "Interrupted downloads pick up where they left off.",
+    },
+    {
+      title: "Integrity checks",
+      description:
+        "Data is automatically verified for correctness on both send and receive.",
+    },
+  ];
+
   return (
-    <section className="relative w-full min-h-[559px] md:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[80vh] flex items-center justify-center overflow-hidden py-10 px-5 md:px-10 lg:px-[60px]">
+    <section className="relative w-full min-h-[559px] md:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[80vh] flex flex-col items-center justify-center overflow-hidden py-10 px-5 md:px-10 lg:px-[60px]">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div
           className="absolute inset-0 bg-[url('/WebinarHeroBg.png')] bg-[length:auto_100%] lg:bg-cover bg-center bg-no-repeat"
@@ -53,7 +74,8 @@ export default function HeroSection() {
         <div className="absolute inset-0 hero-grain mix-blend-overlay opacity-[0.22]" />
       </div>
 
-      <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
         <div className="flex flex-col items-center">
           <a
             href="https://github.com/tonyantony300/alt-sendme"
@@ -77,11 +99,11 @@ export default function HeroSection() {
             {t('common.freeAndOpenSource')}
           </a>
 
-          <h1 className="font-swear-display text-[41px] leading-[1.2] text-center text-foreground font-normal mb-6 max-w-[600px] md:text-[48px] md:mb-6 md:max-w-[800px] lg:mb-8 lg:max-w-[1000px]">
+          <h1 className="font-geist text-[41px] leading-[1.2] text-center text-foreground font-semibold mb-6 max-w-[600px] md:text-[48px] md:mb-6 md:max-w-[800px] lg:mb-8 lg:max-w-[1000px]">
             {t('hero.title')}
           </h1>
 
-          <p className="font-fanwood-text text-base text-center text-foreground mb-6 max-w-[600px] md:text-lg md:mb-8">
+          <p className="font-geist text-base text-center text-foreground mb-6 max-w-[600px] md:text-lg md:mb-8">
             {t('hero.description')}
           </p>
 
@@ -98,7 +120,7 @@ export default function HeroSection() {
                   href={primaryDownload.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all h-16 rounded-[20px] px-4 text-base md:px-6 md:text-lg lg:text-xl flex-1 rounded-r-none border-0 shadow-none group-hover:shadow-none transform-none group-hover:transform-none bg-transparent hover:bg-transparent text-foreground"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all h-16  px-4 text-base md:px-6 md:text-lg lg:text-xl flex-1 rounded-r-none border-0 shadow-none group-hover:shadow-none transform-none group-hover:transform-none bg-transparent hover:bg-transparent text-foreground"
                 >
                   <Image
                     src={primaryDownload.icon}
@@ -167,7 +189,8 @@ export default function HeroSection() {
         </div>
 
         <div className="relative z-20 w-full md:max-w-[500px] lg:max-w-[600px] rounded-[20px] border border-foreground/20 bg-white/30 backdrop-blur-md p-1.5 shadow-[2px_2px_12px_2px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.6)]">
-          <div className="rounded-[14px] overflow-hidden">
+
+          <div className="rounded-xl overflow-hidden">
             <Image
               src="/altsendme-demo.gif"
               alt="AltSendMe app demo"
@@ -177,6 +200,38 @@ export default function HeroSection() {
               priority
               unoptimized
             />
+          </div>
+        </div>
+        </div>
+
+        <div className="w-full mt-12 lg:mt-16 border border-foreground/15 bg-background/40 backdrop-blur-sm">
+          <div className="p-6 md:p-8 border-b border-foreground/15">
+            <h2 className="font-federo text-sm md:text-base font-bold uppercase tracking-wide text-foreground mb-2">
+              {heroFeatures[0].title}
+            </h2>
+            <p className="font-geist text-sm md:text-base text-foreground/55 leading-relaxed">
+              {heroFeatures[0].description}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            {heroFeatures.slice(1).map((feature, index) => (
+              <div
+                key={feature.title}
+                className={`p-6 md:p-8 ${
+                  index < heroFeatures.length - 2
+                    ? "border-b border-foreground/15 md:border-b-0 md:border-r"
+                    : ""
+                }`}
+              >
+                <h3 className="font-geist text-sm md:text-base font-bold uppercase tracking-wide text-foreground mb-2">
+                  {feature.title}
+                </h3>
+                <p className="font-geist text-sm md:text-base text-foreground/55 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
