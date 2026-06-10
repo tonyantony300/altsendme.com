@@ -18,19 +18,24 @@
     "donationMessage": "Vos dons rendent ce projet meilleur"
   },
   "howItWorks": {
-    "title": "Comment ça fonctionne",
-    "subtitle": "Simple. Sécurisé. Instantané.",
+    "sectionLabel": "UTILISER ALTSENDME :",
     "step1": {
-      "title": "Déposez votre fichier ou dossier.",
-      "description": "AltSendme crée un code de partage unique (appelé \"ticket\")."
+      "title": "Configuration",
+      "description": "passez un fichier ou un dossier à partager à altsendme. Il génère un ticket.",
+      "command": "> $ altsendme send ~/great_photos",
+      "output1": "content added",
+      "output2": "run altsendme receive blobQmFoo..."
     },
     "step2": {
-      "title": "Partagez le ticket.",
-      "description": "Copiez-le et envoyez-le à votre ami — via chat, e-mail ou SMS."
+      "title": "Coller",
+      "description": "copiez-collez le ticket à votre ami.",
+      "message": "hey here have some great photos: blobQmFoo..."
     },
     "step3": {
-      "title": "Ils le reçoivent directement.",
-      "description": "Votre ami colle le ticket dans son application, et le transfert commence."
+      "title": "Télécharger",
+      "description": "exécutez get pour récupérer les données directement depuis votre ami.",
+      "command": "> $ altsendme receive blobQmFoo...",
+      "output": "fetched to great_photos"
     }
   },
   "features": {

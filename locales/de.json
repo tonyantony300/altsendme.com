@@ -18,19 +18,24 @@
     "donationMessage": "Ihre Spenden machen dieses Projekt besser"
   },
   "howItWorks": {
-    "title": "Wie es funktioniert",
-    "subtitle": "Einfach. Sicher. Sofort.",
+    "sectionLabel": "ALTSENDME VERWENDEN:",
     "step1": {
-      "title": "Datei oder Ordner ablegen.",
-      "description": "AltSendme erstellt einen einmaligen Freigabecode (genannt \"Ticket\")."
+      "title": "Einrichten",
+      "description": "Übergeben Sie eine Datei oder einen Ordner, den Sie teilen möchten, an altsendme. Es erzeugt ein Ticket.",
+      "command": "> $ altsendme send ~/great_photos",
+      "output1": "content added",
+      "output2": "run altsendme receive blobQmFoo..."
     },
     "step2": {
-      "title": "Ticket teilen.",
-      "description": "Kopieren Sie es und senden Sie es an Ihren Freund — per Chat, E-Mail oder SMS."
+      "title": "Einfügen",
+      "description": "Kopieren Sie das Ticket und senden Sie es an Ihren Freund.",
+      "message": "hey here have some great photos: blobQmFoo..."
     },
     "step3": {
-      "title": "Sie erhalten es direkt.",
-      "description": "Ihr Freund fügt das Ticket in seiner App ein, und die Übertragung beginnt."
+      "title": "Herunterladen",
+      "description": "Führen Sie get aus, um Daten direkt von Ihrem Freund abzurufen.",
+      "command": "> $ altsendme receive blobQmFoo...",
+      "output": "fetched to great_photos"
     }
   },
   "features": {

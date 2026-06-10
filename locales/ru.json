@@ -18,19 +18,24 @@
     "donationMessage": "Ваши пожертвования делают этот проект лучше"
   },
   "howItWorks": {
-    "title": "Как это работает",
-    "subtitle": "Просто. Безопасно. Мгновенно.",
+    "sectionLabel": "ИСПОЛЬЗОВАНИЕ ALTSENDME:",
     "step1": {
-      "title": "Перетащите файл или папку.",
-      "description": "AltSendme создает одноразовый код для обмена (называемый \"билет\")."
+      "title": "Настройка",
+      "description": "передайте файл или папку для обмена в altsendme. Он выдаст билет.",
+      "command": "> $ altsendme send ~/great_photos",
+      "output1": "content added",
+      "output2": "run altsendme receive blobQmFoo..."
     },
     "step2": {
-      "title": "Поделитесь билетом.",
-      "description": "Скопируйте его и отправьте другу — через чат, email или SMS."
+      "title": "Вставить",
+      "description": "скопируйте и отправьте билет другу.",
+      "message": "hey here have some great photos: blobQmFoo..."
     },
     "step3": {
-      "title": "Они получают его напрямую.",
-      "description": "Ваш друг вставляет билет в свое приложение, и передача начинается."
+      "title": "Скачать",
+      "description": "запустите get, чтобы получить данные напрямую от друга.",
+      "command": "> $ altsendme receive blobQmFoo...",
+      "output": "fetched to great_photos"
     }
   },
   "features": {

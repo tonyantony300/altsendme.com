@@ -48,7 +48,7 @@ export default function HeroSection() {
     {
       title: "Free, for files & folders of any size",
       description:
-        "AltSendme works by connecting sender and receiver directly, so there's no need to upload to a server, which means no cost!",
+        "AltSendme works by connecting sender and receiver directly, so there's no need to upload to a server, which means your transfers are truly private.",
     },
     {
       title: "Fast",

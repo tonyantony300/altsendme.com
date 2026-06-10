@@ -13,13 +13,18 @@ module.exports = {
         "footer-bg": "#000000",
         "footer-text": "#ffffff",
         "yc-red": "#DC2626",
+        accent: "#FC4E00",
         dark: "#0F0F0F",
       },
       fontFamily: {
         "geist": ["var(--font-geist-sans)", "sans-serif"],
         "federo": ["var(--font-libre-franklin)", "sans-serif"],
+        "koulen": ["var(--font-koulen)", "sans-serif"],
         "swear-display": ["var(--font-newsreader)", "serif"],
         "fanwood-text": ["var(--font-newsreader)", "serif"],
+      },
+      boxShadow: {
+        xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
       },
     },
   },

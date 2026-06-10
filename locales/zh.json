@@ -18,19 +18,24 @@
     "donationMessage": "您的捐赠让这个项目变得更好"
   },
   "howItWorks": {
-    "title": "工作原理",
-    "subtitle": "简单。安全。即时。",
+    "sectionLabel": "使用 ALTSENDME：",
     "step1": {
-      "title": "拖放您的文件或文件夹。",
-      "description": "AltSendme 创建一个一次性共享代码（称为\"票据\"）。"
+      "title": "设置",
+      "description": "将要分享的文件或文件夹传给 altsendme，它会生成一个票据。",
+      "command": "> $ altsendme send ~/great_photos",
+      "output1": "content added",
+      "output2": "run altsendme receive blobQmFoo..."
     },
     "step2": {
-      "title": "分享票据。",
-      "description": "复制它并发送给您的朋友 — 通过聊天、电子邮件或短信。"
+      "title": "粘贴",
+      "description": "复制票据并发送给朋友。",
+      "message": "hey here have some great photos: blobQmFoo..."
     },
     "step3": {
-      "title": "他们直接接收。",
-      "description": "您的朋友在他们的应用中粘贴票据，传输即开始。"
+      "title": "下载",
+      "description": "运行 get 直接从朋友那里获取数据。",
+      "command": "> $ altsendme receive blobQmFoo...",
+      "output": "fetched to great_photos"
     }
   },
   "features": {

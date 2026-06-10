@@ -18,19 +18,24 @@
     "donationMessage": "여러분의 기부가 이 프로젝트를 더 좋게 만듭니다"
   },
   "howItWorks": {
-    "title": "작동 방식",
-    "subtitle": "간단합니다. 안전합니다. 즉시입니다.",
+    "sectionLabel": "ALTSENDME 사용법:",
     "step1": {
-      "title": "파일 또는 폴더를 드롭하세요.",
-      "description": "AltSendme는 일회용 공유 코드(\"티켓\"이라고 함)를 생성합니다."
+      "title": "설정",
+      "description": "공유할 파일이나 폴더를 altsendme에 전달하면 티켓이 생성됩니다.",
+      "command": "> $ altsendme send ~/great_photos",
+      "output1": "content added",
+      "output2": "run altsendme receive blobQmFoo..."
     },
     "step2": {
-      "title": "티켓을 공유하세요.",
-      "description": "복사하여 친구에게 보내세요 — 채팅, 이메일 또는 문자로."
+      "title": "붙여넣기",
+      "description": "티켓을 복사하여 친구에게 보냅니다.",
+      "message": "hey here have some great photos: blobQmFoo..."
     },
     "step3": {
-      "title": "직접 수신합니다.",
-      "description": "친구가 앱에 티켓을 붙여넣으면 전송이 시작됩니다."
+      "title": "다운로드",
+      "description": "get을 실행하여 친구로부터 직접 데이터를 가져옵니다.",
+      "command": "> $ altsendme receive blobQmFoo...",
+      "output": "fetched to great_photos"
     }
   },
   "features": {

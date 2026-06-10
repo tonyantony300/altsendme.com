@@ -17,22 +17,27 @@
     "downloadForLinuxAppImage": "Scarica per Linux (AppImage)",
     "donationMessage": "Le tue donazioni rendono questo progetto migliore"
   },
-  "howItWorks": {  
-    "title": "Come Funziona",  
-    "subtitle": "Semplice. Sicuro. Istantaneo.",  
-    "step1": {  
-      "title": "Trascina il tuo file o cartella.",  
-      "description": "AltSendme crea un codice di condivisione una tantum (chiamato \"ticket\")."  
-    },  
-    "step2": {  
-      "title": "Condividi il ticket.",  
-      "description": "Copialo e invialo al tuo amico tramite chat, email o SMS."  
-    },  
-    "step3": {  
-      "title": "Lo ricevono direttamente.",  
-      "description": "Il tuo amico incolla il ticket nella sua app e il trasferimento inizia."  
-    }  
-  },  
+  "howItWorks": {
+    "sectionLabel": "USARE ALTSENDME:",
+    "step1": {
+      "title": "Configurazione",
+      "description": "passa un file o una cartella da condividere ad altsendme. Genererà un ticket.",
+      "command": "> $ altsendme send ~/great_photos",
+      "output1": "content added",
+      "output2": "run altsendme receive blobQmFoo..."
+    },
+    "step2": {
+      "title": "Incolla",
+      "description": "copia e incolla il ticket al tuo amico.",
+      "message": "hey here have some great photos: blobQmFoo..."
+    },
+    "step3": {
+      "title": "Scarica",
+      "description": "esegui get per recuperare i dati direttamente dal tuo amico.",
+      "command": "> $ altsendme receive blobQmFoo...",
+      "output": "fetched to great_photos"
+    }
+  },
   "features": {  
     "title": "Perché le persone amano AltSendme",  
     "private": {  

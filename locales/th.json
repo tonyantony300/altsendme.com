@@ -18,19 +18,24 @@
     "donationMessage": "การบริจาคของคุณทำให้โปรเจกต์นี้ดีขึ้น"
   },
   "howItWorks": {
-    "title": "วิธีการทำงาน",
-    "subtitle": "เรียบง่าย ปลอดภัย ทันที",
+    "sectionLabel": "การใช้ ALTSENDME:",
     "step1": {
-      "title": "วางไฟล์หรือโฟลเดอร์ของคุณ",
-      "description": "AltSendme สร้างรหัสแชร์ครั้งเดียว (เรียกว่า \"ตั๋ว\")"
+      "title": "ตั้งค่า",
+      "description": "ส่งไฟล์หรือโฟลเดอร์ที่ต้องการแชร์ไปยัง altsendme แล้วจะได้รับตั๋ว",
+      "command": "> $ altsendme send ~/great_photos",
+      "output1": "content added",
+      "output2": "run altsendme receive blobQmFoo..."
     },
     "step2": {
-      "title": "แชร์ตั๋ว",
-      "description": "คัดลอกและส่งให้เพื่อนของคุณ — ผ่านแชท อีเมล หรือข้อความ"
+      "title": "วาง",
+      "description": "คัดลอกและวางตั๋วส่งให้เพื่อน",
+      "message": "hey here have some great photos: blobQmFoo..."
     },
     "step3": {
-      "title": "พวกเขาได้รับโดยตรง",
-      "description": "เพื่อนของคุณวางตั๋วในแอปของพวกเขา และการถ่ายโอนจะเริ่มขึ้น"
+      "title": "ดาวน์โหลด",
+      "description": "รัน get เพื่อดึงข้อมูลโดยตรงจากเพื่อน",
+      "command": "> $ altsendme receive blobQmFoo...",
+      "output": "fetched to great_photos"
     }
   },
   "features": {

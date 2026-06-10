@@ -2,51 +2,112 @@
 
 import { useTranslations } from 'next-intl';
 
+function TerminalDots() {
+  return (
+    <div className="absolute top-0 left-0 p-2 flex gap-1">
+      <div className="border border-zinc-600 w-3 h-3 rounded-full" />
+      <div className="border border-zinc-600 w-3 h-3 rounded-full" />
+      <div className="border border-zinc-600 w-3 h-3 rounded-full" />
+    </div>
+  );
+}
+
+function TerminalMockup({ command, lines }) {
+  return (
+    <div className="relative rounded border border-zinc-700 bg-zinc-900/60 p-2 py-8 h-40 mb-5">
+      <TerminalDots />
+      <p className="font-mono font-bold text-sm text-zinc-100">{command}</p>
+      {lines.map((line) => (
+        <p key={line} className="font-mono text-zinc-500 text-sm">
+          {line}
+        </p>
+      ))}
+    </div>
+  );
+}
+
+function ChatMockup({ message }) {
+  return (
+    <div className="relative p-2 flex h-40 mb-5 text-zinc-300">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        aria-hidden="true"
+        className="w-6 h-6 mr-2 flex-shrink-0 text-zinc-400"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+        />
+      </svg>
+      <div className="rounded-tr-lg rounded-br-lg rounded-bl-lg border border-zinc-700 bg-zinc-900/60 p-2 pb-10 mb-2 h-20 text-sm text-zinc-300">
+        {message}
+      </div>
+    </div>
+  );
+}
+
 export default function HowItWorks() {
-  const t = useTranslations();
+  const t = useTranslations('howItWorks');
+
+  const steps = [
+    {
+      mockup: (
+        <TerminalMockup
+          command={t('step1.command')}
+          lines={[t('step1.output1'), t('step1.output2')]}
+        />
+      ),
+      title: t('step1.title'),
+      description: t('step1.description'),
+    },
+    {
+      mockup: <ChatMockup message={t('step2.message')} />,
+      title: t('step2.title'),
+      description: t('step2.description'),
+    },
+    {
+      mockup: (
+        <TerminalMockup
+          command={t('step3.command')}
+          lines={[t('step3.output')]}
+        />
+      ),
+      title: t('step3.title'),
+      description: t('step3.description'),
+    },
+  ];
 
   return (
-    <section className="flex flex-col items-center py-12 pt-32 px-4 w-full sm:px-6 md:px-10 md:pb-16 lg:px-[60px] lg:pb-20">
-      <h2 className="font-swear-display text-[32px] leading-[1.2] text-center text-foreground font-normal mb-2 md:mb-4 max-w-[600px] md:text-[40px]">
-        {t('howItWorks.title')}
-      </h2>
-      
-      <p className="font-fanwood-text text-base text-center text-foreground mb-10 lg:mb-14 max-w-[600px] sm:text-lg md:text-xl ">
-        {t('howItWorks.subtitle')}
-      </p>
+    <section className="relative w-full py-12 px-5 md:px-10 lg:px-[60px] text-zinc-100 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none isolate" aria-hidden="true">
+        <div className="absolute inset-0 bg-[#110E0C]" />
+        <div className="absolute inset-0 dark-grain" />
+        <div className="absolute inset-0 dark-grain" />
+        <div className="absolute inset-0 dark-grain" />
+      </div>
 
-      <div className="w-full max-w-[800px] flex flex-col gap-7 md:gap-10">
-        {/* Step 1 */}
-        <div className="flex flex-col gap-2 sm:gap-3 items-center text-center">
-          <h3 className="font-swear-display text-lg text-foreground font-medium sm:text-xl md:text-2xl">
-            1. {t('howItWorks.step1.title')}
-          </h3>
-          <p className="font-fanwood-text text-sm text-foreground sm:text-base md:text-lg">
-            {t('howItWorks.step1.description')}
-          </p>
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto">
+        <div className="px-5 pt-10">
+          <h3 className="font-koulen text-accent text-xl">{t('sectionLabel')}</h3>
         </div>
 
-        {/* Step 2 */}
-        <div className="flex flex-col gap-2 sm:gap-3 items-center text-center">
-          <h3 className="font-swear-display text-lg text-foreground font-medium sm:text-xl md:text-2xl">
-            2. {t('howItWorks.step2.title')}
-          </h3>
-          <p className="font-fanwood-text text-sm text-foreground sm:text-base md:text-lg">
-            {t('howItWorks.step2.description')}
-          </p>
-        </div>
-
-        {/* Step 3 */}
-        <div className="flex flex-col gap-2 sm:gap-3 items-center text-center">
-          <h3 className="font-swear-display text-lg text-foreground font-medium sm:text-xl md:text-2xl">
-            3. {t('howItWorks.step3.title')}
-          </h3>
-          <p className="font-fanwood-text text-sm text-foreground sm:text-base md:text-lg">
-            {t('howItWorks.step3.description')}
-          </p>
+        <div className="md:flex sm:gap-5">
+          {steps.map((step, index) => (
+            <div key={step.title} className="md:w-1/3 p-5 pb-10">
+              {step.mockup}
+              <h3 className="font-geist text-3xl font-bold text-zinc-100">
+                <span className="text-accent">{index + 1}.</span> {step.title}
+              </h3>
+              <p className="mt-1 text-sm/6 text-zinc-400 font-geist">{step.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-

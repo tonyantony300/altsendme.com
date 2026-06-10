@@ -18,19 +18,24 @@
     "donationMessage": "Your donations make this project better"
   },
   "howItWorks": {
-    "title": "How It Works",
-    "subtitle": "Simple. Secure. Instant.",
+    "sectionLabel": "The Transfer Experience:",
     "step1": {
-      "title": "Drop your file or folder.",
-      "description": "AltSendme creates a one-time share code (called a \"ticket\")."
+      "title": "Start",
+      "description": "Pass/Drop/Select a file or folder you want to share with AltSendme. It'll spit out a ticket.",
+      "command": "> $ sendme send ~/great_photos",
+      "output1": "content added",
+      "output2": "run sendme receive blobQmFoo..."
     },
     "step2": {
-      "title": "Share the ticket.",
-      "description": "Copy it and send it to your friend — via chat, email, or text."
+      "title": "Paste",
+      "description": "copy-paste the ticket to your friend.",
+      "message": "hey here have some great photos: blobQmFoo..."
     },
     "step3": {
-      "title": "They receive it directly.",
-      "description": "Your friend pastes the ticket in their app, and the transfer begins."
+      "title": "Download",
+      "description": "Run/Paste the ticket to fetch data directly from your friend.",
+      "command": "> $ sendme receive blobQmFoo...",
+      "output": "fetched to great_photos"
     }
   },
   "features": {
