@@ -119,6 +119,21 @@
   "taglineFooter": {
     "quote": "C'est comme un lien AirDrop privé et unique — pour n'importe qui, n'importe où."
   },
+  "footer": {
+    "headline": "Envoyez des fichiers directement à n'importe qui, n'importe où.",
+    "builtOn": "Construit sur",
+    "iroh": "iroh",
+    "howItWorks": "Comment ça marche",
+    "features": "Fonctionnalités",
+    "downloads": "Téléchargements",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "websiteBy": "Site web avec ❤️ par",
+    "designer": "ShravanKumar PS",
+    "license": "©AGPL 3.0"
+  },
   "contact": {
     "title": "Nous contacter",
     "name": "Votre nom",

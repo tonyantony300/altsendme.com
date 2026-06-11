@@ -119,6 +119,21 @@
   "taglineFooter": {
     "quote": "它就像一个私密的一次性 AirDrop 链接 — 适用于任何人，任何地方。"
   },
+  "footer": {
+    "headline": "将文件直接发送给任何人，任何地方。",
+    "builtOn": "基于",
+    "iroh": "iroh",
+    "howItWorks": "工作原理",
+    "features": "功能",
+    "downloads": "下载",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "websiteBy": "Website with ❤️ by",
+    "designer": "ShravanKumar PS",
+    "license": "©AGPL 3.0"
+  },
   "contact": {
     "title": "联系我们",
     "name": "您的姓名",

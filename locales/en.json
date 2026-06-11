@@ -120,6 +120,21 @@
   "taglineFooter": {
     "quote": "It's like a private, one-time AirDrop link — for anyone, anywhere."
   },
+  "footer": {
+    "headline": "Send files directly<br></br>to anyone, anywhere.",
+    "builtOn": "Built on",
+    "iroh": "iroh",
+    "howItWorks": "How it works",
+    "features": "Features",
+    "downloads": "Downloads",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "websiteBy": "Website made with ❤️ by",
+    "designer": "ShravanKumar PS",
+    "license": "©GNU Affero General Public License v3.0"
+  },
   "contact": {
     "title": "Get in Touch",
     "name": "Your Name",

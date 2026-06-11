@@ -30,7 +30,7 @@ export default function HomePage() {
         <DownloadSection />
       </main>
 
-      <Footer fixed={false} />
+      <Footer />
       {/* <TallyPopup /> */}
     </div>
   );

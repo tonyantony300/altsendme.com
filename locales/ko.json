@@ -119,6 +119,21 @@
   "taglineFooter": {
     "quote": "누구나, 어디서나 사용할 수 있는 비공개 일회용 AirDrop 링크와 같습니다."
   },
+  "footer": {
+    "headline": "파일을 누구에게든, 어디로든 직접 전송하세요.",
+    "builtOn": "Built on",
+    "iroh": "iroh",
+    "howItWorks": "작동 방식",
+    "features": "기능",
+    "downloads": "다운로드",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "websiteBy": "Website with ❤️ by",
+    "designer": "ShravanKumar PS",
+    "license": "©AGPL 3.0"
+  },
   "contact": {
     "title": "문의하기",
     "name": "이름",

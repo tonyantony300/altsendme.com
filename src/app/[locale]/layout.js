@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Funnel_Sans, Newsreader, Libre_Franklin, Koulen } from "next/font/google";
+import { Funnel_Sans, Newsreader, Libre_Franklin, Koulen, Inter } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
 import { routing } from '@/i18n/routing';
 import StructuredData from './StructuredData';
@@ -26,6 +26,11 @@ const koulen = Koulen({
   variable: "--font-koulen",
   subsets: ["latin"],
   weight: "400",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
 
 const keywords = [
@@ -192,7 +197,7 @@ export default async function LocaleLayout({ children, params }) {
         <meta name="format-detection" content="telephone=no" />
         <script src="https://tally.so/widgets/embed.js" async></script>
       </head>
-      <body className={`${funnelSans.variable} ${newsreader.variable} ${libreFranklin.variable} ${koulen.variable}`}>
+      <body className={`${funnelSans.variable} ${newsreader.variable} ${libreFranklin.variable} ${koulen.variable} ${inter.variable}`}>
         <NextIntlClientProvider messages={messages}>
           <StructuredData locale={locale} />
           {children}

@@ -20,7 +20,7 @@ export default function Header() {
               height={32}
               priority
             />
-            <span className="font-funnel-sans text-2xl text-foreground font-medium tracking-tighter lg:text-[28px]">{t('common.logo')}</span>
+            <span className="font-funnel-sans text-2xl text-[#452815] font-extrabold tracking-tighter lg:text-[28px]">{t('common.logo')}</span>
           </Link>
           <div className="hidden md:block">
             <LanguageSwitcher />

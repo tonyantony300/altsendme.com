@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         "funnel-sans": ["var(--font-funnel-sans)", "sans-serif"],
+        "inter": ["var(--font-inter)", "sans-serif"],
         "federo": ["var(--font-libre-franklin)", "sans-serif"],
         "koulen": ["var(--font-koulen)", "sans-serif"],
         "swear-display": ["var(--font-newsreader)", "serif"],

@@ -119,6 +119,21 @@
   "taglineFooter": {
     "quote": "มันเหมือนลิงก์ AirDrop ส่วนตัวครั้งเดียว — สำหรับใครก็ได้ ที่ไหนก็ได้"
   },
+  "footer": {
+    "headline": "ส่งไฟล์ตรงถึงใครก็ได้ ที่ไหนก็ได้",
+    "builtOn": "Built on",
+    "iroh": "iroh",
+    "howItWorks": "วิธีการทำงาน",
+    "features": "คุณสมบัติ",
+    "downloads": "ดาวน์โหลด",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "websiteBy": "Website with ❤️ by",
+    "designer": "ShravanKumar PS",
+    "license": "©AGPL 3.0"
+  },
   "contact": {
     "title": "ติดต่อเรา",
     "name": "ชื่อของคุณ",

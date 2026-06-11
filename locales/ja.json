@@ -119,6 +119,21 @@
   "taglineFooter": {
     "quote": "それは、誰でも、どこでも使えるプライベートな一度限りのAirDropリンクのようなものです。"
   },
+  "footer": {
+    "headline": "ファイルを直接、誰にでも、どこへでも送信。",
+    "builtOn": "Built on",
+    "iroh": "iroh",
+    "howItWorks": "使い方",
+    "features": "機能",
+    "downloads": "ダウンロード",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "websiteBy": "Website with ❤️ by",
+    "designer": "ShravanKumar PS",
+    "license": "©AGPL 3.0"
+  },
   "contact": {
     "title": "お問い合わせ",
     "name": "お名前",

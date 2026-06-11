@@ -119,6 +119,21 @@
   "taglineFooter": {
     "quote": "Это как приватная одноразовая ссылка AirDrop — для любого, где угодно."
   },
+  "footer": {
+    "headline": "Отправляйте файлы напрямую кому угодно и куда угодно.",
+    "builtOn": "Построено на",
+    "iroh": "iroh",
+    "howItWorks": "Как это работает",
+    "features": "Возможности",
+    "downloads": "Загрузки",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "websiteBy": "Сайт с ❤️ от",
+    "designer": "ShravanKumar PS",
+    "license": "©AGPL 3.0"
+  },
   "contact": {
     "title": "Связаться с нами",
     "name": "Ваше имя",

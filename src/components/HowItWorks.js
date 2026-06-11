@@ -83,7 +83,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="relative w-full py-12 px-5 md:px-10 lg:px-[60px] text-zinc-100 overflow-hidden">
+    <section id="how-it-works-section" className="relative w-full scroll-mt-24 py-12 px-5 md:px-10 lg:px-[60px] text-zinc-100 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none isolate" aria-hidden="true">
         <div className="absolute inset-0 bg-[#110E0C]" />
         <div className="absolute inset-0 dark-grain" />
