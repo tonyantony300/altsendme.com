@@ -90,6 +90,13 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "A very straightforward file transfer app. Great for quick, simple file transfers across the web."
   },
+  "partners": {
+    "title": "Partners",
+    "testmuAlt": "TestMu AI, formerly LambdaTest",
+    "ctaTitle": "Interested in Partnership?",
+    "ctaDescription": "We're always looking for organizations that want to collaborate and support open-source development.",
+    "ctaButton": "Get in Touch"
+  },
   "availableAs": {
     "title": "One Experience. Multiple Platforms.",
     "desktop": {

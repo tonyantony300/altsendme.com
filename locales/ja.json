@@ -90,6 +90,13 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "非常にシンプルなファイル転送アプリ。Web上での迅速で簡単なファイル転送に最適です。"
   },
+  "partners": {
+    "title": "パートナー",
+    "testmuAlt": "TestMu AI（旧 LambdaTest）",
+    "ctaTitle": "パートナーシップにご興味がありますか？",
+    "ctaDescription": "私たちの価値観を共有し、オープンソース開発を支援したい組織を常に探しています。",
+    "ctaButton": "お問い合わせ"
+  },
   "availableAs": {
     "title": "対応プラットフォーム",
     "desktop": {

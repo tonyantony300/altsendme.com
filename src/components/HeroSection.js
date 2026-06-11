@@ -69,7 +69,7 @@ export default function HeroSection() {
     <section className="relative w-full min-h-[559px] md:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[80vh] flex flex-col items-center lg:items-start justify-center overflow-hidden py-10 lg:pt-20 px-5 md:px-10 lg:px-[60px]">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div
-          className="absolute inset-0 bg-[url('/heroBg.png')] bg-[length:auto_100%] lg:bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-[url('/heroBg.webp')] bg-[length:auto_100%] lg:bg-cover bg-center bg-no-repeat"
         />
         <div className="absolute inset-0 hero-grain mix-blend-overlay opacity-[0.22]" />
       </div>

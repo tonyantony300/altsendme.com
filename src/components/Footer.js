@@ -32,7 +32,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full overflow-hidden text-white">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute inset-0 bg-[url('/footerBg.png')] bg-cover bg-top bg-no-repeat" />
+        <div className="absolute inset-0 bg-[url('/footerBg.webp')] bg-cover bg-top bg-no-repeat" />
         <div className="absolute inset-0 hero-grain mix-blend-overlay opacity-[0.22]" />
       </div>
 

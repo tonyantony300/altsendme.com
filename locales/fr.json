@@ -90,6 +90,13 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "Une application de transfert de fichiers très simple. Idéale pour des transferts de fichiers rapides et simples sur le Web."
   },
+  "partners": {
+    "title": "Partenaires",
+    "testmuAlt": "TestMu AI, anciennement LambdaTest",
+    "ctaTitle": "Intéressé par un partenariat ?",
+    "ctaDescription": "Nous recherchons toujours des organisations qui partagent nos valeurs et souhaitent soutenir le développement open source.",
+    "ctaButton": "Nous contacter"
+  },
   "availableAs": {
     "title": "Disponible en",
     "desktop": {

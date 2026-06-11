@@ -90,6 +90,13 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "매우 간단한 파일 전송 앱입니다. 웹에서 빠르고 간단한 파일 전송에 완벽합니다."
   },
+  "partners": {
+    "title": "파트너",
+    "testmuAlt": "TestMu AI, formerly LambdaTest",
+    "ctaTitle": "파트너십에 관심이 있으신가요?",
+    "ctaDescription": "우리의 가치를 공유하고 오픈 소스 개발을 지원하고 싶은 조직을 항상 찾고 있습니다.",
+    "ctaButton": "문의하기"
+  },
   "availableAs": {
     "title": "지원 플랫폼",
     "desktop": {

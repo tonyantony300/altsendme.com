@@ -90,6 +90,13 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "Eine sehr unkomplizierte Dateiübertragungs-App. Großartig für schnelle, einfache Dateiübertragungen im Web."
   },
+  "partners": {
+    "title": "Partner",
+    "testmuAlt": "TestMu AI, ehemals LambdaTest",
+    "ctaTitle": "Interesse an einer Partnerschaft?",
+    "ctaDescription": "Wir suchen stets Organisationen, die unsere Werte teilen und Open-Source-Entwicklung unterstützen möchten.",
+    "ctaButton": "Kontakt aufnehmen"
+  },
   "availableAs": {
     "title": "Verfügbar als",
     "desktop": {

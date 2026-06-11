@@ -90,6 +90,13 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "一个非常直接的文件传输应用。非常适合在网络上快速、简单地传输文件。"
   },
+  "partners": {
+    "title": "合作伙伴",
+    "testmuAlt": "TestMu AI，前身为 LambdaTest",
+    "ctaTitle": "有兴趣合作吗？",
+    "ctaDescription": "我们一直在寻找与我们价值观一致、并愿意支持开源开发的组织。",
+    "ctaButton": "联系我们"
+  },
   "availableAs": {
     "title": "支持平台",
     "desktop": {
