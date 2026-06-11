@@ -11,7 +11,6 @@ export default function Footer({ fixed = true }) {
       <div className="flex flex-col items-center gap-6 max-w-[1200px] mx-auto md:flex-row md:justify-between md:items-center md:gap-0">
         <p className="font-fanwood-text text-sm text-center md:text-left">{t('common.license')}</p>
         <div className="flex flex-col items-center gap-5 md:flex-row md:gap-6 md:items-center">
-          <Link href="/faq" className="font-fanwood-text text-sm text-footer-text hover:underline underline-offset-[3px]">FAQ</Link>
           <Link href="/contact" className="font-fanwood-text text-sm text-footer-text hover:underline underline-offset-[3px]">{t('common.contactUs')}</Link>
           <a 
             href="https://buymeacoffee.com/tny_antny" 

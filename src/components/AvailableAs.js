@@ -62,7 +62,7 @@ export default function AvailableAs() {
   return (
     <section className="w-full py-12 px-5 md:px-10 lg:px-[60px]">
       <div className="w-full max-w-[1200px] mx-auto">
-        <h2 className="font-swear-display text-[32px] leading-[1.2] text-center text-foreground font-normal mb-8 md:text-[40px] md:mb-10 lg:mb-12">
+        <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-foreground font-semibold mb-8 md:text-[40px] md:mb-10 lg:mb-12">
           {t('title')}
         </h2>
 

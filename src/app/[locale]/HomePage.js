@@ -10,6 +10,7 @@ import Testimonial from '@/components/Testimonial';
 import PressReviews from '@/components/PressReviews';
 import DownloadSection from '@/components/DownloadSection';
 import AvailableAs from '@/components/AvailableAs';
+import HomeFAQ from '@/components/HomeFAQ';
 import TallyPopup from '@/components/TallyPopup';
 
 export default function HomePage() {
@@ -20,6 +21,7 @@ export default function HomePage() {
         <HeroSection />
         <HowItWorks />
         <AvailableAs />
+        <HomeFAQ />
         <FeaturesGrid />
         <ComparisonTable /> 
         <Testimonial />

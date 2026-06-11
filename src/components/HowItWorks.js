@@ -93,7 +93,7 @@ export default function HowItWorks() {
 
       <div className="relative z-10 w-full max-w-[1200px] mx-auto">
         <div className="px-5 pt-10">
-          <h3 className="font-koulen text-accent text-xl">{t('sectionLabel')}</h3>
+          <h3 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-accent font-bold mb-8 whitespace-pre-line md:text-[40px] md:mb-10 lg:mb-12">{t('sectionLabel')}</h3>
         </div>
 
         <div className="md:flex sm:gap-5">

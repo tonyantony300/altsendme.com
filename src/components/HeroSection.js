@@ -69,7 +69,7 @@ export default function HeroSection() {
     <section className="relative w-full min-h-[559px] md:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[80vh] flex flex-col items-center lg:items-start justify-center overflow-hidden py-10 lg:pt-20 px-5 md:px-10 lg:px-[60px]">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div
-          className="absolute inset-0 bg-[url('/testBg1.png')] bg-[length:auto_100%] lg:bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-[url('/heroBg.png')] bg-[length:auto_100%] lg:bg-cover bg-center bg-no-repeat"
         />
         <div className="absolute inset-0 hero-grain mix-blend-overlay opacity-[0.22]" />
       </div>
@@ -129,7 +129,7 @@ export default function HeroSection() {
                     height={20}
                     className="flex-shrink-0 brightness-0 invert"
                   />
-                  <span className="font-federo font-medium">{primaryDownload.label}</span>
+                  <span className="font-funnel-sans font-medium">{primaryDownload.label}</span>
                 </a>
 
                 <button
@@ -137,7 +137,7 @@ export default function HeroSection() {
                     e.stopPropagation();
                     setIsDropdownOpen(!isDropdownOpen);
                   }}
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all h-16 px-3 rounded-l-none border-0 flex-shrink-0 shadow-none group-hover:shadow-none transform-none group-hover:transform-none bg-dark hover:opacity-90 text-white border-l-2 border-white"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all h-16 px-3 rounded-l-none border-0 flex-shrink-0 shadow-none group-hover:shadow-none transform-none group-hover:transform-none bg-dark hover:opacity-90 text-white border-l-[0.5px] border-white"
                 >
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
