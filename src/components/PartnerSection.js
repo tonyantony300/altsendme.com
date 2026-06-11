@@ -10,7 +10,7 @@ export default function PartnerSection() {
   return (
     <section
       id="partners-section"
-      className="relative w-full scroll-mt-24 py-12 px-5 md:px-10 lg:px-[60px] text-zinc-100 overflow-hidden"
+      className="relative w-full scroll-mt-24 py-16 px-5 md:px-10 md:py-20 lg:px-[60px] lg:py-24 text-zinc-100 overflow-hidden"
     >
       <div className="absolute inset-0 pointer-events-none isolate" aria-hidden="true">
         <div className="absolute inset-0 bg-dark" />
@@ -30,7 +30,7 @@ export default function PartnerSection() {
               href="https://www.lambdatest.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center border-b border-zinc-700/60 bg-[#FBF8F2] px-6 py-10 transition-colors hover:bg-[#F6F2EA] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dark md:border-b-0 md:border-r md:px-8 md:py-12"
+              className="group flex items-center justify-center border-b border-zinc-700/60 bg-[#FBF8F2] px-6 py-14 transition-colors hover:bg-[#F6F2EA] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dark md:border-b-0 md:border-r md:px-8 md:py-16"
             >
               <Image
                 src="/testMUlogo.svg"
@@ -41,7 +41,7 @@ export default function PartnerSection() {
               />
             </a>
 
-            <div className="flex flex-col justify-center bg-accent px-6 py-8 text-foreground md:px-8 md:py-10">
+            <div className="flex flex-col justify-center bg-accent px-6 py-12 text-foreground md:px-8 md:py-14">
               <h3 className="font-funnel-sans text-lg font-semibold leading-snug md:text-xl">
                 {t('ctaTitle')}
               </h3>
