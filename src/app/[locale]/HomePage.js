@@ -11,6 +11,7 @@ import PressReviews from '@/components/PressReviews';
 import DownloadSection from '@/components/DownloadSection';
 import AvailableAs from '@/components/AvailableAs';
 import HomeFAQ from '@/components/HomeFAQ';
+import FeaturesSection from '@/components/FeaturesSection';
 import PartnerSection from '@/components/PartnerSection';
 import TallyPopup from '@/components/TallyPopup';
 
@@ -22,6 +23,7 @@ export default function HomePage() {
         <HeroSection />
         <HowItWorks />
         <AvailableAs />
+        <FeaturesSection />
         <PartnerSection />
         <HomeFAQ />
         {/* <FeaturesGrid />

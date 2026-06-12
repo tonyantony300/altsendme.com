@@ -39,30 +39,40 @@
     }
   },
   "features": {
-    "title": "Warum Menschen AltSendme lieben",
-    "private": {
-      "title": "Privat & Verschlüsselt",
-      "description": "Dateien gehen direkt an Ihren Freund: werden nie online gespeichert."
-    },
-    "fast": {
-      "title": "Schnelle Übertragungen",
-      "description": "AltSendme kann Verbindungen bis zu 4Gbps auslasten."
-    },
-    "unlimited": {
-      "title": "Alles übertragen",
-      "description": "Senden Sie Dateien oder Ordner beliebiger Größe oder Formate zuverlässig."
-    },
-    "noAccounts": {
-      "title": "Keine Konten erforderlich",
-      "description": "Öffnen, ablegen, teilen: das war's."
-    },
-    "crossPlatform": {
-      "title": "Plattformübergreifend",
-      "description": "Funktioniert auf Windows, macOS und Linux."
-    },
-    "openSource": {
-      "title": "Open Source & Transparent",
-      "description": "Vollständig quelloffener Code: prüfen, verifizieren und vertrauen."
+    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "items": {
+      "directSend": {
+        "title": "Send files directly. No middlemen.",
+        "description": "Works seamlessly on local networks or across continents."
+      },
+      "transferAnything": {
+        "title": "Transfer Anything. Any file. Any Format.",
+        "description": "Send files or directories of any size or any format, verified with BLAKE3-based integrity checks."
+      },
+      "noSizeLimits": {
+        "title": "No Size Limits. Truly unlimited.",
+        "description": "Send Kilobyte's to 99GigaByte's. Altsendme helps you to share files of unlimited size."
+      },
+      "blazingFast": {
+        "title": "Blazing Fast & Reliable",
+        "description": "Capable of saturating multi-gigabit connections for lightning-fast transfers."
+      },
+      "endToEndEncrypted": {
+        "title": "End-to-End Encrypted",
+        "description": "Protected by QUIC + TLS 1.3 for forward and backward secrecy."
+      },
+      "resumable": {
+        "title": "Resumable Transfers",
+        "description": "Interrupted? No problem. Transfers automatically resume where they left off."
+      },
+      "zeroPersonalData": {
+        "title": "Zero Personal Data",
+        "description": "No accounts, No ads. No tracking, No training. Just private file transfers."
+      },
+      "freeOpenSource": {
+        "title": "Free & OpenSource",
+        "description": "Built by community. Open by Design. Transparency and private by default."
+      }
     }
   },
   "comparison": {
