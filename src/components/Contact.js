@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
@@ -9,9 +9,11 @@ const fieldClassName =
 
 export default function Contact() {
   const t = useTranslations('contact');
+  const contentRef = useRef(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [lockedHeight, setLockedHeight] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -45,6 +47,9 @@ export default function Contact() {
       const data = await response.json();
 
       if (response.ok && data.success) {
+        if (contentRef.current) {
+          setLockedHeight(contentRef.current.offsetHeight);
+        }
         setSubmitted(true);
         e.target.reset();
       } else {
@@ -58,8 +63,8 @@ export default function Contact() {
   };
 
   return (
-    <section className="flex flex-1 items-center justify-center w-full py-8 px-5 md:px-10 lg:px-[60px] font-funnel-sans">
-      <div className="relative w-full max-w-[1100px] overflow-hidden rounded-none">
+    <section className="flex justify-center w-full py-8 px-5 md:px-10 lg:px-[60px] font-funnel-sans">
+      <div className="relative w-full max-w-[1100px] mx-auto overflow-hidden rounded-none">
         <Image
           src="/intouchBg.png"
           alt=""
@@ -71,9 +76,16 @@ export default function Contact() {
         />
         <div className="absolute inset-0 bg-black/5" aria-hidden="true" />
 
-        <div className="relative min-h-[380px] md:min-h-[400px]">
+        <div
+          ref={contentRef}
+          className="relative"
+          style={submitted && lockedHeight ? { minHeight: lockedHeight } : undefined}
+        >
           {submitted ? (
-            <div className="flex min-h-[380px] md:min-h-[400px] items-center justify-center p-8 md:p-10 lg:p-12">
+            <div
+              className="flex items-center justify-center p-8 md:p-10 lg:p-12"
+              style={lockedHeight ? { minHeight: lockedHeight } : undefined}
+            >
               <p className="text-center text-base md:text-lg text-white leading-relaxed max-w-md">
                 {t('success')}
               </p>
