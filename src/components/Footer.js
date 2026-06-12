@@ -8,13 +8,13 @@ const FOOTER_NAV_GRID = [
     { key: "howItWorks", href: "#how-it-works-section" },
     { key: "features", href: "#features-section" },
     { key: "downloads", href: "#download-section" },
-    { key: "discord", href: "https://discord.gg/xwb7z22Eve", external: true },
+    { key: "contactUs", href: "/contact" },
   ],
   [
     { key: "buyMeACoffee", href: "https://buymeacoffee.com/tny_antny", external: true },
     { key: "github", href: "https://github.com/tonyantony300/alt-sendme", external: true },
     { key: "linkedin", href: "https://linkedin.com/in/tonyantony300", external: true },
-    null,
+    { key: "discord", href: "https://discord.gg/xwb7z22Eve", external: true },,
   ],
 ];
 

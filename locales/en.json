@@ -134,6 +134,7 @@
     "howItWorks": "How it works",
     "features": "Features",
     "downloads": "Downloads",
+    "contactUs": "Contact Us",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
     "github": "GitHub",
@@ -143,14 +144,16 @@
     "license": "©GNU Affero General Public License v3.0"
   },
   "contact": {
-    "title": "Get in Touch",
+    "title": "Reach out to us",
+    "subtitle": "Have a question, feedback, or want to collaborate? Drop us a message and we'll get back to you.",
     "name": "Your Name",
-    "email": "Your Email",
-    "message": "Message",
-    "submit": "Send Message",
+    "email": "Enter your email",
+    "message": "Type here",
+    "submit": "Submit",
     "submitting": "Sending...",
     "success": "Thank you! Your message has been sent successfully.",
-    "error": "Something went wrong. Please try again later."
+    "error": "Something went wrong. Please try again later.",
+    "imageAlt": "The Creation of Adam — reaching out to connect"
   },
   "faq": {
     "title": "Frequently Asked Questions",
