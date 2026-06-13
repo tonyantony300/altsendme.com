@@ -196,8 +196,8 @@ export default function DownloadsPageContent() {
       <section className="w-full px-5 py-12 md:px-10 md:py-16 lg:px-[60px] lg:py-20">
         <div className="mx-auto w-full max-w-[1200px]">
           <div className="border border-[#D3D2CD] bg-[#F5F4F0]">
-            <div className="grid md:grid-cols-3">
-              <div className="border-b border-[#D3D2CD] p-8 md:col-span-2 md:p-12 lg:p-16 md:border-b-0 md:border-r">
+            <div className="grid md:grid-cols-3 md:items-stretch">
+              <div className="p-8 md:col-span-2 md:border-r md:border-[#D3D2CD] md:p-12 lg:p-16">
                 <h1 className="mb-8 text-center font-funnel-sans text-[40px] font-bold leading-[1.1] tracking-tight text-[#121212] sm:text-left md:text-[56px] lg:text-[64px]">
                   <span className="block">{t("titleLine1")}</span>
                   <span className="block">{t("titleLine2")}</span>
@@ -281,14 +281,15 @@ export default function DownloadsPageContent() {
 
               </div>
 
-              <div className="relative min-h-[280px] border-t border-[#D3D2CD] md:min-h-[420px] md:border-t-0">
-                <div className="flex h-full items-center justify-center p-6 md:p-10">
-                  <img
-                    src="/desktop-ss.png"
-                    alt={t("previewAlt")}
-                    className="h-auto w-full max-w-[360px] object-contain"
-                  />
-                </div>
+              <div className="relative hidden min-h-0 overflow-hidden md:block">
+                <Image
+                  src="/downloadbg.webp"
+                  alt={t("previewAlt")}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
