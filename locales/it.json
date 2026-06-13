@@ -18,28 +18,22 @@
     "donationMessage": "Le tue donazioni rendono questo progetto migliore"
   },
   "howItWorks": {
-    "sectionLabel": "USARE ALTSENDME:",
+    "sectionLabel": "Sicuro e istantaneo.\nFunziona in 3 semplici passaggi.",
     "step1": {
-      "title": "Configurazione",
-      "description": "passa un file o una cartella da condividere ad altsendme. Genererà un ticket.",
-      "command": "> $ altsendme send ~/great_photos",
-      "output1": "content added",
-      "output2": "run altsendme receive blobQmFoo..."
+      "title": "Trascina un file o una cartella",
+      "description": "AltSendme crea un codice monouso sicuro (chiamato \"ticket\") per il tuo file"
     },
     "step2": {
-      "title": "Incolla",
-      "description": "copia e incolla il ticket al tuo amico.",
-      "message": "hey here have some great photos: blobQmFoo..."
+      "title": "Condividi il ticket",
+      "description": "Copia il ticket e invialo via chat, e-mail o SMS al destinatario"
     },
     "step3": {
-      "title": "Scarica",
-      "description": "esegui get per recuperare i dati direttamente dal tuo amico.",
-      "command": "> $ altsendme receive blobQmFoo...",
-      "output": "fetched to great_photos"
+      "title": "Ricevono il file",
+      "description": "Il tuo amico incolla il ticket nella sua app e il trasferimento inizia. Il file si scarica direttamente."
     }
   },
   "features": {
-    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "title": "Why People Love AltSendme",
     "items": {
       "directSend": {
         "title": "Send files directly. No middlemen.",
@@ -109,6 +103,8 @@
   },
   "availableAs": {
     "title": "Disponibile come",
+    "download": "Scarica",
+    "comingSoon": "In arrivo",
     "desktop": {
       "title": "Applicazioni desktop",
       "description": "App native per Windows, macOS e Linux. Trascina, rilascia e condividi file all'istante con un'esperienza desktop completa."
@@ -122,7 +118,7 @@
       "description": "CLI scriptabile compatibile con lo strumento sendme. Genera ticket nel terminale e condividili con l'app desktop."
     },
     "web": {
-      "title": "Web (In arrivo)",
+      "title": "Web",
       "description": "Trasferisci file e cartelle senza installare nulla. Condividi con Desktop, Mobile o CLI."
     }
   },

@@ -18,28 +18,22 @@
     "donationMessage": "您的捐赠让这个项目变得更好"
   },
   "howItWorks": {
-    "sectionLabel": "使用 ALTSENDME：",
+    "sectionLabel": "安全即时。\n3 个简单步骤即可使用。",
     "step1": {
-      "title": "设置",
-      "description": "将要分享的文件或文件夹传给 altsendme，它会生成一个票据。",
-      "command": "> $ altsendme send ~/great_photos",
-      "output1": "content added",
-      "output2": "run altsendme receive blobQmFoo..."
+      "title": "拖放文件或文件夹",
+      "description": "AltSendme 为您的文件创建一个安全的一次性代码（称为\"票据\"）"
     },
     "step2": {
-      "title": "粘贴",
-      "description": "复制票据并发送给朋友。",
-      "message": "hey here have some great photos: blobQmFoo..."
+      "title": "分享票据",
+      "description": "复制票据，通过聊天、电子邮件或短信发送给收件人"
     },
     "step3": {
-      "title": "下载",
-      "description": "运行 get 直接从朋友那里获取数据。",
-      "command": "> $ altsendme receive blobQmFoo...",
-      "output": "fetched to great_photos"
+      "title": "对方接收文件",
+      "description": "您的朋友在其应用中粘贴票据，传输即开始。文件直接下载。"
     }
   },
   "features": {
-    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "title": "Why People Love AltSendme",
     "items": {
       "directSend": {
         "title": "Send files directly. No middlemen.",
@@ -109,6 +103,8 @@
   },
   "availableAs": {
     "title": "支持平台",
+    "download": "下载",
+    "comingSoon": "即将推出",
     "desktop": {
       "title": "桌面应用程序",
       "description": "适用于 Windows、macOS 和 Linux 的原生应用。拖放即可即时分享文件，提供完整桌面体验。"
@@ -122,7 +118,7 @@
       "description": "可与 sendme 工具配合使用的可脚本化 CLI。在终端生成票据并与桌面应用共享。"
     },
     "web": {
-      "title": "Web（即将推出）",
+      "title": "Web",
       "description": "无需安装即可传输文件和文件夹。可与 Desktop、Mobile 或 CLI 共享。"
     }
   },

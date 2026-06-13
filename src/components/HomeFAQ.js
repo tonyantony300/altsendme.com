@@ -90,7 +90,7 @@ export default function HomeFAQ() {
       <div className="w-full max-w-[1200px] mx-auto">
         <div className="bg-[#F5F4F0] grid grid-cols-1 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] border border-[#D3D2CD]">
           <div className="border-b border-[#D3D2CD] lg:border-b-0 lg:border-r p-8 md:p-12 lg:p-16">
-            <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold tracking-[-1px] lg:tracking-[-2px] text-[#121212]">
+            <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-foreground font-bold whitespace-pre-line md:text-[40px]">
               {t('title')}
             </h2>
           </div>

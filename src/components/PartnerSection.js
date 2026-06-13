@@ -20,7 +20,7 @@ export default function PartnerSection() {
       </div>
 
       <div className="relative z-10 w-full max-w-[960px] mx-auto">
-        <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-accent font-bold mb-8 md:text-[40px] md:mb-10">
+        <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-accent font-bold mb-8 whitespace-pre-line md:text-[40px] md:mb-10 lg:mb-12">
           {t('title')}
         </h2>
 

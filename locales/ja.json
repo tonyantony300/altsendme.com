@@ -18,28 +18,22 @@
     "donationMessage": "あなたの寄付がこのプロジェクトをより良くします"
   },
   "howItWorks": {
-    "sectionLabel": "ALTSENDMEの使い方:",
+    "sectionLabel": "安全で即座。\n3つの簡単なステップで動作します。",
     "step1": {
-      "title": "セットアップ",
-      "description": "共有したいファイルやフォルダをaltsendmeに渡すと、チケットが発行されます。",
-      "command": "> $ altsendme send ~/great_photos",
-      "output1": "content added",
-      "output2": "run altsendme receive blobQmFoo..."
+      "title": "ファイルまたはフォルダをドロップ",
+      "description": "AltSendmeはファイル用の安全なワンタイムコード（「チケット」）を作成します"
     },
     "step2": {
-      "title": "貼り付け",
-      "description": "チケットをコピーして友達に送ります。",
-      "message": "hey here have some great photos: blobQmFoo..."
+      "title": "チケットを共有",
+      "description": "チケットをコピーして、チャット、メール、またはSMSで受取人に送信します"
     },
     "step3": {
-      "title": "ダウンロード",
-      "description": "getを実行して、友達から直接データを取得します。",
-      "command": "> $ altsendme receive blobQmFoo...",
-      "output": "fetched to great_photos"
+      "title": "相手がファイルを受信",
+      "description": "友達がアプリにチケットを貼り付けると、転送が始まります。ファイルは直接ダウンロードされます。"
     }
   },
   "features": {
-    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "title": "Why People Love AltSendme",
     "items": {
       "directSend": {
         "title": "Send files directly. No middlemen.",
@@ -109,6 +103,8 @@
   },
   "availableAs": {
     "title": "対応プラットフォーム",
+    "download": "ダウンロード",
+    "comingSoon": "近日公開",
     "desktop": {
       "title": "デスクトップアプリケーション",
       "description": "Windows、macOS、Linux向けのネイティブアプリ。ドラッグ＆ドロップで即座にファイルを共有できるフルデスクトップ体験。"
@@ -122,7 +118,7 @@
       "description": "sendmeツールと互換性のあるスクリプト可能なCLI。ターミナルでチケットを生成し、デスクトップアプリと共有。"
     },
     "web": {
-      "title": "Web（近日公開）",
+      "title": "Web",
       "description": "インストール不要でファイルやフォルダを転送。Desktop、Mobile、CLIと共有できます。"
     }
   },

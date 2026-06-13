@@ -31,7 +31,7 @@ export default function Header() {
             href="https://www.buymeacoffee.com/tny_antny"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex shrink-0"
+            className="shrink-0 hidden md:block"
           >
             <img
               src="https://img.buymeacoffee.com/button-api/?text=Support Us&emoji=❤️&slug=tny_antny&button_colour=73411F&font_colour=fff&font_family=Lato&outline_colour=000000&coffee_colour=ffffff"

@@ -18,28 +18,22 @@
     "donationMessage": "การบริจาคของคุณทำให้โปรเจกต์นี้ดีขึ้น"
   },
   "howItWorks": {
-    "sectionLabel": "การใช้ ALTSENDME:",
+    "sectionLabel": "ปลอดภัยและทันที\nทำงานใน 3 ขั้นตอนง่ายๆ",
     "step1": {
-      "title": "ตั้งค่า",
-      "description": "ส่งไฟล์หรือโฟลเดอร์ที่ต้องการแชร์ไปยัง altsendme แล้วจะได้รับตั๋ว",
-      "command": "> $ altsendme send ~/great_photos",
-      "output1": "content added",
-      "output2": "run altsendme receive blobQmFoo..."
+      "title": "วางไฟล์หรือโฟลเดอร์",
+      "description": "AltSendme สร้างรหัสใช้ครั้งเดียวที่ปลอดภัย (เรียกว่า \"ตั๋ว\") สำหรับไฟล์ของคุณ"
     },
     "step2": {
-      "title": "วาง",
-      "description": "คัดลอกและวางตั๋วส่งให้เพื่อน",
-      "message": "hey here have some great photos: blobQmFoo..."
+      "title": "แชร์ตั๋ว",
+      "description": "คัดลอกตั๋วและส่งผ่านแชท อีเมล หรือข้อความให้ผู้รับ"
     },
     "step3": {
-      "title": "ดาวน์โหลด",
-      "description": "รัน get เพื่อดึงข้อมูลโดยตรงจากเพื่อน",
-      "command": "> $ altsendme receive blobQmFoo...",
-      "output": "fetched to great_photos"
+      "title": "พวกเขารับไฟล์",
+      "description": "เพื่อนของคุณวางตั๋วในแอป แล้วการถ่ายโอนจะเริ่มต้น ไฟล์จะดาวน์โหลดโดยตรง"
     }
   },
   "features": {
-    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "title": "Why People Love AltSendme",
     "items": {
       "directSend": {
         "title": "Send files directly. No middlemen.",
@@ -109,6 +103,8 @@
   },
   "availableAs": {
     "title": "รองรับบน",
+    "download": "ดาวน์โหลด",
+    "comingSoon": "เร็วๆ นี้",
     "desktop": {
       "title": "แอปพลิเคชันเดสก์ท็อป",
       "description": "แอปเนทีฟสำหรับ Windows, macOS และ Linux ลาก วาง และแชร์ไฟล์ได้ทันทีด้วยประสบการณ์เดสก์ท็อปเต็มรูปแบบ"
@@ -122,7 +118,7 @@
       "description": "CLI ที่สคริปต์ได้และเข้ากันได้กับเครื่องมือ sendme สร้างตั๋วในเทอร์มินัลและแชร์กับแอปเดสก์ท็อป"
     },
     "web": {
-      "title": "เว็บ (เร็วๆ นี้)",
+      "title": "เว็บ",
       "description": "ถ่ายโอนไฟล์และโฟลเดอร์โดยไม่ต้องติดตั้งอะไร แชร์กับ Desktop, Mobile หรือ CLI"
     }
   },

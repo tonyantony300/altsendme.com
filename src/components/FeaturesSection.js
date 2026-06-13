@@ -43,10 +43,8 @@ export default function FeaturesSection() {
       className="w-full scroll-mt-24 py-12 px-5 md:px-10 lg:px-[60px] font-funnel-sans"
     >
       <div className="w-full max-w-[1200px] mx-auto">
-        <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold tracking-[-1px] lg:tracking-[-2px] text-[#121212] text-center mb-8 md:mb-10 lg:mb-12 max-w-[900px] mx-auto">
-          {t.rich('title', {
-            br: () => <br />,
-          })}
+        <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-foreground font-bold mb-8 whitespace-pre-line md:text-[40px] md:mb-10 lg:mb-12">
+          {t('title')}
         </h2>
 
         <div className="border border-[#D3D2CD]">

@@ -18,28 +18,22 @@
     "donationMessage": "여러분의 기부가 이 프로젝트를 더 좋게 만듭니다"
   },
   "howItWorks": {
-    "sectionLabel": "ALTSENDME 사용법:",
+    "sectionLabel": "안전하고 즉시.\n3가지 간단한 단계로 작동합니다.",
     "step1": {
-      "title": "설정",
-      "description": "공유할 파일이나 폴더를 altsendme에 전달하면 티켓이 생성됩니다.",
-      "command": "> $ altsendme send ~/great_photos",
-      "output1": "content added",
-      "output2": "run altsendme receive blobQmFoo..."
+      "title": "파일 또는 폴더 드롭",
+      "description": "AltSendme가 파일용 안전한 일회용 코드(「티켓」)를 생성합니다"
     },
     "step2": {
-      "title": "붙여넣기",
-      "description": "티켓을 복사하여 친구에게 보냅니다.",
-      "message": "hey here have some great photos: blobQmFoo..."
+      "title": "티켓 공유",
+      "description": "티켓을 복사하여 채팅, 이메일 또는 문자로 수신자에게 보냅니다"
     },
     "step3": {
-      "title": "다운로드",
-      "description": "get을 실행하여 친구로부터 직접 데이터를 가져옵니다.",
-      "command": "> $ altsendme receive blobQmFoo...",
-      "output": "fetched to great_photos"
+      "title": "상대방이 파일 수신",
+      "description": "친구가 앱에 티켓을 붙여넣으면 전송이 시작됩니다. 파일이 직접 다운로드됩니다."
     }
   },
   "features": {
-    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "title": "Why People Love AltSendme",
     "items": {
       "directSend": {
         "title": "Send files directly. No middlemen.",
@@ -109,6 +103,8 @@
   },
   "availableAs": {
     "title": "지원 플랫폼",
+    "download": "다운로드",
+    "comingSoon": "출시 예정",
     "desktop": {
       "title": "데스크톱 애플리케이션",
       "description": "Windows, macOS, Linux용 네이티브 앱. 드래그 앤 드롭으로 즉시 파일을 공유하는 완전한 데스크톱 경험."
@@ -122,7 +118,7 @@
       "description": "sendme 도구와 호환되는 스크립트 가능 CLI. 터미널에서 티켓을 생성하고 데스크톱 앱과 공유하세요."
     },
     "web": {
-      "title": "웹 (출시 예정)",
+      "title": "웹",
       "description": "설치 없이 파일과 폴더를 전송하세요. Desktop, Mobile 또는 CLI와 공유할 수 있습니다."
     }
   },

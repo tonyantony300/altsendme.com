@@ -18,28 +18,22 @@
     "donationMessage": "Ваши пожертвования делают этот проект лучше"
   },
   "howItWorks": {
-    "sectionLabel": "ИСПОЛЬЗОВАНИЕ ALTSENDME:",
+    "sectionLabel": "Безопасно и мгновенно.\nРаботает в 3 простых шага.",
     "step1": {
-      "title": "Настройка",
-      "description": "передайте файл или папку для обмена в altsendme. Он выдаст билет.",
-      "command": "> $ altsendme send ~/great_photos",
-      "output1": "content added",
-      "output2": "run altsendme receive blobQmFoo..."
+      "title": "Перетащите файл или папку",
+      "description": "AltSendme создаёт безопасный одноразовый код (называемый «билет») для вашего файла"
     },
     "step2": {
-      "title": "Вставить",
-      "description": "скопируйте и отправьте билет другу.",
-      "message": "hey here have some great photos: blobQmFoo..."
+      "title": "Поделитесь билетом",
+      "description": "Скопируйте билет и отправьте его через чат, email или SMS получателю"
     },
     "step3": {
-      "title": "Скачать",
-      "description": "запустите get, чтобы получить данные напрямую от друга.",
-      "command": "> $ altsendme receive blobQmFoo...",
-      "output": "fetched to great_photos"
+      "title": "Они получают файл",
+      "description": "Ваш друг вставляет билет в своё приложение, и передача начинается. Файл загружается напрямую."
     }
   },
   "features": {
-    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "title": "Why People Love AltSendme",
     "items": {
       "directSend": {
         "title": "Send files directly. No middlemen.",
@@ -109,6 +103,8 @@
   },
   "availableAs": {
     "title": "Доступно для",
+    "download": "Скачать",
+    "comingSoon": "Скоро",
     "desktop": {
       "title": "Десктопные приложения",
       "description": "Нативные приложения для Windows, macOS и Linux. Перетаскивайте и мгновенно делитесь файлами."
@@ -122,7 +118,7 @@
       "description": "Скриптуемый CLI, совместимый с инструментом sendme. Создавайте тикеты в терминале и делитесь с десктопным приложением."
     },
     "web": {
-      "title": "Web (Скоро)",
+      "title": "Web",
       "description": "Передавайте файлы и папки без установки. Делитесь с Desktop, Mobile или CLI."
     }
   },

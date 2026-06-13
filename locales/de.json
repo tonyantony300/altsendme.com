@@ -18,28 +18,22 @@
     "donationMessage": "Ihre Spenden machen dieses Projekt besser"
   },
   "howItWorks": {
-    "sectionLabel": "ALTSENDME VERWENDEN:",
+    "sectionLabel": "Sicher & sofort.\nFunktioniert in 3 einfachen Schritten.",
     "step1": {
-      "title": "Einrichten",
-      "description": "Übergeben Sie eine Datei oder einen Ordner, den Sie teilen möchten, an altsendme. Es erzeugt ein Ticket.",
-      "command": "> $ altsendme send ~/great_photos",
-      "output1": "content added",
-      "output2": "run altsendme receive blobQmFoo..."
+      "title": "Datei oder Ordner ablegen",
+      "description": "AltSendme erstellt einen sicheren Einmalcode (ein „Ticket“) für Ihre Datei"
     },
     "step2": {
-      "title": "Einfügen",
-      "description": "Kopieren Sie das Ticket und senden Sie es an Ihren Freund.",
-      "message": "hey here have some great photos: blobQmFoo..."
+      "title": "Ticket teilen",
+      "description": "Ticket kopieren und per Chat, E-Mail oder SMS an Ihren Empfänger senden"
     },
     "step3": {
-      "title": "Herunterladen",
-      "description": "Führen Sie get aus, um Daten direkt von Ihrem Freund abzurufen.",
-      "command": "> $ altsendme receive blobQmFoo...",
-      "output": "fetched to great_photos"
+      "title": "Empfänger erhält die Datei",
+      "description": "Ihr Freund fügt das Ticket in seiner App ein und der Transfer beginnt. Die Datei wird direkt heruntergeladen."
     }
   },
   "features": {
-    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "title": "Why People Love AltSendme",
     "items": {
       "directSend": {
         "title": "Send files directly. No middlemen.",
@@ -109,6 +103,8 @@
   },
   "availableAs": {
     "title": "Verfügbar als",
+    "download": "Herunterladen",
+    "comingSoon": "Demnächst",
     "desktop": {
       "title": "Desktop-Anwendungen",
       "description": "Native Apps für Windows, macOS und Linux. Dateien per Drag & Drop sofort teilen — mit vollem Desktop-Erlebnis."
@@ -122,7 +118,7 @@
       "description": "Skriptfähige CLI, kompatibel mit dem sendme-Tool. Tickets im Terminal erzeugen und mit der Desktop-App teilen."
     },
     "web": {
-      "title": "Web (Demnächst)",
+      "title": "Web",
       "description": "Dateien und Ordner übertragen, ohne etwas zu installieren. Mit Desktop, Mobile oder CLI teilen."
     }
   },

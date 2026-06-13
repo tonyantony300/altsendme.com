@@ -20,26 +20,20 @@
   "howItWorks": {
     "sectionLabel": "Secure & Instant.\nWorks in 3 simple steps.",
     "step1": {
-      "title": "Start",
-      "description": "Pass/Drop/Select a file or folder you want to share with AltSendme. It'll spit out a ticket.",
-      "command": "> $ sendme send ~/great_photos",
-      "output1": "content added",
-      "output2": "run sendme receive blobQmFoo..."
+      "title": "Drop a file or folder",
+      "description": "AltSendme creates a secure one-time code (called a \"ticket\") for your file"
     },
     "step2": {
-      "title": "Paste",
-      "description": "copy-paste the ticket to your friend.",
-      "message": "hey here have some great photos: blobQmFoo..."
+      "title": "Share the ticket",
+      "description": "Copy ticket and send it via chat, email, or text to your recipient friend"
     },
     "step3": {
-      "title": "Download",
-      "description": "Run/Paste the ticket to fetch data directly from your friend.",
-      "command": "> $ sendme receive blobQmFoo...",
-      "output": "fetched to great_photos"
+      "title": "They receive file",
+      "description": "Your friend pastes the ticket in their app, and the transfer begins. file downloads directly."
     }
   },
   "features": {
-    "title": "Why People Love AltSendme<br></br>for everyday file sharing",
+    "title": "Why People Love AltSendme",
     "items": {
       "directSend": {
         "title": "Send files directly. No middlemen.",
@@ -109,6 +103,8 @@
   },
   "availableAs": {
     "title": "One Experience. Multiple Platforms.",
+    "download": "Download",
+    "comingSoon": "Coming soon",
     "desktop": {
       "title": "Desktop Applications",
       "description": "Native apps for Windows, macOS, and Linux. Drag, drop, and share files instantly with a full desktop experience."
@@ -122,7 +118,7 @@
       "description": "Generate tickets in the terminal and share with the desktop app or mobile"
     },
     "web": {
-      "title": "Web (Coming Soon)",
+      "title": "Web",
       "description": "Transfer files and folders without installing anything. Share with Desktop, Mobile or CLI"
     }
   },
