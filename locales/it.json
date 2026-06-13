@@ -2,7 +2,7 @@
   "common": {
     "logo": "AltSendme",
     "buyMeACoffee": "Offrimi un caffè",
-    "freeAndOpenSource": "Gratuito e Open Source",
+    "openSourceAgpl": "Open Source | AGPL 3.0",
     "contactUs": "Contattaci",
     "hireDeveloper": "Assumi uno sviluppatore",
     "license": "© GNU Affero General Public License v3.0"
@@ -105,7 +105,7 @@
     "title": "Costruito per sopravviverci.",
     "subtitle": "Open Source & Guidato dalla community",
     "description": "AltSendme è sviluppato in pubblico da contributori in tutto il mondo. Ogni riga di codice è pubblica. Ogni miglioramento è condiviso. Insieme, stiamo costruendo un modo più veloce e privato di inviare file direttamente tra le persone.",
-    "githubStars": "8,2K stelle su GitHub",
+    "githubStars": "8,2k stelle",
     "cardTitle": "Unisciti alla nostra community",
     "cardDescription": "L'open source è il nostro modo di restituire alla community e assicurarci che ciò che stiamo costruendo ci sopravviva.",
     "discordButton": "Unisciti a noi su Discord"
@@ -192,14 +192,14 @@
     "headline": "Invia file direttamente a chiunque, ovunque.",
     "builtOn": "Basato su",
     "iroh": "iroh",
-    "howItWorks": "Sotto il cofano",
-    "features": "Funzionalità",
+    "howItWorks": "Come funziona",
+    "reportIssue": "Segnala un problema",
     "downloads": "Download",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
     "github": "GitHub",
-    "linkedin": "Linkedin",
-    "websiteBy": "Sito web con ❤️ di",
+    "contributors": "Contributori",
+    "websiteBy": "Sito web progettato da",
     "designer": "ShravanKumar PS",
     "license": "©AGPL 3.0"
   },
@@ -250,7 +250,7 @@
     "metaTitle": "Under The Hood",
     "metaDescription": "Learn how AltSendme enables direct peer-to-peer file transfers with tickets, iroh, QUIC encryption, NAT traversal, and open-source relays — no accounts or IP addresses required.",
     "title": "Under The Hood",
-    "intro": "It's like scp without needing to know the IP address. Add some files to AltSendme, and it will give you a pastable ticket that you can give to anyone who needs your files. Sendme will connect your devices directly & transfer the data without any accounts or configuration.",
+    "intro": "It's like scp without needing to know the IP address. Add some files to AltSendme, and it will give you a pastable ticket that you can give to anyone who needs your files. AltSendme will connect your devices directly & transfer the data without any accounts or configuration.",
     "heroAlt": "AltSendme hero graphic",
     "underTheHood": {
       "title": "AltSendme is built on <iroh>iroh</iroh>",

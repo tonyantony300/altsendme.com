@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
-import { GithubLogo } from '@phosphor-icons/react';
+import GithubIcon from '@/components/GithubIcon';
 
 const GITHUB_URL = 'https://github.com/tonyantony300/alt-sendme';
 const DISCORD_URL = 'https://discord.gg/xwb7z22Eve';
@@ -48,9 +48,9 @@ export default function CommunitySection() {
               href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2.5 rounded-full bg-[#452815] px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#452815] focus-visible:ring-offset-2 md:mt-8"
+              className="mt-6 inline-flex items-center gap-2.5 rounded-md bg-[#452815] px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#452815] focus-visible:ring-offset-2 md:mt-8"
             >
-              <GithubLogo size={18} weight="fill" aria-hidden="true" />
+              <GithubIcon size={18} className="shrink-0" />
               {t('githubStars')}
             </a>
           </div>
@@ -67,7 +67,7 @@ export default function CommunitySection() {
                 href={DISCORD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-full bg-[#452815] px-5 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#452815] focus-visible:ring-offset-2"
+                className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-md bg-[#452815] px-5 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#452815] focus-visible:ring-offset-2"
               >
                 <DiscordIcon className="h-[18px] w-[18px] shrink-0" />
                 {t('discordButton')}

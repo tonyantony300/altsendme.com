@@ -2,11 +2,14 @@
 
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
+import { DownloadSimple } from "@phosphor-icons/react";
+import GithubIcon from "@/components/GithubIcon";
 import { Link } from '@/i18n/routing';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Header() {
   const t = useTranslations();
+  const tAvailableAs = useTranslations('availableAs');
 
   return (
     <header className="w-full py-3 px-5 md:px-10 lg:px-[60px] border-b border-[#aeadad] sticky top-0 z-[100] bg-background">
@@ -26,7 +29,8 @@ export default function Header() {
             <LanguageSwitcher />
           </div>
         </div>
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-3 md:gap-6">
+        
           <a
             href="https://www.buymeacoffee.com/tny_antny"
             target="_blank"
@@ -40,22 +44,16 @@ export default function Header() {
             />
           </a>
           <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-funnel-sans text-sm font-normal text-white bg-dark px-4 py-1.5 rounded-md ">
-            <svg
-              width={14}
-              height={14}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ffffff"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="flex-shrink-0"
-              aria-hidden="true"
-            >
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-            </svg>
+            <GithubIcon size={14} className="shrink-0" />
             <span>8.2k</span>
           </a>
+          <Link
+            href="/downloads"
+            className="flex shrink-0 items-center gap-2 rounded-md bg-[#73411F] px-3 py-1.5 font-funnel-sans text-sm font-normal text-white transition-opacity hover:opacity-90 md:px-4"
+          >
+            <DownloadSimple size={14} weight="bold" aria-hidden="true" />
+            <span>{tAvailableAs('download')}</span>
+          </Link>
         </nav>
       </div>
     </header>

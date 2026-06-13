@@ -9,8 +9,8 @@ import {
   LockKey,
   PlayPause,
   EyeSlash,
-  GithubLogo,
 } from '@phosphor-icons/react';
+import GithubIcon from '@/components/GithubIcon';
 
 const FEATURE_KEYS = [
   'directSend',
@@ -31,7 +31,7 @@ const FEATURE_ICONS = {
   endToEndEncrypted: LockKey,
   resumable: PlayPause,
   zeroPersonalData: EyeSlash,
-  freeOpenSource: GithubLogo,
+  freeOpenSource: GithubIcon,
 };
 
 export default function FeaturesSection() {

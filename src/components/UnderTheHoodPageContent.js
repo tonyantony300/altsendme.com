@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { DownloadSimple, GithubLogo } from "@phosphor-icons/react";
+import { DownloadSimple } from "@phosphor-icons/react";
+import GithubIcon from "@/components/GithubIcon";
 import { Link } from "@/i18n/routing";
 
 const CONCEPT_IDS = [
@@ -47,10 +48,10 @@ export default function UnderTheHoodPageContent() {
 
             <div className="relative mx-auto w-full max-w-md lg:max-w-none">
               <Image
-                src="/hero.png"
+                src="/underthehoodasset.svg"
                 alt={t("heroAlt")}
-                width={600}
-                height={600}
+                width={1600}
+                height={900}
                 className="h-auto w-full object-contain"
                 priority
               />
@@ -105,7 +106,7 @@ export default function UnderTheHoodPageContent() {
                 href="https://www.iroh.computer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 items-center justify-center rounded-xl bg-[#121212] px-6 text-sm font-medium uppercase tracking-wide text-white transition-colors hover:bg-[#2a2a2a] md:text-base"
+                className="inline-flex h-12 items-center justify-center rounded-md bg-[#121212] px-6 text-sm font-medium uppercase tracking-wide text-white transition-colors hover:bg-[#2a2a2a] md:text-base"
               >
                 {t("underTheHood.buildOnCta")}
               </a>
@@ -113,7 +114,7 @@ export default function UnderTheHoodPageContent() {
                 href="https://github.com/n0-computer/iroh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 items-center justify-center rounded-xl border border-[#D3D2CD] bg-white px-6 text-sm font-medium uppercase tracking-wide text-[#121212] transition-colors hover:border-[#6860FF] hover:text-[#6860FF] md:text-base"
+                className="inline-flex h-12 items-center justify-center rounded-md border border-[#D3D2CD] bg-white px-6 text-sm font-medium uppercase tracking-wide text-[#121212] transition-colors hover:border-[#6860FF] hover:text-[#6860FF] md:text-base"
               >
                 {t("underTheHood.irohGithubCta")}
               </a>
@@ -207,7 +208,7 @@ export default function UnderTheHoodPageContent() {
           <div className="mt-12 flex flex-wrap items-center gap-4 md:mt-16">
             <Link
               href="/downloads"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[#121212] px-6 text-sm font-medium text-white transition-colors hover:bg-[#2a2a2a] md:text-base"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#121212] px-6 text-sm font-medium text-white transition-colors hover:bg-[#2a2a2a] md:text-base"
             >
               <DownloadSimple size={18} weight="bold" aria-hidden="true" />
               {t("downloadCta")}
@@ -216,9 +217,9 @@ export default function UnderTheHoodPageContent() {
               href="https://github.com/tonyantony300/alt-sendme"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-[#D3D2CD] bg-white px-6 text-sm font-medium text-[#121212] transition-colors hover:border-[#73411F] hover:text-[#73411F] md:text-base"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-[#D3D2CD] bg-white px-6 text-sm font-medium text-[#121212] transition-colors hover:border-[#73411F] hover:text-[#73411F] md:text-base"
             >
-              <GithubLogo size={18} weight="fill" aria-hidden="true" />
+              <GithubIcon size={18} className="shrink-0" />
               {t("githubCta")}
             </a>
           </div>

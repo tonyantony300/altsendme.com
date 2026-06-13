@@ -2,8 +2,6 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
-
 export default function PartnerSection() {
   const t = useTranslations('partners');
 
@@ -41,19 +39,23 @@ export default function PartnerSection() {
               />
             </a>
 
-            <div className="flex flex-col justify-center bg-accent px-6 py-12 text-foreground md:px-8 md:py-14">
+            <div className="flex h-full flex-col bg-accent px-6 py-12 text-foreground md:px-8 md:py-14">
               <h3 className="font-funnel-sans text-lg font-semibold leading-snug md:text-xl">
                 {t('ctaTitle')}
               </h3>
               <p className="mt-2 font-funnel-sans text-sm leading-relaxed text-foreground/70 md:mt-3">
                 {t('ctaDescription')}
               </p>
-              <Link
-                href="/contact"
-                className="mt-5 inline-flex w-fit self-end items-center justify-center rounded-md bg-dark px-4 py-2 font-funnel-sans text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus-visible:ring-offset-accent md:mt-6"
-              >
-                {t('ctaButton')}
-              </Link>
+              <div className="mt-auto w-fit self-start pt-6 md:pt-8">
+                <a
+                  href="https://github.com/sponsors/tonyantony300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-dark px-4 py-2 font-funnel-sans text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus-visible:ring-offset-accent"
+                >
+                  {t('ctaButton')}
+                </a>
+              </div>
             </div>
           </div>
         </div>

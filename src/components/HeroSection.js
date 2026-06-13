@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations } from 'next-intl';
 import { getDownloadOptions } from '@/constants/downloadOptions';
+import GithubIcon from '@/components/GithubIcon';
 
 export default function HeroSection() {
   const t = useTranslations();
@@ -81,22 +82,9 @@ export default function HeroSection() {
             href="https://github.com/tonyantony300/alt-sendme"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center lg:justify-start gap-2 font-funnel-sans text-sm text-background bg-dark px-4 py-1 rounded-full mb-6 hover:opacity-80 transition-opacity"
+            className="flex items-center justify-center lg:justify-start gap-2 font-funnel-sans text-sm text-white px-4 py-1.5 rounded-full mb-6 border-[0.5px] border-white/40 bg-white/20 backdrop-blur-md shadow-[0_2px_8px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.5)] hover:bg-white/30 transition-colors"
           >
-            <svg
-              width={18}
-              height={18}
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              className="flex-shrink-0"
-              aria-hidden="true"
-            >
-              <path
-                fill="#ffffff"
-                d="M12 2c5.523 0 10 4.477 10 10 0 4.13-2.504 7.676-6.077 9.201l-2.518-6.55C14.354 14.148 15 13.15 15 12c0-1.657-1.343-3-3-3s-3 1.343-3 3c0 1.15.647 2.148 1.596 2.652l-2.518 6.55C4.504 19.675 2 16.13 2 12 2 6.477 6.477 2 12 2z"
-              />
-            </svg>
-            {t('common.freeAndOpenSource')}
+            {t('common.openSourceAgpl')}
           </a>
 
           <h1 className="font-funnel-sans text-[41px] leading-[1.2] text-center lg:text-left text-white font-bold mb-6 max-w-[600px] md:text-[56px] md:mb-6 md:max-w-[800px] lg:mb-8 lg:max-w-[1000px] tracking-tight">

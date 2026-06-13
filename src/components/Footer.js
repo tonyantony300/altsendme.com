@@ -6,14 +6,14 @@ import { useTranslations } from "next-intl";
 const FOOTER_NAV_GRID = [
   [
     { key: "howItWorks", href: "/under-the-hood" },
-    { key: "features", href: "#features-section" },
+    { key: "reportIssue", href: "https://github.com/tonyantony300/alt-sendme/issues", external: true },
     { key: "downloads", href: "/downloads" },
     { key: "contactUs", href: "/contact" },
   ],
   [
     { key: "buyMeACoffee", href: "https://buymeacoffee.com/tny_antny", external: true },
     { key: "github", href: "https://github.com/tonyantony300/alt-sendme", external: true },
-    { key: "linkedin", href: "https://linkedin.com/in/tonyantony300", external: true },
+    { key: "contributors", href: "https://github.com/tonyantony300/alt-sendme/graphs/contributors", external: true },
     { key: "discord", href: "https://discord.gg/xwb7z22Eve", external: true },
   ],
 ];
@@ -47,7 +47,7 @@ export default function Footer() {
                 br: () => <br />,
               })}
             </h2>
-            <p className="mt-4 font-inter text-sm text-white/80">
+            <p className="mt-4 font-inter text-md text-white/80">
               {t("builtOn")}{" "}
               <a
                 href="https://www.iroh.computer"
@@ -55,7 +55,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:underline underline-offset-[3px] font-bold text-accent"
               >
-                Iroh
+                iroh
               </a>
             </p>
           </div>

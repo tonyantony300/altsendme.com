@@ -2,7 +2,7 @@
   "common": {
     "logo": "AltSendme",
     "buyMeACoffee": "コーヒーを奢ってください",
-    "freeAndOpenSource": "無料 & オープンソース",
+    "openSourceAgpl": "オープンソース | AGPL 3.0",
     "contactUs": "お問い合わせ",
     "hireDeveloper": "開発者を雇う",
     "license": "© GNU Affero General Public License v3.0"
@@ -105,7 +105,7 @@
     "title": "私たちを超えて残るために。",
     "subtitle": "オープンソース＆コミュニティ主導",
     "description": "AltSendmeは世界中の貢献者によって公開開発されています。すべてのコードは公開されています。すべての改善は共有されます。一緒に、人と人の間でファイルを直接送る、より速く、よりプライベートな方法を構築しています。",
-    "githubStars": "GitHubで8.2Kスター",
+    "githubStars": "8.2kスター",
     "cardTitle": "コミュニティに参加",
     "cardDescription": "オープンソースは、コミュニティへの還元であり、私たちが構築しているものが永続することを保証する方法です。",
     "discordButton": "Discordで参加する"
@@ -192,14 +192,14 @@
     "headline": "ファイルを直接、誰にでも、どこへでも送信。",
     "builtOn": "Built on",
     "iroh": "iroh",
-    "howItWorks": "内部の仕組み",
-    "features": "機能",
+    "howItWorks": "仕組み",
+    "reportIssue": "問題を報告",
     "downloads": "ダウンロード",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
     "github": "GitHub",
-    "linkedin": "Linkedin",
-    "websiteBy": "Website with ❤️ by",
+    "contributors": "コントリビューター",
+    "websiteBy": "Website designed by",
     "designer": "ShravanKumar PS",
     "license": "©AGPL 3.0"
   },
@@ -250,7 +250,7 @@
     "metaTitle": "Under The Hood",
     "metaDescription": "Learn how AltSendme enables direct peer-to-peer file transfers with tickets, iroh, QUIC encryption, NAT traversal, and open-source relays — no accounts or IP addresses required.",
     "title": "Under The Hood",
-    "intro": "It's like scp without needing to know the IP address. Add some files to AltSendme, and it will give you a pastable ticket that you can give to anyone who needs your files. Sendme will connect your devices directly & transfer the data without any accounts or configuration.",
+    "intro": "It's like scp without needing to know the IP address. Add some files to AltSendme, and it will give you a pastable ticket that you can give to anyone who needs your files. AltSendme will connect your devices directly & transfer the data without any accounts or configuration.",
     "heroAlt": "AltSendme hero graphic",
     "underTheHood": {
       "title": "AltSendme is built on <iroh>iroh</iroh>",
