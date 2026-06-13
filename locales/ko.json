@@ -135,6 +135,51 @@
     "title": "지금 AltSendme를 사용해보세요",
     "subtitle": "무료, 오픈 소스, 모든 사람에게 제공"
   },
+  "downloadsPage": {
+    "metaTitle": "AltSendme 다운로드",
+    "metaDescription": "Windows, macOS, Linux, Android용 AltSendme를 다운로드하세요. 무료 오픈 소스 P2P 파일 전송, 용량 제한 없음.",
+    "titleLine1": "다운로드",
+    "titleLine2": "AltSendme",
+    "getAppForMac": "Mac용 앱 받기",
+    "getAppForWindows": "Windows용 앱 받기",
+    "getAppForLinux": "Linux용 앱 받기",
+    "otherPlatforms": "다른 플랫폼",
+    "moreFormats": "다른 다운로드 형식",
+    "termsPrefix": "계속하면 다음에 동의하는 것으로 간주됩니다:",
+    "licenseLink": "라이선스",
+    "previewAlt": "AltSendme 데스크톱 앱 미리보기",
+    "desktop": "데스크톱",
+    "mobile": "모바일",
+    "cli": {
+      "title": "CLI",
+      "platforms": {
+        "bash": "Bash",
+        "powershell": "PowerShell"
+      },
+      "bashIntro": "bash를 사용하여 sendme를 설치하세요:",
+      "powershellIntro": "Windows에서 PowerShell 사용:",
+      "copyNote": "스크립트를 실행한 경로에 sendme 바이너리가 복사됩니다.",
+      "runNote": "Unix 시스템에서는 ./sendme로 실행하세요",
+      "copyCommand": "명령어 복사",
+      "copied": "복사됨"
+    },
+    "platforms": {
+      "mac": "Mac",
+      "windows": "Windows",
+      "linux": "Linux",
+      "android": "Android"
+    },
+    "links": {
+      "universalDmg": "Universal (DMG)",
+      "universalTarGz": "Universal (.app.tar.gz)",
+      "standardExe": "Standard (Setup)",
+      "msi": "MSI 설치 프로그램",
+      "appImage": "AppImage",
+      "debian": "Debian",
+      "rpm": "RPM",
+      "universalApk": "Universal (APK)"
+    }
+  },
   "pressReviews": {
     "title": "언론 및 리뷰"
   },

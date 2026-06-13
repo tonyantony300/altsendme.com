@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 const PLATFORMS = [
   {
@@ -9,7 +10,7 @@ const PLATFORMS = [
     imageAlt: 'Desktop applications',
     width: 1010,
     height: 645,
-    href: '#download-desktop',
+    href: '/downloads#download-desktop',
   },
   {
     key: 'android',
@@ -17,7 +18,7 @@ const PLATFORMS = [
     imageAlt: 'Android application',
     width: 601,
     height: 448,
-    href: '#download-android',
+    href: '/downloads#download-android',
   },
   {
     key: 'cli',
@@ -25,7 +26,7 @@ const PLATFORMS = [
     imageAlt: 'Command line interface',
     width: 1214,
     height: 739,
-    href: '#download-cli',
+    href: '/downloads#download-desktop',
   },
   {
     key: 'web',
@@ -33,7 +34,7 @@ const PLATFORMS = [
     imageAlt: 'Web application',
     width: 1010,
     height: 687,
-    href: '#download-web',
+    href: '/downloads',
   },
 ];
 
@@ -105,13 +106,13 @@ export default function AvailableAs() {
               }
 
               return (
-                <a
+                <Link
                   key={platform.key}
                   href={platform.href}
                   className={`${cardClasses} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 focus-visible:ring-offset-2`}
                 >
                   {cardContent}
-                </a>
+                </Link>
               );
             })}
           </div>

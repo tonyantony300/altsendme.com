@@ -135,6 +135,51 @@
     "title": "ลอง AltSendme ตอนนี้",
     "subtitle": "ฟรี โอเพนซอร์ส และพร้อมใช้งานสำหรับทุกคน"
   },
+  "downloadsPage": {
+    "metaTitle": "ดาวน์โหลด AltSendme",
+    "metaDescription": "ดาวน์โหลด AltSendme สำหรับ Windows, macOS, Linux และ Android การถ่ายโอนไฟล์แบบ peer-to-peer ฟรีและโอเพนซอร์ส ไม่จำกัดขนาด",
+    "titleLine1": "ดาวน์โหลด",
+    "titleLine2": "AltSendme",
+    "getAppForMac": "ดาวน์โหลดสำหรับ Mac",
+    "getAppForWindows": "ดาวน์โหลดสำหรับ Windows",
+    "getAppForLinux": "ดาวน์โหลดสำหรับ Linux",
+    "otherPlatforms": "แพลตฟอร์มอื่นๆ",
+    "moreFormats": "รูปแบบดาวน์โหลดเพิ่มเติม",
+    "termsPrefix": "การดำเนินการต่อถือว่าคุณยอมรับ",
+    "licenseLink": "ใบอนุญาต",
+    "previewAlt": "ตัวอย่างแอป AltSendme บนเดสก์ท็อป",
+    "desktop": "เดสก์ท็อป",
+    "mobile": "มือถือ",
+    "cli": {
+      "title": "CLI",
+      "platforms": {
+        "bash": "Bash",
+        "powershell": "PowerShell"
+      },
+      "bashIntro": "เพิ่ม sendme ลงในเครื่องของคุณด้วย bash:",
+      "powershellIntro": "บน Windows ด้วย PowerShell:",
+      "copyNote": "การทำเช่นนี้จะคัดลอกไบนารี sendme ไปยัง path ที่คุณรันสคริปต์",
+      "runNote": "รันด้วย ./sendme บนระบบ Unix",
+      "copyCommand": "คัดลอกคำสั่ง",
+      "copied": "คัดลอกแล้ว"
+    },
+    "platforms": {
+      "mac": "Mac",
+      "windows": "Windows",
+      "linux": "Linux",
+      "android": "Android"
+    },
+    "links": {
+      "universalDmg": "Universal (DMG)",
+      "universalTarGz": "Universal (.app.tar.gz)",
+      "standardExe": "Standard (Setup)",
+      "msi": "ตัวติดตั้ง MSI",
+      "appImage": "AppImage",
+      "debian": "Debian",
+      "rpm": "RPM",
+      "universalApk": "Universal (APK)"
+    }
+  },
   "pressReviews": {
     "title": "สื่อและรีวิว"
   },

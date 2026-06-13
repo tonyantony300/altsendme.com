@@ -135,6 +135,51 @@
     "title": "立即试用 AltSendme",
     "subtitle": "免费、开源，面向所有人开放"
   },
+  "downloadsPage": {
+    "metaTitle": "下载 AltSendme",
+    "metaDescription": "下载适用于 Windows、macOS、Linux 和 Android 的 AltSendme。免费开源的点对点文件传输，无大小限制。",
+    "titleLine1": "下载",
+    "titleLine2": "AltSendme",
+    "getAppForMac": "获取 Mac 版",
+    "getAppForWindows": "获取 Windows 版",
+    "getAppForLinux": "获取 Linux 版",
+    "otherPlatforms": "其他平台",
+    "moreFormats": "更多下载格式",
+    "termsPrefix": "继续即表示您同意我们的",
+    "licenseLink": "许可证",
+    "previewAlt": "AltSendme 桌面应用预览",
+    "desktop": "桌面端",
+    "mobile": "移动端",
+    "cli": {
+      "title": "CLI",
+      "platforms": {
+        "bash": "Bash",
+        "powershell": "PowerShell"
+      },
+      "bashIntro": "使用 bash 将 sendme 添加到您的机器：",
+      "powershellIntro": "在 Windows 上使用 PowerShell：",
+      "copyNote": "这会将 sendme 二进制文件复制到您运行脚本的目录。",
+      "runNote": "在 Unix 系统上使用 ./sendme 运行",
+      "copyCommand": "复制命令",
+      "copied": "已复制"
+    },
+    "platforms": {
+      "mac": "Mac",
+      "windows": "Windows",
+      "linux": "Linux",
+      "android": "Android"
+    },
+    "links": {
+      "universalDmg": "Universal (DMG)",
+      "universalTarGz": "Universal (.app.tar.gz)",
+      "standardExe": "Standard (Setup)",
+      "msi": "MSI 安装包",
+      "appImage": "AppImage",
+      "debian": "Debian",
+      "rpm": "RPM",
+      "universalApk": "Universal (APK)"
+    }
+  },
   "pressReviews": {
     "title": "媒体与评价"
   },

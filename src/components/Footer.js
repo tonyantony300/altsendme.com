@@ -7,7 +7,7 @@ const FOOTER_NAV_GRID = [
   [
     { key: "howItWorks", href: "#how-it-works-section" },
     { key: "features", href: "#features-section" },
-    { key: "downloads", href: "#download-section" },
+    { key: "downloads", href: "/downloads" },
     { key: "contactUs", href: "/contact" },
   ],
   [

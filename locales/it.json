@@ -135,6 +135,51 @@
     "title": "Prova AltSendme ora",
     "subtitle": "Gratuito, Open Source e Disponibile per Tutti"
   },
+  "downloadsPage": {
+    "metaTitle": "Scarica AltSendme",
+    "metaDescription": "Scarica AltSendme per Windows, macOS, Linux e Android. Trasferimento file peer-to-peer gratuito e open source, senza limiti di dimensione.",
+    "titleLine1": "Scarica",
+    "titleLine2": "AltSendme",
+    "getAppForMac": "App per Mac",
+    "getAppForWindows": "App per Windows",
+    "getAppForLinux": "App per Linux",
+    "otherPlatforms": "Altre piattaforme",
+    "moreFormats": "Altri formati di download",
+    "termsPrefix": "Continuando accetti la nostra",
+    "licenseLink": "Licenza",
+    "previewAlt": "Anteprima dell'applicazione desktop AltSendme",
+    "desktop": "Desktop",
+    "mobile": "Mobile",
+    "cli": {
+      "title": "CLI",
+      "platforms": {
+        "bash": "Bash",
+        "powershell": "PowerShell"
+      },
+      "bashIntro": "Aggiungi sendme al tuo computer con bash:",
+      "powershellIntro": "Su Windows con PowerShell:",
+      "copyNote": "Questo copierà il binario sendme nel percorso da cui hai eseguito lo script.",
+      "runNote": "Eseguilo con ./sendme sui sistemi Unix",
+      "copyCommand": "Copia comando",
+      "copied": "Copiato"
+    },
+    "platforms": {
+      "mac": "Mac",
+      "windows": "Windows",
+      "linux": "Linux",
+      "android": "Android"
+    },
+    "links": {
+      "universalDmg": "Universal (DMG)",
+      "universalTarGz": "Universal (.app.tar.gz)",
+      "standardExe": "Standard (Setup)",
+      "msi": "Installer MSI",
+      "appImage": "AppImage",
+      "debian": "Debian",
+      "rpm": "RPM",
+      "universalApk": "Universal (APK)"
+    }
+  },
   "pressReviews": {
     "title": "Stampa e Recensioni"
   },
