@@ -150,6 +150,8 @@
     "previewAlt": "AltSendme 데스크톱 앱 미리보기",
     "desktop": "데스크톱",
     "mobile": "모바일",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "Scoop으로 설치:",
     "cli": {
       "title": "CLI",
       "platforms": {

@@ -150,6 +150,8 @@
     "previewAlt": "AltSendme desktop application preview",
     "desktop": "Desktop",
     "mobile": "Mobile",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "Install with scoop:",
     "cli": {
       "title": "CLI",
       "platforms": {

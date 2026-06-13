@@ -150,6 +150,8 @@
     "previewAlt": "Vorschau der AltSendme Desktop-Anwendung",
     "desktop": "Desktop",
     "mobile": "Mobil",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "Mit Scoop installieren:",
     "cli": {
       "title": "CLI",
       "platforms": {

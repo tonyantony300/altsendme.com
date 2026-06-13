@@ -150,6 +150,8 @@
     "previewAlt": "Aperçu de l'application de bureau AltSendme",
     "desktop": "Bureau",
     "mobile": "Mobile",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "Installer avec Scoop :",
     "cli": {
       "title": "CLI",
       "platforms": {

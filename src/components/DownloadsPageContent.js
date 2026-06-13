@@ -73,7 +73,7 @@ function PlatformDownloadRow({ platformKey, links, t }) {
   );
 }
 
-function CliDownloadRow({ label, intro, command, copyText, copyLabel, copiedLabel }) {
+function CopyCommandButton({ copyText, copyLabel, copiedLabel }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -87,29 +87,55 @@ function CliDownloadRow({ label, intro, command, copyText, copyLabel, copiedLabe
   };
 
   return (
+    <button
+      type="button"
+      onClick={handleCopy}
+      aria-label={copied ? copiedLabel : copyLabel}
+      className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#D3D2CD] text-[#121212] transition-colors hover:bg-[#E7E6DF] hover:text-[#73411F]"
+    >
+      {copied ? (
+        <Check size={18} weight="bold" aria-hidden="true" />
+      ) : (
+        <Copy size={18} aria-hidden="true" />
+      )}
+    </button>
+  );
+}
+
+function CliCommandLine({ command, copyText, copyLabel, copiedLabel }) {
+  return (
+    <div className="flex items-start justify-between gap-4">
+      <code className="block min-w-0 flex-1 break-all font-mono text-xs text-[#121212] md:text-sm">
+        {command}
+      </code>
+      <CopyCommandButton
+        copyText={copyText}
+        copyLabel={copyLabel}
+        copiedLabel={copiedLabel}
+      />
+    </div>
+  );
+}
+
+function CliDownloadRow({ label, intro, commands, copyLabel, copiedLabel }) {
+  return (
     <div className="grid grid-cols-2 gap-4 border-t border-[#D3D2CD] py-6 md:min-h-[120px] md:py-8">
       <div className="font-funnel-sans text-base font-medium text-[#121212] md:text-lg">
         {label}
       </div>
-      <div className="flex items-start justify-between gap-4">
-        <div className="min-w-0 flex-1">
-          <p className="mb-2 font-funnel-sans text-sm text-[#4D4D4D] md:text-base">{intro}</p>
-          <code className="block break-all font-mono text-sm text-[#121212] md:text-base">
-            {command}
-          </code>
+      <div>
+        <p className="mb-3 font-funnel-sans text-sm text-[#4D4D4D] md:text-base">{intro}</p>
+        <div className="flex flex-col gap-3">
+          {commands.map((item) => (
+            <CliCommandLine
+              key={item.copyText}
+              command={item.command}
+              copyText={item.copyText}
+              copyLabel={copyLabel}
+              copiedLabel={copiedLabel}
+            />
+          ))}
         </div>
-        <button
-          type="button"
-          onClick={handleCopy}
-          aria-label={copied ? copiedLabel : copyLabel}
-          className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#D3D2CD] text-[#121212] transition-colors hover:bg-[#E7E6DF] hover:text-[#73411F]"
-        >
-          {copied ? (
-            <Check size={18} weight="bold" aria-hidden="true" />
-          ) : (
-            <Copy size={18} aria-hidden="true" />
-          )}
-        </button>
       </div>
     </div>
   );
@@ -274,7 +300,7 @@ export default function DownloadsPageContent() {
         className="scroll-mt-24 px-5 pb-16 md:px-10 md:pb-24 lg:px-[60px] lg:pb-28"
       >
         <div className="mx-auto w-full max-w-[1200px]">
-          <div className="grid gap-12 md:grid-cols-2 md:gap-16">
+          <div className="grid gap-12 md:grid-cols-[6.7fr_3.2fr] md:gap-16">
             <div id="download-desktop">
               <h2 className="mb-6 font-funnel-sans text-2xl font-semibold text-[#121212] md:text-[28px]">
                 {t("desktop")}
@@ -288,6 +314,22 @@ export default function DownloadsPageContent() {
                     t={t}
                   />
                 ))}
+                <CliDownloadRow
+                  label={t("scoopLabel")}
+                  intro={t("scoopIntro")}
+                  commands={[
+                    {
+                      command: "scoop bucket add extras",
+                      copyText: "scoop bucket add extras",
+                    },
+                    {
+                      command: "scoop install extras/altsendme",
+                      copyText: "scoop install extras/altsendme",
+                    },
+                  ]}
+                  copyLabel={t("cli.copyCommand")}
+                  copiedLabel={t("cli.copied")}
+                />
               </div>
             </div>
 
@@ -315,16 +357,24 @@ export default function DownloadsPageContent() {
                 <CliDownloadRow
                   label={t("cli.platforms.bash")}
                   intro={t("cli.bashIntro")}
-                  command="$ curl -fsSL https://iroh.computer/sendme.sh | sh"
-                  copyText="curl -fsSL https://iroh.computer/sendme.sh | sh"
+                  commands={[
+                    {
+                      command: "$ curl -fsSL https://iroh.computer/sendme.sh | sh",
+                      copyText: "curl -fsSL https://iroh.computer/sendme.sh | sh",
+                    },
+                  ]}
                   copyLabel={t("cli.copyCommand")}
                   copiedLabel={t("cli.copied")}
                 />
                 <CliDownloadRow
                   label={t("cli.platforms.powershell")}
                   intro={t("cli.powershellIntro")}
-                  command="$ iwr https://www.iroh.computer/sendme.ps1 -useb | iex"
-                  copyText="iwr https://www.iroh.computer/sendme.ps1 -useb | iex"
+                  commands={[
+                    {
+                      command: "$ iwr https://www.iroh.computer/sendme.ps1 -useb | iex",
+                      copyText: "iwr https://www.iroh.computer/sendme.ps1 -useb | iex",
+                    },
+                  ]}
                   copyLabel={t("cli.copyCommand")}
                   copiedLabel={t("cli.copied")}
                 />

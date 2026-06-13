@@ -150,6 +150,8 @@
     "previewAlt": "ตัวอย่างแอป AltSendme บนเดสก์ท็อป",
     "desktop": "เดสก์ท็อป",
     "mobile": "มือถือ",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "ติดตั้งด้วย Scoop:",
     "cli": {
       "title": "CLI",
       "platforms": {

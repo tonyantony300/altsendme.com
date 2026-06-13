@@ -150,6 +150,8 @@
     "previewAlt": "Предпросмотр настольного приложения AltSendme",
     "desktop": "Компьютер",
     "mobile": "Мобильные",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "Установка через Scoop:",
     "cli": {
       "title": "CLI",
       "platforms": {

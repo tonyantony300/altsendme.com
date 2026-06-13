@@ -150,6 +150,8 @@
     "previewAlt": "AltSendmeデスクトップアプリのプレビュー",
     "desktop": "デスクトップ",
     "mobile": "モバイル",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "Scoopでインストール:",
     "cli": {
       "title": "CLI",
       "platforms": {

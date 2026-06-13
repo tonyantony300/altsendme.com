@@ -150,6 +150,8 @@
     "previewAlt": "AltSendme 桌面应用预览",
     "desktop": "桌面端",
     "mobile": "移动端",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "使用 Scoop 安装：",
     "cli": {
       "title": "CLI",
       "platforms": {
