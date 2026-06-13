@@ -192,7 +192,7 @@
     "headline": "ファイルを直接、誰にでも、どこへでも送信。",
     "builtOn": "Built on",
     "iroh": "iroh",
-    "howItWorks": "使い方",
+    "howItWorks": "内部の仕組み",
     "features": "機能",
     "downloads": "ダウンロード",
     "buyMeACoffee": "Buy Me a Coffee",
@@ -245,5 +245,66 @@
   "meta": {
     "title": "ファイルをどこでも送信 | 摩擦のない、高速、プライベート、無制限、無料",
     "description": "AltSendmeは、摩擦のないピアツーピアファイル転送のクロスプラットフォームデスクトップアプリケーションです。オープンソースのblip代替品、Windows、macOS、Linuxで利用可能です。"
+  },
+  "underTheHoodPage": {
+    "metaTitle": "Under The Hood",
+    "metaDescription": "Learn how AltSendme enables direct peer-to-peer file transfers with tickets, iroh, QUIC encryption, NAT traversal, and open-source relays — no accounts or IP addresses required.",
+    "title": "Under The Hood",
+    "intro": "It's like scp without needing to know the IP address. Add some files to AltSendme, and it will give you a pastable ticket that you can give to anyone who needs your files. Sendme will connect your devices directly & transfer the data without any accounts or configuration.",
+    "heroAlt": "AltSendme hero graphic",
+    "underTheHood": {
+      "title": "AltSendme is built on <iroh>iroh</iroh>",
+      "description": "AltSendme extends the open-source work being done by the amazing team behind iroh. AltSendme uses <iroh>iroh</iroh> to establish direct links between devices for data transfer, and <irohBlobs>iroh-blobs</irohBlobs> to send and verify your files.",
+      "buildOnCta": "Build on iroh",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "Important concepts",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "Peer Discovery, Hole-punching & NAT traversal",
+      "quic": "QUIC & End-to-end encryption",
+      "relays": "Relays"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "Content-addressed blob storage and transfer. iroh-blobs implements request/response and streaming transfers of arbitrary-sized byte blobs, using BLAKE3-verified streams and content-addressed links.",
+        "items": {
+          "blob": "Blob: an opaque sequence of bytes (no embedded metadata).",
+          "link": "Link: a 32-byte BLAKE3 hash that identifies a blob.",
+          "hashSeq": "HashSeq: a blob that contains a sequence of links (useful for chunking/trees).",
+          "provider": "Provider / Requester: provider serves data; requester fetches it. An endpoint can be both."
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "Tickets are a way to share dialing information between iroh endpoints. They're a single token that contains everything needed to connect to another endpoint, or to fetch a blob in this case. Contains Ed25519 NodeIds: Your device's cryptographic identity for authentication. They're also very powerful. It's worth pointing out this setup is considerably better than full peer-2-peer systems, which broadcast your IP to peers. Instead in iroh, tickets are used to form a \"cozy network\" between peers you explicitly want to connect with. It's possible to go \"full p2p\" & configure your app to broadcast dialing details, but tickets represent a better middle-ground default."
+      },
+      "peerDiscovery": {
+        "title": "Peer Discovery, NAT Traversal & Hole Punching",
+        "body": "Peers register with an open-source public relay servers at startup to help traverse firewalls and NATs, enabling connection setup. Once connected, iroh uses QUIC hole punching to try and establish a direct peer-to-peer connection, bypassing the relay. If direct connection is possible, communication happens directly between peers with end-to-end encryption; otherwise, the relay operates only temporarily as a fallback. This enables smooth reliable connections between peers within local-network and across the internet."
+      },
+      "quic": {
+        "title": "QUIC & Encryption",
+        "intro": "QUIC is a modern transport protocol built on UDP, designed to reduce latency and improve web performance over TCP. Developed originally by Google and now standardized by the IETF as HTTP/3's foundation, it integrates TLS 1.3 encryption directly into the protocol.",
+        "powersLabel": "QUIC allows following super-powers:",
+        "powers": {
+          "encryption": "encryption & authentication",
+          "multiplexing": "stream multiplexing",
+          "headOfLine": "no head-of-line blocking issues",
+          "priorities": "stream priorities",
+          "congestion": "one shared congestion controller",
+          "datagram": "an encrypted, unreliable datagram transport",
+          "zeroRtt": "zero round trip time connection establishment if you've connected to another endpoint before"
+        }
+      },
+      "relays": {
+        "title": "Relays",
+        "body": "AltSendme uses open-source public relay servers to support establishing direct connections, to speed up initial connection times, and to provide a fallback should direct connections between two endpoints fail or be impossible otherwise. All connections are end-to-end encrypted. The relay is \"just another UDP socket\" for sending encrypted packets around. <link>Read more</link>."
+      }
+    },
+    "downloadCta": "Download AltSendme",
+    "githubCta": "View on GitHub"
   }
 }

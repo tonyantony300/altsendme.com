@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 const FOOTER_NAV_GRID = [
   [
-    { key: "howItWorks", href: "#how-it-works-section" },
+    { key: "howItWorks", href: "/under-the-hood" },
     { key: "features", href: "#features-section" },
     { key: "downloads", href: "/downloads" },
     { key: "contactUs", href: "/contact" },
@@ -14,7 +14,7 @@ const FOOTER_NAV_GRID = [
     { key: "buyMeACoffee", href: "https://buymeacoffee.com/tny_antny", external: true },
     { key: "github", href: "https://github.com/tonyantony300/alt-sendme", external: true },
     { key: "linkedin", href: "https://linkedin.com/in/tonyantony300", external: true },
-    { key: "discord", href: "https://discord.gg/xwb7z22Eve", external: true },,
+    { key: "discord", href: "https://discord.gg/xwb7z22Eve", external: true },
   ],
 ];
 
