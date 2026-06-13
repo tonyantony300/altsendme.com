@@ -101,6 +101,15 @@
     "ctaDescription": "우리의 가치를 공유하고 오픈 소스 개발을 지원하고 싶은 조직을 항상 찾고 있습니다.",
     "ctaButton": "문의하기"
   },
+  "community": {
+    "title": "우리를 뛰어넘어 남도록.",
+    "subtitle": "오픈 소스 & 커뮤니티 주도",
+    "description": "AltSendme는 전 세계 기여자들에 의해 공개적으로 개발되고 있습니다. 모든 코드는 공개되어 있습니다. 모든 개선은 공유됩니다. 함께 사람들 사이에서 파일을 직접 보내는 더 빠르고 더 프라이빗한 방법을 만들고 있습니다.",
+    "githubStars": "GitHub 8.2K 스타",
+    "cardTitle": "커뮤니티에 참여하세요",
+    "cardDescription": "오픈 소스는 커뮤니티에 환원하고 우리가 만드는 것이 우리를 뛰어넘어 남도록 하는 방법입니다.",
+    "discordButton": "Discord에서 참여하기"
+  },
   "availableAs": {
     "title": "지원 플랫폼",
     "download": "다운로드",

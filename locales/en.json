@@ -101,6 +101,15 @@
     "ctaDescription": "We're always looking for organizations that want to collaborate and support open-source development.",
     "ctaButton": "Get in Touch"
   },
+  "community": {
+    "title": "Built To Outlive Us.",
+    "subtitle": "Open Source & Community Driven",
+    "description": "AltSendme is built in public by contributors around the world. Every line of code is public. Every improvement is shared. Together, we're building a faster, more private way to send files directly between people.",
+    "githubStars": "8.2K Stars on GitHub",
+    "cardTitle": "Join our Community",
+    "cardDescription": "Open source is our way of giving back to the community and making sure what we're building outlives us.",
+    "discordButton": "Join us on Discord"
+  },
   "availableAs": {
     "title": "One Experience. Multiple Platforms.",
     "download": "Download",

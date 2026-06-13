@@ -101,6 +101,15 @@
     "ctaDescription": "我们一直在寻找与我们价值观一致、并愿意支持开源开发的组织。",
     "ctaButton": "联系我们"
   },
+  "community": {
+    "title": "为超越我们而构建。",
+    "subtitle": "开源 & 社区驱动",
+    "description": "AltSendme 由全球贡献者公开构建。每一行代码都是公开的。每一项改进都会共享。我们一起正在构建一种更快、更私密的文件直传方式。",
+    "githubStars": "GitHub 8.2K Stars",
+    "cardTitle": "加入我们的社区",
+    "cardDescription": "开源是我们回馈社区的方式，也是确保我们所构建的东西能够超越我们的方式。",
+    "discordButton": "在 Discord 上加入我们"
+  },
   "availableAs": {
     "title": "支持平台",
     "download": "下载",

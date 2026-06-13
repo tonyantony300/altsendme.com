@@ -13,6 +13,7 @@ import AvailableAs from '@/components/AvailableAs';
 import HomeFAQ from '@/components/HomeFAQ';
 import FeaturesSection from '@/components/FeaturesSection';
 import PartnerSection from '@/components/PartnerSection';
+import CommunitySection from '@/components/CommunitySection';
 import TallyPopup from '@/components/TallyPopup';
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
         <AvailableAs />
         <FeaturesSection />
         <PartnerSection />
+        <CommunitySection />
         <HomeFAQ />
         {/* <FeaturesGrid />
         <ComparisonTable /> 
