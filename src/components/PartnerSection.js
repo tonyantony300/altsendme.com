@@ -50,7 +50,7 @@ export default function PartnerSection() {
               </p>
               <Link
                 href="/contact"
-                className="mt-5 inline-flex w-fit items-center justify-center rounded-md bg-dark px-4 py-2 font-funnel-sans text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus-visible:ring-offset-accent md:mt-6"
+                className="mt-5 inline-flex w-fit self-end items-center justify-center rounded-md bg-dark px-4 py-2 font-funnel-sans text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus-visible:ring-offset-accent md:mt-6"
               >
                 {t('ctaButton')}
               </Link>
