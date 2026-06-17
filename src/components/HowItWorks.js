@@ -3,50 +3,48 @@
 import { useTranslations } from 'next-intl';
 
 export default function HowItWorks() {
-  const t = useTranslations();
+  const t = useTranslations('howItWorks');
+
+  const steps = [
+    {
+      title: t('step1.title'),
+      description: t('step1.description'),
+    },
+    {
+      title: t('step2.title'),
+      description: t('step2.description'),
+    },
+    {
+      title: t('step3.title'),
+      description: t('step3.description'),
+    },
+  ];
 
   return (
-    <section className="flex flex-col items-center py-12 pt-0 px-4 w-full sm:px-6 md:px-10 md:pb-16 lg:px-[60px] lg:pb-20">
-      <h2 className="font-swear-display text-[32px] leading-[1.2] text-center text-foreground font-normal mb-2 md:mb-4 max-w-[600px] md:text-[40px]">
-        {t('howItWorks.title')}
-      </h2>
-      
-      <p className="font-fanwood-text text-base text-center text-foreground mb-10 lg:mb-14 max-w-[600px] sm:text-lg md:text-xl ">
-        {t('howItWorks.subtitle')}
-      </p>
+    <section id="how-it-works-section" className="relative w-full scroll-mt-24 pt-12 pb-16 px-5 md:px-10 md:pb-20 lg:px-[60px] lg:pb-24 text-zinc-100 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none isolate" aria-hidden="true">
+        <div className="absolute inset-0 bg-dark" />
+        <div className="absolute inset-0 dark-grain" />
+        <div className="absolute inset-0 dark-grain" />
+        <div className="absolute inset-0 dark-grain" />
+      </div>
 
-      <div className="w-full max-w-[800px] flex flex-col gap-7 md:gap-10">
-        {/* Step 1 */}
-        <div className="flex flex-col gap-2 sm:gap-3 items-center text-center">
-          <h3 className="font-swear-display text-lg text-foreground font-medium sm:text-xl md:text-2xl">
-            1. {t('howItWorks.step1.title')}
-          </h3>
-          <p className="font-fanwood-text text-sm text-foreground sm:text-base md:text-lg">
-            {t('howItWorks.step1.description')}
-          </p>
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto">
+        <div className="px-5 pt-10">
+          <h3 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-accent font-bold mb-8 whitespace-pre-line md:text-[40px] md:mb-10 lg:mb-12">{t('sectionLabel')}</h3>
         </div>
 
-        {/* Step 2 */}
-        <div className="flex flex-col gap-2 sm:gap-3 items-center text-center">
-          <h3 className="font-swear-display text-lg text-foreground font-medium sm:text-xl md:text-2xl">
-            2. {t('howItWorks.step2.title')}
-          </h3>
-          <p className="font-fanwood-text text-sm text-foreground sm:text-base md:text-lg">
-            {t('howItWorks.step2.description')}
-          </p>
-        </div>
-
-        {/* Step 3 */}
-        <div className="flex flex-col gap-2 sm:gap-3 items-center text-center">
-          <h3 className="font-swear-display text-lg text-foreground font-medium sm:text-xl md:text-2xl">
-            3. {t('howItWorks.step3.title')}
-          </h3>
-          <p className="font-fanwood-text text-sm text-foreground sm:text-base md:text-lg">
-            {t('howItWorks.step3.description')}
-          </p>
+        <div className="md:flex sm:gap-5">
+          {steps.map((step, index) => (
+            <div key={step.title} className="text-center md:text-left md:w-1/3 p-5 pb-10">
+              <h3 className="font-funnel-sans text-2xl font-bold text-accent">
+              {index + 1}. {step.title}
+              </h3>
+              <p className="mt-1 text-sm/6 text-zinc-400 font-funnel-sans">{step.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-

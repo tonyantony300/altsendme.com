@@ -1,61 +1,73 @@
 {
   "common": {
     "logo": "AltSendme",
+    "donate": "Donate",
     "buyMeACoffee": "Buy me a coffee",
-    "freeAndOpenSource": "Free & Open source",
+    "openSourceAgpl": "Open Source | AGPL 3.0",
     "contactUs": "Contact Us",
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "File transfer doesn't need to be complicated",
-    "description": "Direct, encrypted file transfers from your computer to anyone, anywhere — no signup, no cloud storage in between.",
-    "airdropQuote": "Think of it like AirDrop for everyone.",
+    "title": "Fastest file transfer experience on this planet",
+    "description": "Direct, encrypted file transfers from your devices to anyone, anywhere - no accounts, no cloud storage in between.",
+    "airdropQuote": "Think of it like AirDrop for any device, any network.",
     "downloadForMac": "Download for Mac",
     "downloadForWindows": "Download for Windows",
     "downloadForLinux": "Download for Linux",
-    "downloadForLinuxAppImage": "Download for Linux (AppImage)"
+    "downloadForLinuxAppImage": "Download for Linux (AppImage)",
+    "donationMessage": "Your donations make this project better"
   },
   "howItWorks": {
-    "title": "How It Works",
-    "subtitle": "Simple. Secure. Instant.",
+    "sectionLabel": "Secure & Instant.\nWorks in 3 simple steps.",
     "step1": {
-      "title": "Drop your file or folder.",
-      "description": "AltSendme creates a one-time share code (called a \"ticket\")."
+      "title": "Drop a file or folder",
+      "description": "AltSendme creates a secure one-time code (called a \"ticket\") for your file"
     },
     "step2": {
-      "title": "Share the ticket.",
-      "description": "Copy it and send it to your friend — via chat, email, or text."
+      "title": "Share the ticket",
+      "description": "Copy ticket and send it via chat, email, or text to your recipient friend"
     },
     "step3": {
-      "title": "They receive it directly.",
-      "description": "Your friend pastes the ticket in their app, and the transfer begins."
+      "title": "They receive file",
+      "description": "Your friend pastes the ticket in their app, and the transfer begins. file downloads directly."
     }
   },
   "features": {
-    "title": "Why People Love AltSendme",
-    "private": {
-      "title": "Private & Encrypted",
-      "description": "Files go straight to your friend: never stored anywhere online."
-    },
-    "fast": {
-      "title": "Fast Transfers",
-      "description": "AltSendme can saturate upto 4Gbps connections."
-    },
-    "unlimited": {
-      "title": "Transfer Anything",
-      "description": "Send files or folders of any size or format reliably."
-    },
-    "noAccounts": {
-      "title": "No Accounts Needed",
-      "description": "Open, drop, share: that's it."
-    },
-    "crossPlatform": {
-      "title": "Cross-Platform",
-      "description": "Works on Windows, macOS, and Linux."
-    },
-    "openSource": {
-      "title": "Open Source & Transparent",
-      "description": "Fully open source code: inspect, verify, and trust."
+    "titleLine1": "Why People Love AltSendme",
+    "titleLine2": "For Everyday File Sharing",
+    "items": {
+      "directSend": {
+        "title": "Send files directly. No middlemen.",
+        "description": "Works seamlessly on local networks or across continents."
+      },
+      "transferAnything": {
+        "title": "Transfer Anything. Any file. Any Format.",
+        "description": "Send files or directories of any size or any format, verified with BLAKE3-based integrity checks."
+      },
+      "noSizeLimits": {
+        "title": "No Size Limits. Truly unlimited.",
+        "description": "Send KB's to 99GB's. Altsendme helps you to share files of unlimited size."
+      },
+      "blazingFast": {
+        "title": "Blazing Fast & Reliable",
+        "description": "Capable of saturating multi-gigabit connections for lightning-fast transfers."
+      },
+      "endToEndEncrypted": {
+        "title": "End-to-End Encrypted",
+        "description": "Protected by QUIC + TLS 1.3 for forward and backward secrecy."
+      },
+      "resumable": {
+        "title": "Resumable Transfers",
+        "description": "Interrupted? No problem. Transfers automatically resume where they left off."
+      },
+      "zeroPersonalData": {
+        "title": "Zero Personal Data",
+        "description": "No accounts, No ads. No tracking, No training. Just private file transfers."
+      },
+      "freeOpenSource": {
+        "title": "Free & OpenSource",
+        "description": "Built by community. Open by Design. Transparency and private by default."
+      }
     }
   },
   "comparison": {
@@ -83,9 +95,158 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "A very straightforward file transfer app. Great for quick, simple file transfers across the web."
   },
+  "partners": {
+    "title": "Partners",
+    "testmuAlt": "TestMu AI, formerly LambdaTest",
+    "ctaTitle": "Interested in Partnership?",
+    "ctaDescription": "We're always looking for organizations that want to collaborate and support open-source development.",
+    "ctaButton": "Get in Touch"
+  },
+  "community": {
+    "title": "Built To Outlive Us.",
+    "subtitle": "Open Source & Community Driven",
+    "description": "AltSendme is built in public by contributors around the world. Every line of code is public. Every improvement is shared. Together, we're building a faster, more private way to send files directly between people.",
+    "githubStars": "8.2k stars",
+    "cardTitle": "Join our Community",
+    "othersCount": "+ 65 Others",
+    "cardDescription": "Open source is our way of giving back to the community and making sure what we're building outlives us.",
+    "cardDescription2": "Interact with us directly, suggest features, report bugs, get updates early, and help shape the future of file sharing.",
+    "discordButton": "Join us on Discord"
+  },
+  "availableAs": {
+    "titleLine1": "One Experience.",
+    "titleLine2": "Multiple Platforms.",
+    "download": "Download",
+    "comingSoon": "Coming soon",
+    "desktop": {
+      "title": "Desktop Applications",
+      "description": "Native apps for Windows, macOS, and Linux. Drag, drop, and share files instantly with a full desktop experience."
+    },
+    "android": {
+      "title": "Android Application",
+      "description": "Send and receive files on the go from your Android device with a minimalistic interface. iOS coming soon. "
+    },
+    "cli": {
+      "title": "Command Line Interface",
+      "description": "Generate tickets in the terminal and share with the desktop app or mobile"
+    },
+    "web": {
+      "title": "Web",
+      "description": "Transfer files and folders without installing anything. Share with Desktop, Mobile or CLI"
+    }
+  },
   "download": {
     "title": "Try AltSendme now",
     "subtitle": "Free, Open Source, and Available for Everyone"
+  },
+  "underTheHoodPage": {
+    "metaTitle": "Under The Hood",
+    "metaDescription": "Learn how AltSendme enables direct peer-to-peer file transfers with tickets, iroh, QUIC encryption, NAT traversal, and open-source relays — no accounts or IP addresses required.",
+    "title": "Under The Hood",
+    "intro": "It's like scp without needing to know the IP address. Add some files to AltSendme, and it will give you a pastable ticket that you can give to anyone who needs your files. AltSendme will connect your devices directly & transfer the data without any accounts or configuration.",
+    "heroAlt": "AltSendme hero graphic",
+    "underTheHood": {
+      "title": "AltSendme is built on <iroh>iroh</iroh>",
+      "description": "AltSendme extends the open-source work being done by the amazing team behind iroh. AltSendme uses <iroh>iroh</iroh> to establish direct links between devices for data transfer, and <irohBlobs>iroh-blobs</irohBlobs> to send and verify your files.",
+      "buildOnCta": "Build on iroh",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "Important concepts",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "Peer Discovery, Hole-punching & NAT traversal",
+      "quic": "QUIC & End-to-end encryption",
+      "relays": "Relays"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "Content-addressed blob storage and transfer. iroh-blobs implements request/response and streaming transfers of arbitrary-sized byte blobs, using BLAKE3-verified streams and content-addressed links.",
+        "items": {
+          "blob": "Blob: an opaque sequence of bytes (no embedded metadata).",
+          "link": "Link: a 32-byte BLAKE3 hash that identifies a blob.",
+          "hashSeq": "HashSeq: a blob that contains a sequence of links (useful for chunking/trees).",
+          "provider": "Provider / Requester: provider serves data; requester fetches it. An endpoint can be both."
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "Tickets are a way to share dialing information between iroh endpoints. They're a single token that contains everything needed to connect to another endpoint, or to fetch a blob in this case. Contains Ed25519 NodeIds: Your device's cryptographic identity for authentication. They're also very powerful. It's worth pointing out this setup is considerably better than full peer-2-peer systems, which broadcast your IP to peers. Instead in iroh, tickets are used to form a \"cozy network\" between peers you explicitly want to connect with. It's possible to go \"full p2p\" & configure your app to broadcast dialing details, but tickets represent a better middle-ground default."
+      },
+      "peerDiscovery": {
+        "title": "Peer Discovery, NAT Traversal & Hole Punching",
+        "body": "Peers register with an open-source public relay servers at startup to help traverse firewalls and NATs, enabling connection setup. Once connected, iroh uses QUIC hole punching to try and establish a direct peer-to-peer connection, bypassing the relay. If direct connection is possible, communication happens directly between peers with end-to-end encryption; otherwise, the relay operates only temporarily as a fallback. This enables smooth reliable connections between peers within local-network and across the internet."
+      },
+      "quic": {
+        "title": "QUIC & Encryption",
+        "intro": "QUIC is a modern transport protocol built on UDP, designed to reduce latency and improve web performance over TCP. Developed originally by Google and now standardized by the IETF as HTTP/3's foundation, it integrates TLS 1.3 encryption directly into the protocol.",
+        "powersLabel": "QUIC allows following super-powers:",
+        "powers": {
+          "encryption": "encryption & authentication",
+          "multiplexing": "stream multiplexing",
+          "headOfLine": "no head-of-line blocking issues",
+          "priorities": "stream priorities",
+          "congestion": "one shared congestion controller",
+          "datagram": "an encrypted, unreliable datagram transport",
+          "zeroRtt": "zero round trip time connection establishment if you've connected to another endpoint before"
+        }
+      },
+      "relays": {
+        "title": "Relays",
+        "body": "AltSendme uses open-source public relay servers to support establishing direct connections, to speed up initial connection times, and to provide a fallback should direct connections between two endpoints fail or be impossible otherwise. All connections are end-to-end encrypted. The relay is \"just another UDP socket\" for sending encrypted packets around. <link>Read more</link>."
+      }
+    },
+    "downloadCta": "Download AltSendme",
+    "githubCta": "View on GitHub"
+  },
+  "downloadsPage": {
+    "metaTitle": "Download AltSendme",
+    "metaDescription": "Download AltSendme for Windows, macOS, Linux, and Android. Free, open source, peer-to-peer file transfer with no size limits.",
+    "titleLine1": "Download",
+    "titleLine2": "AltSendme",
+    "statsLine": "100K+ Downloads | Available in 24 Languages | Free",
+    "getAppForMac": "Get app for Mac",
+    "getAppForWindows": "Get app for Windows",
+    "getAppForLinux": "Get app for Linux",
+    "otherPlatforms": "Other Platforms",
+    "moreFormats": "More download formats",
+    "termsPrefix": "By continuing you agree to our",
+    "licenseLink": "License",
+    "previewAlt": "AltSendme desktop application preview",
+    "desktop": "Desktop",
+    "mobile": "Mobile",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "Install with scoop:",
+    "cli": {
+      "title": "CLI",
+      "platforms": {
+        "bash": "Bash",
+        "powershell": "PowerShell"
+      },
+      "bashIntro": "Add sendme to your machine using bash:",
+      "powershellIntro": "On windows with PowerShell:",
+      "copyNote": "This will copy the sendme binary to the path you ran the script from.",
+      "runNote": "Run it with ./sendme on unix systems",
+      "copyCommand": "Copy command",
+      "copied": "Copied"
+    },
+    "platforms": {
+      "mac": "Mac",
+      "windows": "Windows",
+      "linux": "Linux",
+      "android": "Android"
+    },
+    "links": {
+      "universalDmg": "Universal (DMG)",
+      "universalTarGz": "Universal (.app.tar.gz)",
+      "standardExe": "Standard (Setup)",
+      "msi": "MSI Installer",
+      "appImage": "AppImage",
+      "debian": "Debian",
+      "rpm": "RPM",
+      "universalApk": "Universal (APK)"
+    }
   },
   "pressReviews": {
     "title": "Press & Reviews"
@@ -94,15 +255,33 @@
   "taglineFooter": {
     "quote": "It's like a private, one-time AirDrop link — for anyone, anywhere."
   },
+  "footer": {
+    "headline": "Send files directly<br></br>to anyone, anywhere.",
+    "builtOn": "Built on",
+    "iroh": "iroh",
+    "howItWorks": "How it works",
+    "reportIssue": "Report Issue",
+    "downloads": "Downloads",
+    "contactUs": "Contact Us",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "contributors": "Contributors",
+    "websiteBy": "Website designed by",
+    "designer": "ShravanKumar PS",
+    "license": "©GNU Affero General Public License v3.0"
+  },
   "contact": {
-    "title": "Get in Touch",
+    "title": "Reach out to us",
+    "subtitle": "Have a question, feedback, or want to collaborate? Drop us a message and we'll get back to you.",
     "name": "Your Name",
-    "email": "Your Email",
-    "message": "Message",
-    "submit": "Send Message",
+    "email": "Enter your email",
+    "message": "Type here",
+    "submit": "Submit",
     "submitting": "Sending...",
     "success": "Thank you! Your message has been sent successfully.",
-    "error": "Something went wrong. Please try again later."
+    "error": "Something went wrong. Please try again later.",
+    "imageAlt": "The Creation of Adam — reaching out to connect"
   },
   "faq": {
     "title": "Frequently Asked Questions",

@@ -1,62 +1,73 @@
 {
   "common": {
     "logo": "AltSendme",
+    "donate": "捐赠",
     "buyMeACoffee": "请我喝杯咖啡",
-    "freeAndOpenSource": "免费和开源",
+    "openSourceAgpl": "开源 | AGPL 3.0",
     "contactUs": "联系我们",
-    "hireDeveloper": "雇佣开发者",
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "文件传输不必复杂",
-    "description": "从您的计算机直接、加密的文件传输到任何人、任何地方 — 无需注册，中间没有云存储。",
-    "airdropQuote": "把它想象成面向所有人的 AirDrop。",
+    "title": "这个星球上最快的文件传输体验",
+    "description": "从您的设备直接、加密传输文件给任何人、任何地方 — 无需账户，中间没有云存储。",
+    "airdropQuote": "把它想象成适用于任何设备、任何网络的 AirDrop。",
     "downloadForMac": "下载 Mac 版",
     "downloadForWindows": "下载 Windows 版",
     "downloadForLinux": "下载 Linux 版",
-    "downloadForLinuxAppImage": "下载 Linux 版 (AppImage)"
+    "downloadForLinuxAppImage": "下载 Linux 版 (AppImage)",
+    "donationMessage": "您的捐赠让这个项目变得更好"
   },
   "howItWorks": {
-    "title": "工作原理",
-    "subtitle": "简单。安全。即时。",
+    "sectionLabel": "安全即时。\n3 个简单步骤即可使用。",
     "step1": {
-      "title": "拖放您的文件或文件夹。",
-      "description": "AltSendme 创建一个一次性共享代码（称为\"票据\"）。"
+      "title": "拖放文件或文件夹",
+      "description": "AltSendme 为您的文件创建一个安全的一次性代码（称为\"票据\"）"
     },
     "step2": {
-      "title": "分享票据。",
-      "description": "复制它并发送给您的朋友 — 通过聊天、电子邮件或短信。"
+      "title": "分享票据",
+      "description": "复制票据，通过聊天、电子邮件或短信发送给收件人"
     },
     "step3": {
-      "title": "他们直接接收。",
-      "description": "您的朋友在他们的应用中粘贴票据，传输即开始。"
+      "title": "对方接收文件",
+      "description": "您的朋友在其应用中粘贴票据，传输即开始。文件直接下载。"
     }
   },
   "features": {
-    "title": "为什么人们喜欢 AltSendme",
-    "private": {
-      "title": "私密和加密",
-      "description": "文件直接发送给您的朋友：永远不会在线存储。"
-    },
-    "fast": {
-      "title": "快速传输",
-      "description": "AltSendme 可以饱和高达 4Gbps 的连接。"
-    },
-    "unlimited": {
-      "title": "传输任何内容",
-      "description": "可靠地发送任何大小或格式的文件或文件夹。"
-    },
-    "noAccounts": {
-      "title": "无需账户",
-      "description": "打开、拖放、分享：就这样。"
-    },
-    "crossPlatform": {
-      "title": "跨平台",
-      "description": "适用于 Windows、macOS 和 Linux。"
-    },
-    "openSource": {
-      "title": "开源和透明",
-      "description": "完全开源的代码：检查、验证和信任。"
+    "titleLine1": "人们喜爱 AltSendme 的原因",
+    "titleLine2": "用于日常文件共享",
+    "items": {
+      "directSend": {
+        "title": "直接发送文件。没有中间人。",
+        "description": "在本地网络或跨大陆都能无缝运行。"
+      },
+      "transferAnything": {
+        "title": "传输任何内容。任何文件。任何格式。",
+        "description": "发送任意大小和格式的文件或目录，并通过基于 BLAKE3 的完整性检查进行验证。"
+      },
+      "noSizeLimits": {
+        "title": "无大小限制。真正无限。",
+        "description": "从 KB's 到 99GB's。AltSendme 帮助您分享无限大小的文件。"
+      },
+      "blazingFast": {
+        "title": "极速且可靠",
+        "description": "能够跑满多千兆连接，实现闪电般的传输速度。"
+      },
+      "endToEndEncrypted": {
+        "title": "端到端加密",
+        "description": "由 QUIC + TLS 1.3 保护，提供前向和后向保密性。"
+      },
+      "resumable": {
+        "title": "可恢复传输",
+        "description": "中断了？没问题。传输会自动从停止处继续。"
+      },
+      "zeroPersonalData": {
+        "title": "零个人数据",
+        "description": "无账户、无广告。无跟踪、无训练。只有私密的文件传输。"
+      },
+      "freeOpenSource": {
+        "title": "免费且开源",
+        "description": "由社区构建。设计开放。默认透明且注重隐私。"
+      }
     }
   },
   "comparison": {
@@ -84,9 +95,158 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "一个非常直接的文件传输应用。非常适合在网络上快速、简单地传输文件。"
   },
+  "partners": {
+    "title": "合作伙伴",
+    "testmuAlt": "TestMu AI，前身为 LambdaTest",
+    "ctaTitle": "有兴趣合作吗？",
+    "ctaDescription": "我们一直在寻找希望合作并支持开源开发的组织。",
+    "ctaButton": "联系我们"
+  },
+  "community": {
+    "title": "为超越我们而构建。",
+    "subtitle": "开源 & 社区驱动",
+    "description": "AltSendme 由全球贡献者公开构建。每一行代码都是公开的。每一项改进都会共享。我们一起正在构建一种更快、更私密的文件直传方式。",
+    "githubStars": "8.2k stars",
+    "cardTitle": "加入我们的社区",
+    "othersCount": "+ 65 其他人",
+    "cardDescription": "开源是我们回馈社区的方式，也是确保我们所构建的东西能够超越我们的方式。",
+    "cardDescription2": "直接与我们互动，提出功能建议，报告错误，提前获取更新，并帮助塑造文件分享的未来。",
+    "discordButton": "在 Discord 上加入我们"
+  },
+  "availableAs": {
+    "titleLine1": "一种体验。",
+    "titleLine2": "多个平台。",
+    "download": "下载",
+    "comingSoon": "即将推出",
+    "desktop": {
+      "title": "桌面应用程序",
+      "description": "适用于 Windows、macOS 和 Linux 的原生应用。拖放即可即时分享文件，提供完整桌面体验。"
+    },
+    "android": {
+      "title": "Android 应用程序",
+      "description": "在 Android 设备上随时随地发送和接收文件，界面极简。iOS 即将推出。"
+    },
+    "cli": {
+      "title": "命令行界面",
+      "description": "在终端生成票据，并与桌面应用或移动端共享"
+    },
+    "web": {
+      "title": "Web",
+      "description": "无需安装即可传输文件和文件夹。可与 Desktop、Mobile 或 CLI 共享。"
+    }
+  },
   "download": {
     "title": "立即试用 AltSendme",
     "subtitle": "免费、开源，面向所有人开放"
+  },
+  "underTheHoodPage": {
+    "metaTitle": "底层原理",
+    "metaDescription": "了解 AltSendme 如何通过票据、iroh、QUIC 加密、NAT 穿透和开源中继实现直接点对点文件传输 — 无需账户或 IP 地址。",
+    "title": "底层原理",
+    "intro": "就像 scp，但无需知道 IP 地址。将文件添加到 AltSendme，它会给你一个可粘贴的票据，交给任何需要这些文件的人。AltSendme 会直接连接你的设备并传输数据，无需账户或配置。",
+    "heroAlt": "AltSendme 主视觉图",
+    "underTheHood": {
+      "title": "AltSendme 基于 <iroh>iroh</iroh> 构建",
+      "description": "AltSendme 扩展了 iroh 团队的开源工作。AltSendme 使用 <iroh>iroh</iroh> 在设备之间建立直接链接进行数据传输，并使用 <irohBlobs>iroh-blobs</irohBlobs> 发送和验证文件。",
+      "buildOnCta": "基于 iroh 构建",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "重要概念",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "节点发现、打洞与 NAT 穿透",
+      "quic": "QUIC 与端到端加密",
+      "relays": "中继"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "内容寻址的 blob 存储与传输。iroh-blobs 使用 BLAKE3 验证流和内容寻址链接，实现任意大小字节 blob 的请求/响应和流式传输。",
+        "items": {
+          "blob": "Blob：不透明的字节序列（无嵌入元数据）。",
+          "link": "Link：标识 blob 的 32 字节 BLAKE3 哈希。",
+          "hashSeq": "HashSeq：包含链接序列的 blob（适用于分块/树结构）。",
+          "provider": "Provider / Requester：provider 提供数据；requester 获取数据。一个端点可以同时扮演两者。"
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "票据是在 iroh 端点之间共享拨号信息的方式。它是一个包含连接另一个端点或获取 blob 所需一切信息的单一令牌。包含 Ed25519 NodeIds：设备用于身份验证的加密身份。这种方案明显优于向对等节点广播 IP 的完整 P2P 系统。在 iroh 中，票据用于在你明确想要连接的节点之间形成“cozy network”。也可以配置为“full p2p”并广播拨号详情，但票据是更好的默认折中方案。"
+      },
+      "peerDiscovery": {
+        "title": "节点发现、NAT 穿透与打洞",
+        "body": "节点在启动时向开源公共中继服务器注册，以穿越防火墙和 NAT 并建立连接。连接后，iroh 使用 QUIC 打洞尝试建立直接 P2P 连接，绕过中继。若可直接连接，则在端到端加密下直接通信；否则中继仅作为临时回退。这可在本地网络和互联网上实现稳定连接。"
+      },
+      "quic": {
+        "title": "QUIC 与加密",
+        "intro": "QUIC 是基于 UDP 的现代传输协议，旨在降低延迟并提升相对 TCP 的 Web 性能。最初由 Google 开发，现由 IETF 标准化为 HTTP/3 的基础，并将 TLS 1.3 直接集成到协议中。",
+        "powersLabel": "QUIC 提供以下超能力：",
+        "powers": {
+          "encryption": "加密与认证",
+          "multiplexing": "流多路复用",
+          "headOfLine": "无队头阻塞问题",
+          "priorities": "流优先级",
+          "congestion": "共享的拥塞控制器",
+          "datagram": "加密且不可靠的数据报传输",
+          "zeroRtt": "若曾连接过该端点，可实现零往返连接建立"
+        }
+      },
+      "relays": {
+        "title": "中继",
+        "body": "AltSendme 使用开源公共中继服务器来建立直接连接、加快初始连接，并在直接连接失败时提供回退。所有连接均端到端加密。中继只是发送加密数据包的“另一个 UDP 套接字”。<link>了解更多</link>。"
+      }
+    },
+    "downloadCta": "下载 AltSendme",
+    "githubCta": "在 GitHub 上查看"
+  },
+  "downloadsPage": {
+    "metaTitle": "下载 AltSendme",
+    "metaDescription": "下载适用于 Windows、macOS、Linux 和 Android 的 AltSendme。免费开源的点对点文件传输，无大小限制。",
+    "titleLine1": "下载",
+    "titleLine2": "AltSendme",
+    "statsLine": "10万+ 下载 | 支持 24 种语言 | 免费",
+    "getAppForMac": "获取 Mac 版",
+    "getAppForWindows": "获取 Windows 版",
+    "getAppForLinux": "获取 Linux 版",
+    "otherPlatforms": "其他平台",
+    "moreFormats": "更多下载格式",
+    "termsPrefix": "继续即表示您同意我们的",
+    "licenseLink": "许可证",
+    "previewAlt": "AltSendme 桌面应用预览",
+    "desktop": "桌面端",
+    "mobile": "移动端",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "使用 Scoop 安装：",
+    "cli": {
+      "title": "CLI",
+      "platforms": {
+        "bash": "Bash",
+        "powershell": "PowerShell"
+      },
+      "bashIntro": "使用 bash 将 sendme 添加到您的机器：",
+      "powershellIntro": "在 Windows 上使用 PowerShell：",
+      "copyNote": "这会将 sendme 二进制文件复制到您运行脚本的目录。",
+      "runNote": "在 Unix 系统上使用 ./sendme 运行",
+      "copyCommand": "复制命令",
+      "copied": "已复制"
+    },
+    "platforms": {
+      "mac": "Mac",
+      "windows": "Windows",
+      "linux": "Linux",
+      "android": "Android"
+    },
+    "links": {
+      "universalDmg": "Universal (DMG)",
+      "universalTarGz": "Universal (.app.tar.gz)",
+      "standardExe": "Standard (Setup)",
+      "msi": "MSI 安装包",
+      "appImage": "AppImage",
+      "debian": "Debian",
+      "rpm": "RPM",
+      "universalApk": "Universal (APK)"
+    }
   },
   "pressReviews": {
     "title": "媒体与评价"
@@ -94,15 +254,33 @@
   "taglineFooter": {
     "quote": "它就像一个私密的一次性 AirDrop 链接 — 适用于任何人，任何地方。"
   },
+  "footer": {
+    "headline": "将文件直接<br></br>发送给任何人，任何地方。",
+    "builtOn": "基于",
+    "iroh": "iroh",
+    "howItWorks": "工作原理",
+    "reportIssue": "报告问题",
+    "downloads": "下载",
+    "contactUs": "联系我们",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "contributors": "贡献者",
+    "websiteBy": "网站设计",
+    "designer": "ShravanKumar PS",
+    "license": "©GNU Affero General Public License v3.0"
+  },
   "contact": {
     "title": "联系我们",
+    "subtitle": "有问题、反馈或想合作？给我们留言，我们会回复您。",
     "name": "您的姓名",
-    "email": "您的邮箱",
-    "message": "消息",
-    "submit": "发送消息",
+    "email": "输入您的邮箱",
+    "message": "在此输入",
+    "submit": "提交",
     "submitting": "发送中...",
     "success": "谢谢！您的消息已成功发送。",
-    "error": "出错了。请稍后再试。"
+    "error": "出错了。请稍后再试。",
+    "imageAlt": "创世纪·亚当的创造 — 伸手连接"
   },
   "faq": {
     "title": "常见问题",

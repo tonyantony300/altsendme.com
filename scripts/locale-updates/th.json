@@ -1,0 +1,142 @@
+{
+  "common": { "donate": "บริจาค" },
+  "hero": {
+    "title": "ประสบการณ์ถ่ายโอนไฟล์ที่เร็วที่สุดบนโลกใบนี้",
+    "description": "ถ่ายโอนไฟล์ที่เข้ารหัสโดยตรงจากอุปกรณ์ของคุณไปยังใครก็ได้ ที่ไหนก็ได้ — ไม่ต้องมีบัญชี ไม่มีคลาวด์ส토เรจคั่นกลาง",
+    "airdropQuote": "คิดว่าเหมือน AirDrop สำหรับทุกอุปกรณ์ ทุกเครือข่าย"
+  },
+  "howItWorks": {
+    "step2": {
+      "description": "คัดลอกตั๋วและส่งผ่านแชท อีเมล หรือข้อความให้ผู้รับ"
+    },
+    "step3": {
+      "title": "พวกเขารับไฟล์",
+      "description": "เพื่อนของคุณวางตั๋วในแอป แล้วการถ่ายโอนจะเริ่มต้น ไฟล์จะดาวน์โหลดโดยตรง"
+    }
+  },
+  "features": {
+    "title": "ทำไมผู้คนถึงชอบ AltSendme",
+    "items": {
+      "directSend": {
+        "title": "ส่งไฟล์โดยตรง ไม่มีคนกลาง",
+        "description": "ใช้งานได้อย่างราบรื่นทั้งในเครือข่ายท้องถิ่นหรือข้ามทวีป"
+      },
+      "transferAnything": {
+        "title": "ถ่ายโอนได้ทุกอย่าง ทุกไฟล์ ทุกรูปแบบ",
+        "description": "ส่งไฟล์หรือโฟลเดอร์ทุกขนาดและทุกรูปแบบ ตรวจสอบด้วยการตรวจสอบความสมบูรณ์แบบ BLAKE3"
+      },
+      "noSizeLimits": {
+        "title": "ไม่จำกัดขนาด ไม่จำกัดจริงๆ",
+        "description": "ตั้งแต่ KB's ถึง 99GB's AltSendme ช่วยให้คุณแชร์ไฟล์ขนาดไม่จำกัด"
+      },
+      "blazingFast": {
+        "title": "เร็วทันใจและเชื่อถือได้",
+        "description": "สามารถใช้แบนด์วิดท์ของการเชื่อมต่อได้เต็มที่เพื่อการถ่ายโอนที่รวดเร็ว"
+      },
+      "endToEndEncrypted": {
+        "title": "เข้ารหัสแบบ end-to-end",
+        "description": "ป้องกันด้วย QUIC + TLS 1.3 สำหรับ forward และ backward secrecy"
+      },
+      "resumable": {
+        "title": "ถ่ายโอนได้ต่อเนื่อง",
+        "description": "ขัดจังหวะ? ไม่เป็นไร การถ่ายโอนจะดำเนินต่อจากจุดที่หยุดโดยอัตโนมัติ"
+      },
+      "zeroPersonalData": {
+        "title": "ไม่เก็บข้อมูลส่วนตัว",
+        "description": "ไม่มีบัญชี ไม่มีโฆษณา ไม่มีการติดตาม ไม่มีการฝึกข้อมูล มีแค่การถ่ายโอนไฟล์ส่วนตัว"
+      },
+      "freeOpenSource": {
+        "title": "ฟรีและโอเพนซอร์ส",
+        "description": "สร้างโดยชุมชน เปิดโดยการออกแบบ โปร่งใสและเป็นส่วนตัวเป็นค่าเริ่มต้น"
+      }
+    }
+  },
+  "partners": {
+    "ctaDescription": "เรากำลังมองหาองค์กรที่ต้องการร่วมมือและสนับสนุนการพัฒนาโอเพนซอร์สอยู่เสมอ"
+  },
+  "availableAs": {
+    "title": "ประสบการณ์เดียว หลายแพลตฟอร์ม",
+    "android": {
+      "description": "ส่งและรับไฟล์จากอุปกรณ์ Android ได้ทุกที่ด้วยอินเทอร์เฟซเรียบง่าย iOS เร็วๆ นี้ "
+    },
+    "cli": {
+      "description": "สร้างตั๋วในเทอร์มินัลและแชร์กับแอปเดสก์ท็อปหรือมือถือ"
+    }
+  },
+  "underTheHoodPage": {
+    "metaTitle": "เบื้องหลังการทำงาน",
+    "metaDescription": "เรียนรู้ว่า AltSendme เปิดใช้งานการถ่ายโอนไฟล์ peer-to-peer โดยตรงด้วยตั๋ว iroh การเข้ารหัส QUIC NAT traversal และ relay โอเพนซอร์ส — ไม่ต้องมีบัญชีหรือ IP address",
+    "title": "เบื้องหลังการทำงาน",
+    "intro": "เหมือน scp โดยไม่ต้องรู้ IP address เพิ่มไฟล์ใน AltSendme แล้วจะได้ตั๋วที่วางได้ให้ใครก็ตามที่ต้องการไฟล์ของคุณ AltSendme จะเชื่อมอุปกรณ์โดยตรงและถ่ายโอนข้อมูลโดยไม่ต้องมีบัญชีหรือการตั้งค่า",
+    "heroAlt": "กราฟิก hero ของ AltSendme",
+    "underTheHood": {
+      "title": "AltSendme สร้างบน <iroh>iroh</iroh>",
+      "description": "AltSendme ขยายงานโอเพนซอร์สของทีม iroh AltSendme ใช้ <iroh>iroh</iroh> เพื่อสร้างลิงก์ตรงระหว่างอุปกรณ์ และ <irohBlobs>iroh-blobs</irohBlobs> เพื่อส่งและตรวจสอบไฟล์",
+      "buildOnCta": "สร้างบน iroh",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "แนวคิดสำคัญ",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "การค้นหา peer, hole punching และ NAT traversal",
+      "quic": "QUIC และการเข้ารหัส end-to-end",
+      "relays": "Relay"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "การจัดเก็บและถ่ายโอน blob แบบ content-addressed iroh-blobs รองรับการถ่ายโอน request/response และ streaming ของ blob ขนาดใดก็ได้ ด้วย stream ที่ตรวจสอบ BLAKE3 และลิงก์แบบ content-addressed",
+        "items": {
+          "blob": "Blob: ลำดับ byte ที่ไม่โปร่งใส (ไม่มี metadata ฝังอยู่)",
+          "link": "Link: hash BLAKE3 32 byte ที่ระบุ blob",
+          "hashSeq": "HashSeq: blob ที่มีลำดับของลิงก์ (มีประโยชน์สำหรับ chunking/tree)",
+          "provider": "Provider / Requester: provider ให้ข้อมูล requester ดึงข้อมูล endpoint สามารถเป็นทั้งสองได้"
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "ตั๋วเป็นวิธีแชร์ข้อมูลการเชื่อมต่อระหว่าง iroh endpoints เป็น token เดียวที่มีทุกอย่างที่จำเป็นในการเชื่อมต่อ endpoint อื่นหรือดึง blob มี Ed25519 NodeIds: ตัวตนทาง cryptography ของอุปกรณ์สำหรับการยืนยันตัวตน วิธีนี้ดีกว่าระบบ P2P เต็มรูปแบบที่ broadcast IP ของคุณ ใน iroh ตั๋วใช้สร้าง \"cozy network\" ระหว่าง peer ที่คุณต้องการเชื่อมต่ออย่างชัดเจน สามารถไป \"full p2p\" และ broadcast รายละเอียดการเชื่อมต่อได้ แต่ตั๋วเป็นค่าเริ่มต้นที่ดีกว่า"
+      },
+      "peerDiscovery": {
+        "title": "การค้นหา peer, NAT Traversal และ Hole Punching",
+        "body": "peer ลงทะเบียนกับ relay server สาธารณะโอเพนซอร์สเมื่อเริ่มต้นเพื่อข้าม firewall และ NAT และตั้งค่าการเชื่อมต่อ เมื่อเชื่อมต่อแล้ว iroh ใช้ QUIC hole punching เพื่อพยายามสร้างการเชื่อมต่อ P2P โดยตรง ข้าม relay หากเชื่อมต่อตรงได้ การสื่อสารจะเกิดขึ้นโดยตรงพร้อม E2E encryption มิฉะนั้น relay จะทำงานเป็น fallback ชั่วคราว ทำให้เชื่อมต่อได้อย่างราบรื่นทั้งในเครือข่ายท้องถิ่นและอินเทอร์เน็ต"
+      },
+      "quic": {
+        "title": "QUIC และการเข้ารหัส",
+        "intro": "QUIC เป็นโปรโตคอลขนส่งสมัยใหม่บน UDP ออกแบบมาเพื่อลด latency และปรับปรุงประสิทธิภาพเว็บเหนือ TCP พัฒนาโดย Google และมาตรฐานโดย IETF เป็นพื้นฐานของ HTTP/3 รวม TLS 1.3 เข้าในโปรโตคอลโดยตรง",
+        "powersLabel": "QUIC ให้พลังพิเศษดังนี้:",
+        "powers": {
+          "encryption": "การเข้ารหัสและการยืนยันตัวตน",
+          "multiplexing": "stream multiplexing",
+          "headOfLine": "ไม่มีปัญหา head-of-line blocking",
+          "priorities": "ลำดับความสำคัญของ stream",
+          "congestion": "ตัวควบคุม congestion ที่ใช้ร่วมกัน",
+          "datagram": "การขนส่ง datagram ที่เข้ารหัสและไม่น่าเชื่อถือ",
+          "zeroRtt": "การสร้างการเชื่อมต่อ zero round-trip หากเคยเชื่อมต่อ endpoint นั้นมาก่อน"
+        }
+      },
+      "relays": {
+        "title": "Relay",
+        "body": "AltSendme ใช้ relay server สาธารณะโอเพนซอร์สเพื่อสร้างการเชื่อมต่อตรง เร่งเวลาเชื่อมต่อเริ่มต้น และเป็น fallback หากการเชื่อมต่อตรงล้มเหลว การเชื่อมต่อทั้งหมดเข้ารหัส E2E relay เป็น \"UDP socket อีกตัว\" สำหรับส่งแพ็กเก็ตที่เข้ารหัส <link>อ่านเพิ่มเติม</link>"
+      }
+    },
+    "downloadCta": "ดาวน์โหลด AltSendme",
+    "githubCta": "ดูบน GitHub"
+  },
+  "footer": {
+    "headline": "ส่งไฟล์ตรง<br></br>ถึงใครก็ได้ ที่ไหนก็ได้",
+    "contactUs": "ติดต่อเรา",
+    "builtOn": "สร้างบน",
+    "websiteBy": "ออกแบบเว็บไซต์โดย",
+    "license": "©GNU Affero General Public License v3.0"
+  },
+  "contact": {
+    "title": "ติดต่อเรา",
+    "subtitle": "มีคำถาม ข้อเสนอแนะ หรือต้องการร่วมมือ? ส่งข้อความถึงเราแล้วเราจะติดต่อกลับ",
+    "email": "กรอกอีเมลของคุณ",
+    "message": "พิมพ์ที่นี่",
+    "submit": "ส่ง",
+    "imageAlt": "ภาพ The Creation of Adam — เอื้อมมือเพื่อเชื่อมต่อ"
+  }
+}

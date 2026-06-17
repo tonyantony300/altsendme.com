@@ -48,7 +48,7 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-foreground/20 hover:bg-foreground/5 transition-colors font-federo text-sm"
+        className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-foreground/20 hover:bg-foreground/5 transition-colors font-federo text-xs"
         aria-label="Change language"
       >
         <svg

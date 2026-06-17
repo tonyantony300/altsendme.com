@@ -1,62 +1,73 @@
 {
   "common": {
     "logo": "AltSendme",
+    "donate": "寄付する",
     "buyMeACoffee": "コーヒーを奢ってください",
-    "freeAndOpenSource": "無料 & オープンソース",
+    "openSourceAgpl": "オープンソース | AGPL 3.0",
     "contactUs": "お問い合わせ",
-    "hireDeveloper": "開発者を雇う",
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "ファイル転送は複雑である必要はありません",
-    "description": "コンピューターから誰にでも、どこにでも直接暗号化されたファイル転送 — サインアップ不要、クラウドストレージを介さない。",
-    "airdropQuote": "誰でも使えるAirDropのようなものと考えてください。",
+    "title": "この地球上で最速のファイル転送体験",
+    "description": "デバイスから誰にでも、どこにでも直接暗号化されたファイル転送 — アカウント不要、クラウドストレージを介しません。",
+    "airdropQuote": "あらゆるデバイス、あらゆるネットワーク向けのAirDropのようなものと考えてください。",
     "downloadForMac": "Mac用をダウンロード",
     "downloadForWindows": "Windows用をダウンロード",
     "downloadForLinux": "Linux用をダウンロード",
-    "downloadForLinuxAppImage": "Linux用をダウンロード (AppImage)"
+    "downloadForLinuxAppImage": "Linux用をダウンロード (AppImage)",
+    "donationMessage": "あなたの寄付がこのプロジェクトをより良くします"
   },
   "howItWorks": {
-    "title": "使い方",
-    "subtitle": "シンプル。安全。即座に。",
+    "sectionLabel": "安全で即座。\n3つの簡単なステップで動作します。",
     "step1": {
-      "title": "ファイルまたはフォルダをドロップ。",
-      "description": "AltSendmeは一度だけ使用できる共有コード（「チケット」と呼ばれる）を作成します。"
+      "title": "ファイルまたはフォルダをドロップ",
+      "description": "AltSendmeはファイル用の安全なワンタイムコード（「チケット」）を作成します"
     },
     "step2": {
-      "title": "チケットを共有。",
-      "description": "コピーして友達に送信 — チャット、メール、またはテキストで。"
+      "title": "チケットを共有",
+      "description": "チケットをコピーして、チャット、メール、またはSMSで受取人に送信します"
     },
     "step3": {
-      "title": "直接受信。",
-      "description": "友達がアプリにチケットを貼り付けると、転送が開始されます。"
+      "title": "相手がファイルを受信",
+      "description": "友達がアプリにチケットを貼り付けると、転送が始まります。ファイルは直接ダウンロードされます。"
     }
   },
   "features": {
-    "title": "AltSendmeが愛される理由",
-    "private": {
-      "title": "プライベート & 暗号化",
-      "description": "ファイルは友達に直接送信：オンラインに保存されることはありません。"
-    },
-    "fast": {
-      "title": "高速転送",
-      "description": "AltSendmeは最大4Gbpsの接続を飽和させることができます。"
-    },
-    "unlimited": {
-      "title": "何でも転送",
-      "description": "任意のサイズや形式のファイルやフォルダを確実に送信。"
-    },
-    "noAccounts": {
-      "title": "アカウント不要",
-      "description": "開く、ドロップ、共有：それだけです。"
-    },
-    "crossPlatform": {
-      "title": "クロスプラットフォーム",
-      "description": "Windows、macOS、Linuxで動作します。"
-    },
-    "openSource": {
-      "title": "オープンソース & 透明性",
-      "description": "完全にオープンソースのコード：検査、検証、信頼。"
+    "titleLine1": "AltSendmeが愛される理由",
+    "titleLine2": "日常のファイル共有のために",
+    "items": {
+      "directSend": {
+        "title": "ファイルを直接送信。仲介者なし。",
+        "description": "ローカルネットワークでも大陸を越えてもシームレスに動作します。"
+      },
+      "transferAnything": {
+        "title": "何でも転送。あらゆるファイル。あらゆる形式。",
+        "description": "BLAKE3ベースの整合性チェックで検証された、あらゆるサイズ・形式のファイルやディレクトリを送信できます。"
+      },
+      "noSizeLimits": {
+        "title": "サイズ制限なし。真に無制限。",
+        "description": "KB'sから99GB'sまで。AltSendmeは無制限サイズのファイル共有を支援します。"
+      },
+      "blazingFast": {
+        "title": "超高速＆信頼性",
+        "description": "マルチギガビット接続を飽和させ、電光石火の転送を実現します。"
+      },
+      "endToEndEncrypted": {
+        "title": "エンドツーエンド暗号化",
+        "description": "QUIC + TLS 1.3により、前方・後方秘匿性を保護します。"
+      },
+      "resumable": {
+        "title": "再開可能な転送",
+        "description": "中断されても問題ありません。転送は自動的に中断した位置から再開されます。"
+      },
+      "zeroPersonalData": {
+        "title": "個人データゼロ",
+        "description": "アカウントなし、広告なし。トラッキングなし、学習なし。プライベートなファイル転送だけ。"
+      },
+      "freeOpenSource": {
+        "title": "無料＆オープンソース",
+        "description": "コミュニティによって構築。設計上オープン。透明性とプライバシーをデフォルトに。"
+      }
     }
   },
   "comparison": {
@@ -84,9 +95,158 @@
     "rating": "4.5 / 5 — Softpedia",
     "quote": "非常にシンプルなファイル転送アプリ。Web上での迅速で簡単なファイル転送に最適です。"
   },
+  "partners": {
+    "title": "パートナー",
+    "testmuAlt": "TestMu AI（旧 LambdaTest）",
+    "ctaTitle": "パートナーシップにご興味がありますか？",
+    "ctaDescription": "協力し、オープンソース開発を支援したい組織を常に探しています。",
+    "ctaButton": "お問い合わせ"
+  },
+  "community": {
+    "title": "私たちを超えて残るために。",
+    "subtitle": "オープンソース＆コミュニティ主導",
+    "description": "AltSendmeは世界中の貢献者によって公開開発されています。すべてのコードは公開されています。すべての改善は共有されます。一緒に、人と人の間でファイルを直接送る、より速く、よりプライベートな方法を構築しています。",
+    "githubStars": "8.2kスター",
+    "cardTitle": "コミュニティに参加",
+    "othersCount": "+ 65 人",
+    "cardDescription": "オープンソースは、コミュニティへの還元であり、私たちが構築しているものが永続することを保証する方法です。",
+    "cardDescription2": "直接交流し、機能を提案し、バグを報告し、早期にアップデートを受け取り、ファイル共有の未来を形作るお手伝いをしてください。",
+    "discordButton": "Discordで参加する"
+  },
+  "availableAs": {
+    "titleLine1": "ひとつの体験。",
+    "titleLine2": "複数のプラットフォーム。",
+    "download": "ダウンロード",
+    "comingSoon": "近日公開",
+    "desktop": {
+      "title": "デスクトップアプリケーション",
+      "description": "Windows、macOS、Linux向けのネイティブアプリ。ドラッグ＆ドロップで即座にファイルを共有できるフルデスクトップ体験。"
+    },
+    "android": {
+      "title": "Androidアプリケーション",
+      "description": "Androidデバイスから外出先でもミニマルなインターフェースでファイルの送受信が可能。iOSは近日公開。"
+    },
+    "cli": {
+      "title": "コマンドラインインターフェース",
+      "description": "ターミナルでチケットを生成し、デスクトップアプリまたはモバイルと共有"
+    },
+    "web": {
+      "title": "Web",
+      "description": "インストール不要でファイルやフォルダを転送。Desktop、Mobile、CLIと共有できます。"
+    }
+  },
   "download": {
     "title": "今すぐAltSendmeを試す",
     "subtitle": "無料、オープンソース、誰でも利用可能"
+  },
+  "underTheHoodPage": {
+    "metaTitle": "内部の仕組み",
+    "metaDescription": "AltSendmeがチケット、iroh、QUIC暗号化、NATトラバーサル、オープンソースリレーで直接P2Pファイル転送を実現する方法を学びましょう — アカウントやIPアドレスは不要です。",
+    "title": "内部の仕組み",
+    "intro": "IPアドレスを知らなくてもscpのように使えます。AltSendmeにファイルを追加すると、貼り付け可能なチケットが生成され、必要な人に渡せます。AltSendmeはデバイスを直接接続し、アカウントや設定なしでデータを転送します。",
+    "heroAlt": "AltSendmeヒーローグラフィック",
+    "underTheHood": {
+      "title": "AltSendmeは<iroh>iroh</iroh>上に構築されています",
+      "description": "AltSendmeはirohチームのオープンソース成果を拡張しています。AltSendmeは<iroh>iroh</iroh>でデバイス間の直接リンクを確立し、<irohBlobs>iroh-blobs</irohBlobs>でファイルの送信と検証を行います。",
+      "buildOnCta": "iroh上に構築",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "重要な概念",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "ピア検出、ホールパンチング、NATトラバーサル",
+      "quic": "QUICとエンドツーエンド暗号化",
+      "relays": "リレー"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "コンテンツアドレス型のblobストレージと転送。iroh-blobsはBLAKE3検証ストリームとコンテンツアドレスリンクを使用し、任意サイズのバイトblobのリクエスト/レスポンスおよびストリーミング転送を実装します。",
+        "items": {
+          "blob": "Blob：不透明なバイト列（埋め込みメタデータなし）。",
+          "link": "Link：blobを識別する32バイトのBLAKE3ハッシュ。",
+          "hashSeq": "HashSeq：リンクのシーケンスを含むblob（チャンク/ツリーに有用）。",
+          "provider": "Provider / Requester：providerがデータを提供し、requesterが取得します。エンドポイントは両方の役割を担えます。"
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "チケットはirohエンドポイント間で接続情報を共有する方法です。別のエンドポイントに接続する、またはこの場合はblobを取得するために必要なすべてを含む単一トークンです。Ed25519 NodeIdsを含みます：認証のためのデバイスの暗号学的アイデンティティ。フルP2PシステムがIPをピアにブロードキャストするのに対し、この仕組みははるかに優れています。irohでは、明示的に接続したいピア間で「cozy network」を形成するためにチケットが使われます。「full p2p」にして接続情報をブロードキャストすることも可能ですが、チケットはより良い中間的なデフォルトです。"
+      },
+      "peerDiscovery": {
+        "title": "ピア検出、NATトラバーサル、ホールパンチング",
+        "body": "ピアは起動時にオープンソースのパブリックリレーサーバーに登録し、ファイアウォールとNATを通過して接続を確立します。接続後、irohはQUICホールパンチングで直接P2P接続を試み、リレーをバイパスします。直接接続が可能な場合、E2E暗号化で直接通信します。そうでなければ、リレーは一時的なフォールバックとして機能します。これによりローカルネットワーク内外で信頼性の高い接続が可能になります。"
+      },
+      "quic": {
+        "title": "QUICと暗号化",
+        "intro": "QUICはUDP上の最新トランスポートプロトコルで、TCPより低遅延・高パフォーマンスを目指して設計されました。Googleが開発し、IETFによりHTTP/3の基盤として標準化。TLS 1.3をプロトコルに直接統合しています。",
+        "powersLabel": "QUICが可能にするスーパーパワー：",
+        "powers": {
+          "encryption": "暗号化と認証",
+          "multiplexing": "ストリーム多重化",
+          "headOfLine": "head-of-line blocking問題なし",
+          "priorities": "ストリーム優先度",
+          "congestion": "共有の輻輳制御",
+          "datagram": "暗号化された非信頼性データグラム転送",
+          "zeroRtt": "以前接続したエンドポイントへのゼロRTT接続確立"
+        }
+      },
+      "relays": {
+        "title": "リレー",
+        "body": "AltSendmeはオープンソースのパブリックリレーサーバーで直接接続の確立、初期接続時間の短縮、直接接続失敗時のフォールバックをサポートします。すべての接続はE2E暗号化されます。リレーは暗号化パケット送信用の「もう一つのUDPソケット」です。<link>詳しく読む</link>。"
+      }
+    },
+    "downloadCta": "AltSendmeをダウンロード",
+    "githubCta": "GitHubで見る"
+  },
+  "downloadsPage": {
+    "metaTitle": "AltSendmeをダウンロード",
+    "metaDescription": "Windows、macOS、Linux、Android向けのAltSendmeをダウンロード。無料のオープンソースP2Pファイル転送、サイズ制限なし。",
+    "titleLine1": "ダウンロード",
+    "titleLine2": "AltSendme",
+    "statsLine": "10万回以上のダウンロード | 24言語対応 | 無料",
+    "getAppForMac": "Mac版を入手",
+    "getAppForWindows": "Windows版を入手",
+    "getAppForLinux": "Linux版を入手",
+    "otherPlatforms": "その他のプラットフォーム",
+    "moreFormats": "その他のダウンロード形式",
+    "termsPrefix": "続行することで、次に同意したものとみなされます：",
+    "licenseLink": "ライセンス",
+    "previewAlt": "AltSendmeデスクトップアプリのプレビュー",
+    "desktop": "デスクトップ",
+    "mobile": "モバイル",
+    "scoopLabel": "Windows (Scoop)",
+    "scoopIntro": "Scoopでインストール:",
+    "cli": {
+      "title": "CLI",
+      "platforms": {
+        "bash": "Bash",
+        "powershell": "PowerShell"
+      },
+      "bashIntro": "bashでsendmeをマシンに追加します:",
+      "powershellIntro": "WindowsでPowerShellを使用する場合:",
+      "copyNote": "これにより、スクリプトを実行したパスにsendmeバイナリがコピーされます。",
+      "runNote": "Unixシステムでは ./sendme で実行します",
+      "copyCommand": "コマンドをコピー",
+      "copied": "コピーしました"
+    },
+    "platforms": {
+      "mac": "Mac",
+      "windows": "Windows",
+      "linux": "Linux",
+      "android": "Android"
+    },
+    "links": {
+      "universalDmg": "Universal (DMG)",
+      "universalTarGz": "Universal (.app.tar.gz)",
+      "standardExe": "Standard (Setup)",
+      "msi": "MSIインストーラー",
+      "appImage": "AppImage",
+      "debian": "Debian",
+      "rpm": "RPM",
+      "universalApk": "Universal (APK)"
+    }
   },
   "pressReviews": {
     "title": "プレスとレビュー"
@@ -94,15 +254,33 @@
   "taglineFooter": {
     "quote": "それは、誰でも、どこでも使えるプライベートな一度限りのAirDropリンクのようなものです。"
   },
+  "footer": {
+    "headline": "ファイルを直接<br></br>誰にでも、どこへでも送信。",
+    "builtOn": "Built on",
+    "iroh": "iroh",
+    "howItWorks": "仕組み",
+    "reportIssue": "問題を報告",
+    "downloads": "ダウンロード",
+    "contactUs": "お問い合わせ",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "discord": "Discord",
+    "github": "GitHub",
+    "contributors": "コントリビューター",
+    "websiteBy": "Website designed by",
+    "designer": "ShravanKumar PS",
+    "license": "©GNU Affero General Public License v3.0"
+  },
   "contact": {
     "title": "お問い合わせ",
+    "subtitle": "ご質問、フィードバック、または協力のご希望がありますか？メッセージをお送りください。折り返しご連絡します。",
     "name": "お名前",
-    "email": "メールアドレス",
-    "message": "メッセージ",
+    "email": "メールアドレスを入力",
+    "message": "ここに入力",
     "submit": "送信",
     "submitting": "送信中...",
     "success": "ありがとうございます！メッセージが正常に送信されました。",
-    "error": "エラーが発生しました。後でもう一度お試しください。"
+    "error": "エラーが発生しました。後でもう一度お試しください。",
+    "imageAlt": "アダムの創造 — つながりを求めて手を伸ばす"
   },
   "faq": {
     "title": "よくある質問",
