@@ -60,7 +60,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <nav className="grid w-full grid-cols-2 gap-x-6 gap-y-3 font-inter text-sm text-white sm:gap-x-8 md:grid-cols-4 md:gap-y-4 lg:ml-12 lg:flex-1">
+          <nav className="grid w-full grid-cols-2 gap-x-6 gap-y-5 font-inter text-sm text-white sm:gap-x-8 md:grid-cols-4 md:gap-y-4 lg:ml-12 lg:flex-1">
             {FOOTER_NAV_GRID.flatMap((row, rowIndex) =>
               row.map((link, colIndex) => {
                 if (!link) {
@@ -82,7 +82,7 @@ export default function Footer() {
                     {...(external
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}
-                    className="whitespace-nowrap hover:underline underline-offset-[3px] lg:flex lg:justify-end"
+                    className="whitespace-nowrap hover:underline underline-offset-[3px]"
                   >
                     {t(key)}
                   </a>
@@ -93,7 +93,6 @@ export default function Footer() {
         </div>
       </div>
 
-      <FooterRule />
 
       <div className="px-5 py-8 md:px-10 md:py-10 lg:px-[60px] lg:py-16">
         <div className="mx-auto flex max-w-[1200px] items-center gap-4 md:gap-6">
@@ -104,7 +103,7 @@ export default function Footer() {
             height={220}
             className="h-24 w-24 shrink-0 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-48 lg:w-48"
           />
-          <span className="min-w-0 font-funnel-sans text-[clamp(2.5rem,11vw,3.5rem)] font-extrabold leading-none tracking-tighter text-accent sm:text-[clamp(2.75rem,12vw,4.5rem)] md:text-[clamp(3rem,12vw,6rem)] lg:text-[clamp(3.5rem,15vw,10rem)]">
+          <span className="min-w-0 font-funnel-sans text-[clamp(2.75rem,12.1vw,3.85rem)] font-extrabold leading-none tracking-tighter text-accent sm:text-[clamp(2.75rem,12vw,4.5rem)] md:text-[clamp(3rem,12vw,6rem)] lg:text-[clamp(3.5rem,15vw,10rem)]">
             AltSendme
           </span>
         </div>
@@ -113,11 +112,11 @@ export default function Footer() {
       <FooterRule />
 
       <div className="px-5 py-6 md:px-10 md:py-8 lg:px-[60px]">
-        <div className="mx-auto flex max-w-[1200px] flex-col gap-3 font-inter text-xs text-white/80 sm:flex-row sm:items-center sm:justify-between md:text-sm">
+        <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-3 text-center font-inter text-xs text-white/80 sm:flex-row sm:items-center sm:justify-between sm:text-left md:text-sm">
           <p>
             {t("websiteBy")}{" "}
             <a
-              href="https://www.behance.net/shravankumarps/"
+              href="https://www.linkedin.com/in/shravankumarps/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline underline-offset-[3px] hover:text-white"

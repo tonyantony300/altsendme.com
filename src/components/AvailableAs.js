@@ -51,7 +51,7 @@ export default function AvailableAs() {
   const t = useTranslations('availableAs');
 
   return (
-    <section className="home-section">
+    <section className="home-section home-section--extra-bottom">
       <div className="home-section__container">
         <div className="px-5 pt-10">
           <h2 className="home-section__heading">

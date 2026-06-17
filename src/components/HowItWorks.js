@@ -21,7 +21,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works-section" className="relative w-full scroll-mt-24 py-12 px-5 md:px-10 lg:px-[60px] text-zinc-100 overflow-hidden">
+    <section id="how-it-works-section" className="relative w-full scroll-mt-24 pt-12 pb-16 px-5 md:px-10 md:pb-20 lg:px-[60px] lg:pb-24 text-zinc-100 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none isolate" aria-hidden="true">
         <div className="absolute inset-0 bg-dark" />
         <div className="absolute inset-0 dark-grain" />
@@ -36,7 +36,7 @@ export default function HowItWorks() {
 
         <div className="md:flex sm:gap-5">
           {steps.map((step, index) => (
-            <div key={step.title} className="md:w-1/3 p-5 pb-10">
+            <div key={step.title} className="text-center md:text-left md:w-1/3 p-5 pb-10">
               <h3 className="font-funnel-sans text-2xl font-bold text-accent">
               {index + 1}. {step.title}
               </h3>

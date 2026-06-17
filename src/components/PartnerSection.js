@@ -7,11 +7,13 @@ export default function PartnerSection() {
   const t = useTranslations('partners');
 
   return (
-    <section id="partners-section" className="home-section scroll-mt-24">
+    <section id="partners-section" className="home-section home-section--extra-bottom scroll-mt-24">
       <div className="home-section__container">
-        <h2 className="home-section__heading">
-          {t('title')}
-        </h2>
+        <div className="px-5 pt-10">
+          <h2 className="home-section__heading">
+            {t('title')}
+          </h2>
+        </div>
 
         <div className="border border-foreground/15">
           <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-none">

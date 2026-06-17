@@ -33,6 +33,22 @@
   }
 }
 
+.home-section--extra-bottom {
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .home-section--extra-bottom {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-section--extra-bottom {
+    padding-bottom: 6rem;
+  }
+}
+
 .home-section__container {
   width: 100%;
   max-width: 1200px;
