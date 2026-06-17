@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Copy, Check } from "@phosphor-icons/react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
@@ -12,25 +11,6 @@ import {
   mobilePlatformGroups,
   primaryDownloadsByOs,
 } from "@/constants/downloads";
-
-function AppleIcon({ className = "" }) {
-  return (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden="true"
-    >
-      <path
-        d="M17.8218 11.168C17.7973 8.51457 20.0298 7.22456 20.1318 7.16382C18.868 5.35072 16.9089 5.10351 16.2196 5.08326C14.5744 4.91284 12.9773 6.05183 12.1387 6.05183C11.284 6.05183 9.99315 5.10014 8.60105 5.12798C6.81073 5.15498 5.13515 6.17416 4.21721 7.75862C2.32059 10.9874 3.73462 15.7332 5.55109 18.3428C6.45975 19.621 7.52197 21.0485 8.91153 20.9987C10.2716 20.9431 10.7795 20.1458 12.4205 20.1458C14.0454 20.1458 14.523 20.9979 15.9404 20.9658C17.4 20.9431 18.3179 19.6826 19.1953 18.3926C20.2449 16.9271 20.6667 15.4843 20.6836 15.4101C20.6499 15.3983 17.8488 14.347 17.8218 11.168ZM15.1448 3.36634C15.8754 2.46697 16.3766 1.24276 16.2373 0C15.1785 0.0464032 13.8547 0.720516 13.0929 1.60049C12.4179 2.37669 11.8164 3.64729 11.9716 4.84197C13.1612 4.92971 14.3812 4.25138 15.1439 3.36634H15.1448Z"
-        fill="#ffffff"
-      />
-    </svg>
-  );
-}
 
 function DownloadIcon({ className = "", fill = "currentColor" }) {
   return (
@@ -155,6 +135,7 @@ function CliNotesRow({ copyNote, runNote }) {
 
 export default function DownloadsPageContent() {
   const t = useTranslations("downloadsPage");
+  const tHero = useTranslations("hero");
   const [detectedOS, setDetectedOS] = useState("mac");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -193,113 +174,93 @@ export default function DownloadsPageContent() {
 
   return (
     <div className="w-full font-funnel-sans">
-      <section className="w-full px-5 py-12 md:px-10 md:py-16 lg:px-[60px] lg:py-20">
-        <div className="mx-auto w-full max-w-[1200px]">
-          <div className="border border-[#D3D2CD] bg-[#F5F4F0]">
-            <div className="grid md:grid-cols-3 md:items-stretch">
-              <div className="p-8 md:col-span-2 md:border-r md:border-[#D3D2CD] md:p-12 lg:p-16">
-                <h1 className="mb-8 text-center font-funnel-sans text-[40px] font-bold leading-[1.1] tracking-tight text-[#121212] sm:text-left md:text-[56px] lg:text-[64px]">
-                  <span className="block">{t("titleLine1")}</span>
-                  <span className="block">{t("titleLine2")}</span>
-                </h1>
+      <section className="relative flex min-h-[420px] w-full items-start overflow-hidden px-5 py-14 md:min-h-[480px] md:px-10 md:py-16 lg:min-h-[540px] lg:px-[60px] lg:py-20">
+        <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+          <div className="absolute inset-0 bg-[url('/downloadsBg.webp')] bg-cover bg-center bg-no-repeat" />
+          <div className="absolute inset-0 hero-grain mix-blend-overlay opacity-[0.18]" />
+        </div>
 
-                <div className="mb-6 flex w-full flex-col gap-4 sm:flex-row sm:gap-6">
-                  <div className="relative w-full sm:max-w-sm" ref={dropdownRef}>
-                    <div className="flex w-full overflow-hidden rounded-xl bg-[#121212]">
-                      <a
-                        href={primaryUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex h-14 flex-1 items-center justify-center gap-3 px-6 text-base font-medium text-white transition-colors hover:bg-[#2a2a2a]"
-                      >
-                        {detectedOS === "mac" ? (
-                          <AppleIcon className="h-6 w-6 shrink-0" />
-                        ) : (
-                          <Image
-                            src={primary.icon}
-                            alt=""
-                            width={24}
-                            height={24}
-                            className="h-6 w-6 shrink-0 brightness-0 invert"
-                            style={{ filter: "brightness(0) invert(1)" }}
-                          />
-                        )}
-                        <span>{t(primary.translationKey)}</span>
-                      </a>
+        <div className="relative z-10 mx-auto w-full max-w-[1200px]">
+          <h1 className="mb-4 font-funnel-sans text-[40px] font-bold leading-[1.1] tracking-tight text-[#452815] md:text-[56px] lg:text-[64px]">
+            <span className="block">{t("titleLine1")}</span>
+            <span className="block">{t("titleLine2")}</span>
+          </h1>
 
-                      {alternateDownloads.length > 0 && (
-                        <button
-                          type="button"
-                          aria-expanded={isDropdownOpen}
-                          aria-label={t("moreFormats")}
-                          onClick={() => setIsDropdownOpen((open) => !open)}
-                          className="inline-flex h-14 w-12 shrink-0 items-center justify-center border-l border-white/20 text-white transition-colors hover:bg-[#2a2a2a]"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="18"
-                            height="18"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="#ffffff"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className={`transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
-                          >
-                            <path d="m6 9 6 6 6-6" />
-                          </svg>
-                        </button>
-                      )}
-                    </div>
+          <p className="mb-8 font-funnel-sans text-sm font-medium text-[#452815] md:text-base">
+            {t("statsLine")}
+          </p>
 
-                    {isDropdownOpen && alternateDownloads.length > 0 && (
-                      <div className="absolute left-0 right-0 top-full z-20 mt-2 overflow-hidden rounded-xl border border-[#D3D2CD] bg-[#121212] shadow-lg">
-                        {alternateDownloads.map((link) => (
-                          <a
-                            key={link.key}
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block border-b border-white/10 px-5 py-3 text-left text-sm font-medium text-white transition-colors last:border-b-0 hover:bg-white/10 md:text-base"
-                          >
-                            {t(`links.${link.key}`)}
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                  </div>
+          <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
+            <div className="relative w-full sm:w-auto" ref={dropdownRef}>
+              <div className="flex h-12 w-full overflow-hidden rounded-md border-4 border-accent bg-[#452815] sm:w-auto">
+                <a
+                  href={primaryUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-full flex-1 items-center justify-center gap-3 px-6 text-base font-medium text-[#F5F4F0] transition-colors hover:bg-[#5a3419] sm:flex-initial"
+                >
+                  <span>{tHero(primary.heroTranslationKey.replace(/^hero\./, ""))}</span>
+                  <DownloadIcon className="h-5 w-5 shrink-0" fill="#F5F4F0" />
+                </a>
 
+                {alternateDownloads.length > 0 && (
                   <button
                     type="button"
-                    onClick={scrollToPlatforms}
-                    className="inline-flex h-14 w-full items-center justify-center gap-3 rounded-xl border border-[#121212] bg-[#121212] px-6 text-base font-medium text-white transition-colors hover:bg-[#2a2a2a] sm:w-auto"
+                    aria-expanded={isDropdownOpen}
+                    aria-label={t("moreFormats")}
+                    onClick={() => setIsDropdownOpen((open) => !open)}
+                    className="inline-flex h-full w-11 shrink-0 items-center justify-center border-l border-[#F5F4F0]/20 text-[#F5F4F0] transition-colors hover:bg-[#5a3419]"
                   >
-                    <DownloadIcon className="h-6 w-6 shrink-0" fill="#ffffff" />
-                    <span>{t("otherPlatforms")}</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className={`transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
                   </button>
+                )}
+              </div>
+
+              {isDropdownOpen && alternateDownloads.length > 0 && (
+                <div className="absolute left-0 right-0 top-full w-full z-20 mt-2 overflow-hidden rounded-md border border-[#73411F]/20 bg-[#5a3419] shadow-lg sm:right-auto sm:min-w-[240px]">
+                  {alternateDownloads.map((link) => (
+                    <a
+                      key={link.key}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block border-b border-[#F5F4F0]/10 px-5 py-3 text-left text-sm font-medium text-[#F5F4F0] transition-colors last:border-b-0 hover:bg-[#73411F] md:text-base"
+                    >
+                      {t(`links.${link.key}`)}
+                    </a>
+                  ))}
                 </div>
-
-              </div>
-
-              <div className="relative hidden min-h-0 overflow-hidden md:block">
-                <Image
-                  src="/downloadbg.webp"
-                  alt={t("previewAlt")}
-                  fill
-                  priority
-                  sizes="(max-width: 768px) 100vw, 400px"
-                  className="object-cover"
-                />
-              </div>
+              )}
             </div>
+
+            <button
+              type="button"
+              onClick={scrollToPlatforms}
+              className="inline-flex h-12 w-full items-center justify-center gap-3 rounded-md border-4 border-accent bg-[#E5DACC] px-6 text-base font-medium text-[#73411F] transition-colors hover:bg-[#D9CCB5] sm:w-auto"
+            >
+              <span>{t("otherPlatforms")}</span>
+              <DownloadIcon className="h-5 w-5 shrink-0" fill="#73411F" />
+            </button>
           </div>
         </div>
       </section>
 
       <section
         id="other-platforms"
-        className="scroll-mt-24 px-5 pb-16 md:px-10 md:pb-24 lg:px-[60px] lg:pb-28"
+        className="scroll-mt-24 px-5 py-16 md:px-10 md:py-20 lg:px-[60px] lg:py-24"
       >
         <div className="mx-auto w-full max-w-[1200px]">
           <div className="grid gap-12 md:grid-cols-[6.7fr_3.2fr] md:gap-16">

@@ -46,11 +46,6 @@ export const desktopPlatformGroups = [
         file: `AltSendme_${DESKTOP_VERSION}_universal.dmg`,
         tag: `v${DESKTOP_VERSION}`,
       },
-      {
-        key: "universalTarGz",
-        file: "AltSendme_universal.app.tar.gz",
-        tag: `v${DESKTOP_VERSION}`,
-      },
     ],
   },
   {
