@@ -146,30 +146,28 @@ export default function HeroSection() {
               </div>
 
               {isDropdownOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 mt-2 w-full lg:w-[400px] bg-background rounded-[20px] overflow-hidden shadow-[0px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-foreground z-40">
-                  <div className="m-1 overflow-hidden">
-                    {downloadOptions.map((option) => (
-                      <a
-                        key={option.id}
-                        href={option.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full flex items-center justify-between px-4 py-3 text-left hover:text-foreground hover:bg-foreground hover:bg-opacity-5 rounded-2xl transition-all whitespace-nowrap"
-                      >
-                        <div className="flex items-center gap-3 min-w-0">
-                          <Image
-                            src={option.icon}
-                            alt=""
-                            width={20}
-                            height={20}
-                            className="flex-shrink-0"
-                          />
-                          <span className="font-federo font-medium text-base truncate">{option.label}</span>
-                        </div>
-                        <span className="font-federo text-sm flex-shrink-0 ml-2">{option.size}</span>
-                      </a>
-                    ))}
-                  </div>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 mt-2 w-full lg:w-[400px] overflow-hidden rounded-xl border border-section-border bg-dark shadow-lg z-40">
+                  {downloadOptions.map((option) => (
+                    <a
+                      key={option.id}
+                      href={option.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex w-full items-center justify-between border-b border-white/10 px-5 py-3 text-left text-sm font-medium text-white transition-colors last:border-b-0 hover:bg-white/10 md:text-base whitespace-nowrap"
+                    >
+                      <div className="flex min-w-0 items-center gap-3">
+                        <Image
+                          src={option.icon}
+                          alt=""
+                          width={20}
+                          height={20}
+                          className="flex-shrink-0 brightness-0 invert"
+                        />
+                        <span className="font-funnel-sans truncate">{option.label}</span>
+                      </div>
+                      <span className="ml-2 flex-shrink-0 font-funnel-sans text-sm text-white/60">{option.size}</span>
+                    </a>
+                  ))}
                 </div>
               )}
             </div>
