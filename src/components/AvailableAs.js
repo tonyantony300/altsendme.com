@@ -6,7 +6,7 @@ import { Link } from '@/i18n/routing';
 const PLATFORMS = [
   {
     key: 'desktop',
-    image: '/desktop-ss.png',
+    image: '/desktop.webp',
     imageAlt: 'Desktop applications',
     width: 1010,
     height: 645,
@@ -14,7 +14,7 @@ const PLATFORMS = [
   },
   {
     key: 'android',
-    image: '/mobile-ss.png',
+    image: '/mobile.webp',
     imageAlt: 'Android application',
     width: 601,
     height: 448,
@@ -22,7 +22,7 @@ const PLATFORMS = [
   },
   {
     key: 'cli',
-    image: '/cli-ss.png',
+    image: '/cli.webp',
     imageAlt: 'Command line interface',
     width: 1214,
     height: 739,
@@ -30,7 +30,7 @@ const PLATFORMS = [
   },
   {
     key: 'web',
-    image: '/browser-ss.png',
+    image: '/browser.webp',
     imageAlt: 'Web application',
     width: 1010,
     height: 687,
