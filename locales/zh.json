@@ -1,16 +1,16 @@
 {
   "common": {
     "logo": "AltSendme",
+    "donate": "捐赠",
     "buyMeACoffee": "请我喝杯咖啡",
     "openSourceAgpl": "开源 | AGPL 3.0",
     "contactUs": "联系我们",
-    "hireDeveloper": "雇佣开发者",
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "文件传输不必复杂",
-    "description": "从您的计算机直接、加密的文件传输到任何人、任何地方 — 无需注册，中间没有云存储。",
-    "airdropQuote": "把它想象成面向所有人的 AirDrop。",
+    "title": "这个星球上最快的文件传输体验",
+    "description": "从您的设备直接、加密传输文件给任何人、任何地方 — 无需账户，中间没有云存储。",
+    "airdropQuote": "把它想象成适用于任何设备、任何网络的 AirDrop。",
     "downloadForMac": "下载 Mac 版",
     "downloadForWindows": "下载 Windows 版",
     "downloadForLinux": "下载 Linux 版",
@@ -33,39 +33,39 @@
     }
   },
   "features": {
-    "title": "Why People Love AltSendme",
+    "title": "人们喜爱 AltSendme 的原因",
     "items": {
       "directSend": {
-        "title": "Send files directly. No middlemen.",
-        "description": "Works seamlessly on local networks or across continents."
+        "title": "直接发送文件。没有中间人。",
+        "description": "在本地网络或跨大陆都能无缝运行。"
       },
       "transferAnything": {
-        "title": "Transfer Anything. Any file. Any Format.",
-        "description": "Send files or directories of any size or any format, verified with BLAKE3-based integrity checks."
+        "title": "传输任何内容。任何文件。任何格式。",
+        "description": "发送任意大小和格式的文件或目录，并通过基于 BLAKE3 的完整性检查进行验证。"
       },
       "noSizeLimits": {
-        "title": "No Size Limits. Truly unlimited.",
-        "description": "Send Kilobyte's to 99GigaByte's. Altsendme helps you to share files of unlimited size."
+        "title": "无大小限制。真正无限。",
+        "description": "从千字节到 99 千兆字节。AltSendme 帮助您分享无限大小的文件。"
       },
       "blazingFast": {
-        "title": "Blazing Fast & Reliable",
-        "description": "Capable of saturating multi-gigabit connections for lightning-fast transfers."
+        "title": "极速且可靠",
+        "description": "能够跑满多千兆连接，实现闪电般的传输速度。"
       },
       "endToEndEncrypted": {
-        "title": "End-to-End Encrypted",
-        "description": "Protected by QUIC + TLS 1.3 for forward and backward secrecy."
+        "title": "端到端加密",
+        "description": "由 QUIC + TLS 1.3 保护，提供前向和后向保密性。"
       },
       "resumable": {
-        "title": "Resumable Transfers",
-        "description": "Interrupted? No problem. Transfers automatically resume where they left off."
+        "title": "可恢复传输",
+        "description": "中断了？没问题。传输会自动从停止处继续。"
       },
       "zeroPersonalData": {
-        "title": "Zero Personal Data",
-        "description": "No accounts, No ads. No tracking, No training. Just private file transfers."
+        "title": "零个人数据",
+        "description": "无账户、无广告。无跟踪、无训练。只有私密的文件传输。"
       },
       "freeOpenSource": {
-        "title": "Free & OpenSource",
-        "description": "Built by community. Open by Design. Transparency and private by default."
+        "title": "免费且开源",
+        "description": "由社区构建。设计开放。默认透明且注重隐私。"
       }
     }
   },
@@ -98,7 +98,7 @@
     "title": "合作伙伴",
     "testmuAlt": "TestMu AI，前身为 LambdaTest",
     "ctaTitle": "有兴趣合作吗？",
-    "ctaDescription": "我们一直在寻找与我们价值观一致、并愿意支持开源开发的组织。",
+    "ctaDescription": "我们一直在寻找希望合作并支持开源开发的组织。",
     "ctaButton": "联系我们"
   },
   "community": {
@@ -111,7 +111,7 @@
     "discordButton": "在 Discord 上加入我们"
   },
   "availableAs": {
-    "title": "支持平台",
+    "title": "一种体验。多个平台。",
     "download": "下载",
     "comingSoon": "即将推出",
     "desktop": {
@@ -120,11 +120,11 @@
     },
     "android": {
       "title": "Android 应用程序",
-      "description": "在 Android 设备上随时随地发送和接收文件。无需账户，快速点对点传输。"
+      "description": "在 Android 设备上随时随地发送和接收文件，界面极简。iOS 即将推出。"
     },
     "cli": {
       "title": "命令行界面",
-      "description": "可与 sendme 工具配合使用的可脚本化 CLI。在终端生成票据并与桌面应用共享。"
+      "description": "在终端生成票据，并与桌面应用或移动端共享"
     },
     "web": {
       "title": "Web",
@@ -134,6 +134,67 @@
   "download": {
     "title": "立即试用 AltSendme",
     "subtitle": "免费、开源，面向所有人开放"
+  },
+  "underTheHoodPage": {
+    "metaTitle": "底层原理",
+    "metaDescription": "了解 AltSendme 如何通过票据、iroh、QUIC 加密、NAT 穿透和开源中继实现直接点对点文件传输 — 无需账户或 IP 地址。",
+    "title": "底层原理",
+    "intro": "就像 scp，但无需知道 IP 地址。将文件添加到 AltSendme，它会给你一个可粘贴的票据，交给任何需要这些文件的人。AltSendme 会直接连接你的设备并传输数据，无需账户或配置。",
+    "heroAlt": "AltSendme 主视觉图",
+    "underTheHood": {
+      "title": "AltSendme 基于 <iroh>iroh</iroh> 构建",
+      "description": "AltSendme 扩展了 iroh 团队的开源工作。AltSendme 使用 <iroh>iroh</iroh> 在设备之间建立直接链接进行数据传输，并使用 <irohBlobs>iroh-blobs</irohBlobs> 发送和验证文件。",
+      "buildOnCta": "基于 iroh 构建",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "重要概念",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "节点发现、打洞与 NAT 穿透",
+      "quic": "QUIC 与端到端加密",
+      "relays": "中继"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "内容寻址的 blob 存储与传输。iroh-blobs 使用 BLAKE3 验证流和内容寻址链接，实现任意大小字节 blob 的请求/响应和流式传输。",
+        "items": {
+          "blob": "Blob：不透明的字节序列（无嵌入元数据）。",
+          "link": "Link：标识 blob 的 32 字节 BLAKE3 哈希。",
+          "hashSeq": "HashSeq：包含链接序列的 blob（适用于分块/树结构）。",
+          "provider": "Provider / Requester：provider 提供数据；requester 获取数据。一个端点可以同时扮演两者。"
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "票据是在 iroh 端点之间共享拨号信息的方式。它是一个包含连接另一个端点或获取 blob 所需一切信息的单一令牌。包含 Ed25519 NodeIds：设备用于身份验证的加密身份。这种方案明显优于向对等节点广播 IP 的完整 P2P 系统。在 iroh 中，票据用于在你明确想要连接的节点之间形成“cozy network”。也可以配置为“full p2p”并广播拨号详情，但票据是更好的默认折中方案。"
+      },
+      "peerDiscovery": {
+        "title": "节点发现、NAT 穿透与打洞",
+        "body": "节点在启动时向开源公共中继服务器注册，以穿越防火墙和 NAT 并建立连接。连接后，iroh 使用 QUIC 打洞尝试建立直接 P2P 连接，绕过中继。若可直接连接，则在端到端加密下直接通信；否则中继仅作为临时回退。这可在本地网络和互联网上实现稳定连接。"
+      },
+      "quic": {
+        "title": "QUIC 与加密",
+        "intro": "QUIC 是基于 UDP 的现代传输协议，旨在降低延迟并提升相对 TCP 的 Web 性能。最初由 Google 开发，现由 IETF 标准化为 HTTP/3 的基础，并将 TLS 1.3 直接集成到协议中。",
+        "powersLabel": "QUIC 提供以下超能力：",
+        "powers": {
+          "encryption": "加密与认证",
+          "multiplexing": "流多路复用",
+          "headOfLine": "无队头阻塞问题",
+          "priorities": "流优先级",
+          "congestion": "共享的拥塞控制器",
+          "datagram": "加密且不可靠的数据报传输",
+          "zeroRtt": "若曾连接过该端点，可实现零往返连接建立"
+        }
+      },
+      "relays": {
+        "title": "中继",
+        "body": "AltSendme 使用开源公共中继服务器来建立直接连接、加快初始连接，并在直接连接失败时提供回退。所有连接均端到端加密。中继只是发送加密数据包的“另一个 UDP 套接字”。<link>了解更多</link>。"
+      }
+    },
+    "downloadCta": "下载 AltSendme",
+    "githubCta": "在 GitHub 上查看"
   },
   "downloadsPage": {
     "metaTitle": "下载 AltSendme",
@@ -189,29 +250,32 @@
     "quote": "它就像一个私密的一次性 AirDrop 链接 — 适用于任何人，任何地方。"
   },
   "footer": {
-    "headline": "将文件直接发送给任何人，任何地方。",
+    "headline": "将文件直接<br></br>发送给任何人，任何地方。",
     "builtOn": "基于",
     "iroh": "iroh",
     "howItWorks": "工作原理",
     "reportIssue": "报告问题",
     "downloads": "下载",
+    "contactUs": "联系我们",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
     "github": "GitHub",
     "contributors": "贡献者",
-    "websiteBy": "Website designed by",
+    "websiteBy": "网站设计",
     "designer": "ShravanKumar PS",
-    "license": "©AGPL 3.0"
+    "license": "©GNU Affero General Public License v3.0"
   },
   "contact": {
     "title": "联系我们",
+    "subtitle": "有问题、反馈或想合作？给我们留言，我们会回复您。",
     "name": "您的姓名",
-    "email": "您的邮箱",
-    "message": "消息",
-    "submit": "发送消息",
+    "email": "输入您的邮箱",
+    "message": "在此输入",
+    "submit": "提交",
     "submitting": "发送中...",
     "success": "谢谢！您的消息已成功发送。",
-    "error": "出错了。请稍后再试。"
+    "error": "出错了。请稍后再试。",
+    "imageAlt": "创世纪·亚当的创造 — 伸手连接"
   },
   "faq": {
     "title": "常见问题",
@@ -245,66 +309,5 @@
   "meta": {
     "title": "将文件发送到任何地方 | 无摩擦、快速、私密、无限且免费",
     "description": "AltSendme 是一款无摩擦的点对点文件传输跨平台桌面应用程序。开源 blip 替代品，适用于 Windows、macOS 和 Linux。"
-  },
-  "underTheHoodPage": {
-    "metaTitle": "Under The Hood",
-    "metaDescription": "Learn how AltSendme enables direct peer-to-peer file transfers with tickets, iroh, QUIC encryption, NAT traversal, and open-source relays — no accounts or IP addresses required.",
-    "title": "Under The Hood",
-    "intro": "It's like scp without needing to know the IP address. Add some files to AltSendme, and it will give you a pastable ticket that you can give to anyone who needs your files. AltSendme will connect your devices directly & transfer the data without any accounts or configuration.",
-    "heroAlt": "AltSendme hero graphic",
-    "underTheHood": {
-      "title": "AltSendme is built on <iroh>iroh</iroh>",
-      "description": "AltSendme extends the open-source work being done by the amazing team behind iroh. AltSendme uses <iroh>iroh</iroh> to establish direct links between devices for data transfer, and <irohBlobs>iroh-blobs</irohBlobs> to send and verify your files.",
-      "buildOnCta": "Build on iroh",
-      "irohGithubCta": "iroh github"
-    },
-    "conceptsTitle": "Important concepts",
-    "concepts": {
-      "blobs": "Blobs",
-      "tickets": "Tickets",
-      "peerDiscovery": "Peer Discovery, Hole-punching & NAT traversal",
-      "quic": "QUIC & End-to-end encryption",
-      "relays": "Relays"
-    },
-    "sections": {
-      "blobs": {
-        "title": "Blobs",
-        "intro": "Content-addressed blob storage and transfer. iroh-blobs implements request/response and streaming transfers of arbitrary-sized byte blobs, using BLAKE3-verified streams and content-addressed links.",
-        "items": {
-          "blob": "Blob: an opaque sequence of bytes (no embedded metadata).",
-          "link": "Link: a 32-byte BLAKE3 hash that identifies a blob.",
-          "hashSeq": "HashSeq: a blob that contains a sequence of links (useful for chunking/trees).",
-          "provider": "Provider / Requester: provider serves data; requester fetches it. An endpoint can be both."
-        }
-      },
-      "tickets": {
-        "title": "Tickets",
-        "body": "Tickets are a way to share dialing information between iroh endpoints. They're a single token that contains everything needed to connect to another endpoint, or to fetch a blob in this case. Contains Ed25519 NodeIds: Your device's cryptographic identity for authentication. They're also very powerful. It's worth pointing out this setup is considerably better than full peer-2-peer systems, which broadcast your IP to peers. Instead in iroh, tickets are used to form a \"cozy network\" between peers you explicitly want to connect with. It's possible to go \"full p2p\" & configure your app to broadcast dialing details, but tickets represent a better middle-ground default."
-      },
-      "peerDiscovery": {
-        "title": "Peer Discovery, NAT Traversal & Hole Punching",
-        "body": "Peers register with an open-source public relay servers at startup to help traverse firewalls and NATs, enabling connection setup. Once connected, iroh uses QUIC hole punching to try and establish a direct peer-to-peer connection, bypassing the relay. If direct connection is possible, communication happens directly between peers with end-to-end encryption; otherwise, the relay operates only temporarily as a fallback. This enables smooth reliable connections between peers within local-network and across the internet."
-      },
-      "quic": {
-        "title": "QUIC & Encryption",
-        "intro": "QUIC is a modern transport protocol built on UDP, designed to reduce latency and improve web performance over TCP. Developed originally by Google and now standardized by the IETF as HTTP/3's foundation, it integrates TLS 1.3 encryption directly into the protocol.",
-        "powersLabel": "QUIC allows following super-powers:",
-        "powers": {
-          "encryption": "encryption & authentication",
-          "multiplexing": "stream multiplexing",
-          "headOfLine": "no head-of-line blocking issues",
-          "priorities": "stream priorities",
-          "congestion": "one shared congestion controller",
-          "datagram": "an encrypted, unreliable datagram transport",
-          "zeroRtt": "zero round trip time connection establishment if you've connected to another endpoint before"
-        }
-      },
-      "relays": {
-        "title": "Relays",
-        "body": "AltSendme uses open-source public relay servers to support establishing direct connections, to speed up initial connection times, and to provide a fallback should direct connections between two endpoints fail or be impossible otherwise. All connections are end-to-end encrypted. The relay is \"just another UDP socket\" for sending encrypted packets around. <link>Read more</link>."
-      }
-    },
-    "downloadCta": "Download AltSendme",
-    "githubCta": "View on GitHub"
   }
 }

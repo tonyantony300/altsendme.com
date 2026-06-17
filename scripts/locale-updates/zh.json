@@ -1,0 +1,141 @@
+{
+  "common": { "donate": "捐赠" },
+  "hero": {
+    "title": "这个星球上最快的文件传输体验",
+    "description": "从您的设备直接、加密传输文件给任何人、任何地方 — 无需账户，中间没有云存储。",
+    "airdropQuote": "把它想象成适用于任何设备、任何网络的 AirDrop。"
+  },
+  "howItWorks": {
+    "step2": {
+      "description": "复制票据，通过聊天、电子邮件或短信发送给收件人"
+    },
+    "step3": {
+      "title": "对方接收文件",
+      "description": "您的朋友在其应用中粘贴票据，传输即开始。文件直接下载。"
+    }
+  },
+  "features": {
+    "title": "人们喜爱 AltSendme 的原因",
+    "items": {
+      "directSend": {
+        "title": "直接发送文件。没有中间人。",
+        "description": "在本地网络或跨大陆都能无缝运行。"
+      },
+      "transferAnything": {
+        "title": "传输任何内容。任何文件。任何格式。",
+        "description": "发送任意大小和格式的文件或目录，并通过基于 BLAKE3 的完整性检查进行验证。"
+      },
+      "noSizeLimits": {
+        "title": "无大小限制。真正无限。",
+        "description": "从千字节到 99 千兆字节。AltSendme 帮助您分享无限大小的文件。"
+      },
+      "blazingFast": {
+        "title": "极速且可靠",
+        "description": "能够跑满多千兆连接，实现闪电般的传输速度。"
+      },
+      "endToEndEncrypted": {
+        "title": "端到端加密",
+        "description": "由 QUIC + TLS 1.3 保护，提供前向和后向保密性。"
+      },
+      "resumable": {
+        "title": "可恢复传输",
+        "description": "中断了？没问题。传输会自动从停止处继续。"
+      },
+      "zeroPersonalData": {
+        "title": "零个人数据",
+        "description": "无账户、无广告。无跟踪、无训练。只有私密的文件传输。"
+      },
+      "freeOpenSource": {
+        "title": "免费且开源",
+        "description": "由社区构建。设计开放。默认透明且注重隐私。"
+      }
+    }
+  },
+  "partners": {
+    "ctaDescription": "我们一直在寻找希望合作并支持开源开发的组织。"
+  },
+  "availableAs": {
+    "title": "一种体验。多个平台。",
+    "android": {
+      "description": "在 Android 设备上随时随地发送和接收文件，界面极简。iOS 即将推出。"
+    },
+    "cli": {
+      "description": "在终端生成票据，并与桌面应用或移动端共享"
+    }
+  },
+  "underTheHoodPage": {
+    "metaTitle": "底层原理",
+    "metaDescription": "了解 AltSendme 如何通过票据、iroh、QUIC 加密、NAT 穿透和开源中继实现直接点对点文件传输 — 无需账户或 IP 地址。",
+    "title": "底层原理",
+    "intro": "就像 scp，但无需知道 IP 地址。将文件添加到 AltSendme，它会给你一个可粘贴的票据，交给任何需要这些文件的人。AltSendme 会直接连接你的设备并传输数据，无需账户或配置。",
+    "heroAlt": "AltSendme 主视觉图",
+    "underTheHood": {
+      "title": "AltSendme 基于 <iroh>iroh</iroh> 构建",
+      "description": "AltSendme 扩展了 iroh 团队的开源工作。AltSendme 使用 <iroh>iroh</iroh> 在设备之间建立直接链接进行数据传输，并使用 <irohBlobs>iroh-blobs</irohBlobs> 发送和验证文件。",
+      "buildOnCta": "基于 iroh 构建",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "重要概念",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "节点发现、打洞与 NAT 穿透",
+      "quic": "QUIC 与端到端加密",
+      "relays": "中继"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "内容寻址的 blob 存储与传输。iroh-blobs 使用 BLAKE3 验证流和内容寻址链接，实现任意大小字节 blob 的请求/响应和流式传输。",
+        "items": {
+          "blob": "Blob：不透明的字节序列（无嵌入元数据）。",
+          "link": "Link：标识 blob 的 32 字节 BLAKE3 哈希。",
+          "hashSeq": "HashSeq：包含链接序列的 blob（适用于分块/树结构）。",
+          "provider": "Provider / Requester：provider 提供数据；requester 获取数据。一个端点可以同时扮演两者。"
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "票据是在 iroh 端点之间共享拨号信息的方式。它是一个包含连接另一个端点或获取 blob 所需一切信息的单一令牌。包含 Ed25519 NodeIds：设备用于身份验证的加密身份。这种方案明显优于向对等节点广播 IP 的完整 P2P 系统。在 iroh 中，票据用于在你明确想要连接的节点之间形成“cozy network”。也可以配置为“full p2p”并广播拨号详情，但票据是更好的默认折中方案。"
+      },
+      "peerDiscovery": {
+        "title": "节点发现、NAT 穿透与打洞",
+        "body": "节点在启动时向开源公共中继服务器注册，以穿越防火墙和 NAT 并建立连接。连接后，iroh 使用 QUIC 打洞尝试建立直接 P2P 连接，绕过中继。若可直接连接，则在端到端加密下直接通信；否则中继仅作为临时回退。这可在本地网络和互联网上实现稳定连接。"
+      },
+      "quic": {
+        "title": "QUIC 与加密",
+        "intro": "QUIC 是基于 UDP 的现代传输协议，旨在降低延迟并提升相对 TCP 的 Web 性能。最初由 Google 开发，现由 IETF 标准化为 HTTP/3 的基础，并将 TLS 1.3 直接集成到协议中。",
+        "powersLabel": "QUIC 提供以下超能力：",
+        "powers": {
+          "encryption": "加密与认证",
+          "multiplexing": "流多路复用",
+          "headOfLine": "无队头阻塞问题",
+          "priorities": "流优先级",
+          "congestion": "共享的拥塞控制器",
+          "datagram": "加密且不可靠的数据报传输",
+          "zeroRtt": "若曾连接过该端点，可实现零往返连接建立"
+        }
+      },
+      "relays": {
+        "title": "中继",
+        "body": "AltSendme 使用开源公共中继服务器来建立直接连接、加快初始连接，并在直接连接失败时提供回退。所有连接均端到端加密。中继只是发送加密数据包的“另一个 UDP 套接字”。<link>了解更多</link>。"
+      }
+    },
+    "downloadCta": "下载 AltSendme",
+    "githubCta": "在 GitHub 上查看"
+  },
+  "footer": {
+    "headline": "将文件直接<br></br>发送给任何人，任何地方。",
+    "contactUs": "联系我们",
+    "websiteBy": "网站设计",
+    "license": "©GNU Affero General Public License v3.0"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "有问题、反馈或想合作？给我们留言，我们会回复您。",
+    "email": "输入您的邮箱",
+    "message": "在此输入",
+    "submit": "提交",
+    "imageAlt": "创世纪·亚当的创造 — 伸手连接"
+  }
+}

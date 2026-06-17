@@ -1,0 +1,140 @@
+{
+  "common": { "donate": "Dona" },
+  "hero": {
+    "title": "L'esperienza di trasferimento file più veloce su questo pianeta",
+    "description": "Trasferimenti diretti e crittografati dai tuoi dispositivi a chiunque, ovunque — nessun account, nessun cloud storage in mezzo.",
+    "airdropQuote": "Pensalo come AirDrop per qualsiasi dispositivo, qualsiasi rete."
+  },
+  "howItWorks": {
+    "step2": {
+      "description": "Copia il ticket e invialo via chat, e-mail o SMS al destinatario"
+    },
+    "step3": {
+      "title": "Ricevono il file",
+      "description": "Il tuo amico incolla il ticket nella sua app e il trasferimento inizia. Il file si scarica direttamente."
+    }
+  },
+  "features": {
+    "title": "Perché le persone amano AltSendme",
+    "items": {
+      "directSend": {
+        "title": "Invia file direttamente. Nessun intermediario.",
+        "description": "Funziona perfettamente su reti locali o attraverso continenti."
+      },
+      "transferAnything": {
+        "title": "Trasferisci qualsiasi cosa. Qualsiasi file. Qualsiasi formato.",
+        "description": "Invia file o cartelle di qualsiasi dimensione e formato, verificati con controlli di integrità basati su BLAKE3."
+      },
+      "noSizeLimits": {
+        "title": "Nessun limite di dimensione. Veramente illimitato.",
+        "description": "Da kilobyte a 99 gigabyte. AltSendme ti aiuta a condividere file di dimensioni illimitate."
+      },
+      "blazingFast": {
+        "title": "Velocissimo e affidabile",
+        "description": "Capace di saturare connessioni multi-gigabit per trasferimenti fulminei."
+      },
+      "endToEndEncrypted": {
+        "title": "Crittografia end-to-end",
+        "description": "Protetto da QUIC + TLS 1.3 per segretezza forward e backward."
+      },
+      "resumable": {
+        "title": "Trasferimenti riprendibili",
+        "description": "Interrotto? Nessun problema. I trasferimenti riprendono automaticamente da dove erano stati interrotti."
+      },
+      "zeroPersonalData": {
+        "title": "Zero dati personali",
+        "description": "Nessun account, nessuna pubblicità. Nessun tracciamento, nessun training. Solo trasferimenti privati."
+      },
+      "freeOpenSource": {
+        "title": "Gratuito e Open Source",
+        "description": "Costruito dalla community. Aperto per design. Trasparenza e privacy by default."
+      }
+    }
+  },
+  "partners": {
+    "ctaDescription": "Siamo sempre alla ricerca di organizzazioni che vogliano collaborare e supportare lo sviluppo open source."
+  },
+  "availableAs": {
+    "title": "Un'esperienza. Più piattaforme.",
+    "android": {
+      "description": "Invia e ricevi file in movimento dal tuo dispositivo Android con un'interfaccia minimalista. iOS in arrivo."
+    },
+    "cli": {
+      "description": "Genera ticket nel terminale e condividili con l'app desktop o mobile"
+    }
+  },
+  "underTheHoodPage": {
+    "metaTitle": "Sotto il cofano",
+    "metaDescription": "Scopri come AltSendme abilita trasferimenti file peer-to-peer diretti con ticket, iroh, crittografia QUIC, NAT traversal e relay open source — senza account o indirizzi IP.",
+    "title": "Sotto il cofano",
+    "intro": "È come scp senza dover conoscere l'indirizzo IP. Aggiungi file ad AltSendme e otterrai un ticket incollabile da dare a chiunque abbia bisogno dei tuoi file. AltSendme collegherà i tuoi dispositivi direttamente e trasferirà i dati senza account o configurazione.",
+    "heroAlt": "Grafica hero AltSendme",
+    "underTheHood": {
+      "title": "AltSendme è costruito su <iroh>iroh</iroh>",
+      "description": "AltSendme estende il lavoro open source del team dietro iroh. AltSendme usa <iroh>iroh</iroh> per stabilire collegamenti diretti tra dispositivi e <irohBlobs>iroh-blobs</irohBlobs> per inviare e verificare i tuoi file.",
+      "buildOnCta": "Costruisci su iroh",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "Concetti importanti",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "Peer Discovery, hole punching e NAT traversal",
+      "quic": "QUIC e crittografia end-to-end",
+      "relays": "Relay"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "Archiviazione e trasferimento di blob indirizzati per contenuto. iroh-blobs implementa trasferimenti request/response e in streaming di blob di byte di dimensione arbitraria, con stream verificati BLAKE3 e link indirizzati per contenuto.",
+        "items": {
+          "blob": "Blob: una sequenza opaca di byte (senza metadati incorporati).",
+          "link": "Link: un hash BLAKE3 a 32 byte che identifica un blob.",
+          "hashSeq": "HashSeq: un blob che contiene una sequenza di link (utile per chunking/alberi).",
+          "provider": "Provider / Requester: il provider serve i dati; il requester li recupera. Un endpoint può essere entrambi."
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "I ticket sono un modo per condividere informazioni di connessione tra endpoint iroh. Sono un singolo token con tutto il necessario per connettersi a un altro endpoint o recuperare un blob. Contiene NodeIds Ed25519: l'identità crittografica del tuo dispositivo per l'autenticazione. Vale la pena sottolineare che questo setup è nettamente migliore dei sistemi peer-to-peer completi che diffondono il tuo IP. In iroh, i ticket formano una \"cozy network\" tra i peer con cui vuoi connetterti esplicitamente. È possibile andare in \"full p2p\" e configurare l'app per diffondere i dettagli di connessione, ma i ticket rappresentano un migliore compromesso predefinito."
+      },
+      "peerDiscovery": {
+        "title": "Peer Discovery, NAT Traversal e Hole Punching",
+        "body": "I peer si registrano all'avvio su server relay pubblici open source per attraversare firewall e NAT e stabilire connessioni. Una volta connessi, iroh usa QUIC hole punching per tentare una connessione peer-to-peer diretta, bypassando il relay. Se la connessione diretta è possibile, la comunicazione avviene direttamente con crittografia end-to-end; altrimenti il relay opera temporaneamente come fallback. Questo consente connessioni affidabili in rete locale e su Internet."
+      },
+      "quic": {
+        "title": "QUIC e crittografia",
+        "intro": "QUIC è un protocollo di trasporto moderno basato su UDP, progettato per ridurre la latenza e migliorare le prestazioni web rispetto a TCP. Sviluppato originariamente da Google e ora standardizzato dall'IETF come base di HTTP/3, integra TLS 1.3 direttamente nel protocollo.",
+        "powersLabel": "QUIC consente i seguenti super-poteri:",
+        "powers": {
+          "encryption": "crittografia e autenticazione",
+          "multiplexing": "multiplexing degli stream",
+          "headOfLine": "nessun problema di head-of-line blocking",
+          "priorities": "priorità degli stream",
+          "congestion": "un unico controller di congestione condiviso",
+          "datagram": "un trasporto datagramma crittografato e inaffidabile",
+          "zeroRtt": "stabilimento connessione zero round-trip se ti sei già connesso a un altro endpoint"
+        }
+      },
+      "relays": {
+        "title": "Relay",
+        "body": "AltSendme usa server relay pubblici open source per stabilire connessioni dirette, accelerare i tempi di connessione iniziali e fornire un fallback se le connessioni dirette falliscono. Tutte le connessioni sono crittografate end-to-end. Il relay è \"solo un altro socket UDP\" per inviare pacchetti crittografati. <link>Scopri di più</link>."
+      }
+    },
+    "downloadCta": "Scarica AltSendme",
+    "githubCta": "Vedi su GitHub"
+  },
+  "footer": {
+    "headline": "Invia file direttamente<br></br>a chiunque, ovunque.",
+    "contactUs": "Contattaci",
+    "license": "©GNU Affero General Public License v3.0"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Hai una domanda, un feedback o vuoi collaborare? Inviaci un messaggio e ti risponderemo.",
+    "email": "Inserisci la tua email",
+    "message": "Scrivi qui",
+    "submit": "Invia",
+    "imageAlt": "La Creazione di Adamo — tendere la mano per connettersi"
+  }
+}

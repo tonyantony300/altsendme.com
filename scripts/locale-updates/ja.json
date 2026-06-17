@@ -1,0 +1,142 @@
+{
+  "common": { "donate": "寄付する" },
+  "hero": {
+    "title": "この地球上で最速のファイル転送体験",
+    "description": "デバイスから誰にでも、どこにでも直接暗号化されたファイル転送 — アカウント不要、クラウドストレージを介しません。",
+    "airdropQuote": "あらゆるデバイス、あらゆるネットワーク向けのAirDropのようなものと考えてください。"
+  },
+  "howItWorks": {
+    "step2": {
+      "description": "チケットをコピーして、チャット、メール、またはSMSで受取人に送信します"
+    },
+    "step3": {
+      "title": "相手がファイルを受信",
+      "description": "友達がアプリにチケットを貼り付けると、転送が始まります。ファイルは直接ダウンロードされます。"
+    }
+  },
+  "features": {
+    "title": "AltSendmeが愛される理由",
+    "items": {
+      "directSend": {
+        "title": "ファイルを直接送信。仲介者なし。",
+        "description": "ローカルネットワークでも大陸を越えてもシームレスに動作します。"
+      },
+      "transferAnything": {
+        "title": "何でも転送。あらゆるファイル。あらゆる形式。",
+        "description": "BLAKE3ベースの整合性チェックで検証された、あらゆるサイズ・形式のファイルやディレクトリを送信できます。"
+      },
+      "noSizeLimits": {
+        "title": "サイズ制限なし。真に無制限。",
+        "description": "キロバイトから99ギガバイトまで。AltSendmeは無制限サイズのファイル共有を支援します。"
+      },
+      "blazingFast": {
+        "title": "超高速＆信頼性",
+        "description": "マルチギガビット接続を飽和させ、電光石火の転送を実現します。"
+      },
+      "endToEndEncrypted": {
+        "title": "エンドツーエンド暗号化",
+        "description": "QUIC + TLS 1.3により、前方・後方秘匿性を保護します。"
+      },
+      "resumable": {
+        "title": "再開可能な転送",
+        "description": "中断されても問題ありません。転送は自動的に中断した位置から再開されます。"
+      },
+      "zeroPersonalData": {
+        "title": "個人データゼロ",
+        "description": "アカウントなし、広告なし。トラッキングなし、学習なし。プライベートなファイル転送だけ。"
+      },
+      "freeOpenSource": {
+        "title": "無料＆オープンソース",
+        "description": "コミュニティによって構築。設計上オープン。透明性とプライバシーをデフォルトに。"
+      }
+    }
+  },
+  "partners": {
+    "ctaDescription": "協力し、オープンソース開発を支援したい組織を常に探しています。"
+  },
+  "availableAs": {
+    "title": "ひとつの体験。複数のプラットフォーム。",
+    "android": {
+      "description": "Androidデバイスから外出先でもミニマルなインターフェースでファイルの送受信が可能。iOSは近日公開。"
+    },
+    "cli": {
+      "description": "ターミナルでチケットを生成し、デスクトップアプリまたはモバイルと共有"
+    }
+  },
+  "underTheHoodPage": {
+    "metaTitle": "内部の仕組み",
+    "metaDescription": "AltSendmeがチケット、iroh、QUIC暗号化、NATトラバーサル、オープンソースリレーで直接P2Pファイル転送を実現する方法を学びましょう — アカウントやIPアドレスは不要です。",
+    "title": "内部の仕組み",
+    "intro": "IPアドレスを知らなくてもscpのように使えます。AltSendmeにファイルを追加すると、貼り付け可能なチケットが生成され、必要な人に渡せます。AltSendmeはデバイスを直接接続し、アカウントや設定なしでデータを転送します。",
+    "heroAlt": "AltSendmeヒーローグラフィック",
+    "underTheHood": {
+      "title": "AltSendmeは<iroh>iroh</iroh>上に構築されています",
+      "description": "AltSendmeはirohチームのオープンソース成果を拡張しています。AltSendmeは<iroh>iroh</iroh>でデバイス間の直接リンクを確立し、<irohBlobs>iroh-blobs</irohBlobs>でファイルの送信と検証を行います。",
+      "buildOnCta": "iroh上に構築",
+      "irohGithubCta": "iroh github"
+    },
+    "conceptsTitle": "重要な概念",
+    "concepts": {
+      "blobs": "Blobs",
+      "tickets": "Tickets",
+      "peerDiscovery": "ピア検出、ホールパンチング、NATトラバーサル",
+      "quic": "QUICとエンドツーエンド暗号化",
+      "relays": "リレー"
+    },
+    "sections": {
+      "blobs": {
+        "title": "Blobs",
+        "intro": "コンテンツアドレス型のblobストレージと転送。iroh-blobsはBLAKE3検証ストリームとコンテンツアドレスリンクを使用し、任意サイズのバイトblobのリクエスト/レスポンスおよびストリーミング転送を実装します。",
+        "items": {
+          "blob": "Blob：不透明なバイト列（埋め込みメタデータなし）。",
+          "link": "Link：blobを識別する32バイトのBLAKE3ハッシュ。",
+          "hashSeq": "HashSeq：リンクのシーケンスを含むblob（チャンク/ツリーに有用）。",
+          "provider": "Provider / Requester：providerがデータを提供し、requesterが取得します。エンドポイントは両方の役割を担えます。"
+        }
+      },
+      "tickets": {
+        "title": "Tickets",
+        "body": "チケットはirohエンドポイント間で接続情報を共有する方法です。別のエンドポイントに接続する、またはこの場合はblobを取得するために必要なすべてを含む単一トークンです。Ed25519 NodeIdsを含みます：認証のためのデバイスの暗号学的アイデンティティ。フルP2PシステムがIPをピアにブロードキャストするのに対し、この仕組みははるかに優れています。irohでは、明示的に接続したいピア間で「cozy network」を形成するためにチケットが使われます。「full p2p」にして接続情報をブロードキャストすることも可能ですが、チケットはより良い中間的なデフォルトです。"
+      },
+      "peerDiscovery": {
+        "title": "ピア検出、NATトラバーサル、ホールパンチング",
+        "body": "ピアは起動時にオープンソースのパブリックリレーサーバーに登録し、ファイアウォールとNATを通過して接続を確立します。接続後、irohはQUICホールパンチングで直接P2P接続を試み、リレーをバイパスします。直接接続が可能な場合、E2E暗号化で直接通信します。そうでなければ、リレーは一時的なフォールバックとして機能します。これによりローカルネットワーク内外で信頼性の高い接続が可能になります。"
+      },
+      "quic": {
+        "title": "QUICと暗号化",
+        "intro": "QUICはUDP上の最新トランスポートプロトコルで、TCPより低遅延・高パフォーマンスを目指して設計されました。Googleが開発し、IETFによりHTTP/3の基盤として標準化。TLS 1.3をプロトコルに直接統合しています。",
+        "powersLabel": "QUICが可能にするスーパーパワー：",
+        "powers": {
+          "encryption": "暗号化と認証",
+          "multiplexing": "ストリーム多重化",
+          "headOfLine": "head-of-line blocking問題なし",
+          "priorities": "ストリーム優先度",
+          "congestion": "共有の輻輳制御",
+          "datagram": "暗号化された非信頼性データグラム転送",
+          "zeroRtt": "以前接続したエンドポイントへのゼロRTT接続確立"
+        }
+      },
+      "relays": {
+        "title": "リレー",
+        "body": "AltSendmeはオープンソースのパブリックリレーサーバーで直接接続の確立、初期接続時間の短縮、直接接続失敗時のフォールバックをサポートします。すべての接続はE2E暗号化されます。リレーは暗号化パケット送信用の「もう一つのUDPソケット」です。<link>詳しく読む</link>。"
+      }
+    },
+    "downloadCta": "AltSendmeをダウンロード",
+    "githubCta": "GitHubで見る"
+  },
+  "footer": {
+    "headline": "ファイルを直接<br></br>誰にでも、どこへでも送信。",
+    "contactUs": "お問い合わせ",
+    "builtOn": "Built on",
+    "websiteBy": "Website designed by",
+    "license": "©GNU Affero General Public License v3.0"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "ご質問、フィードバック、または協力のご希望がありますか？メッセージをお送りください。折り返しご連絡します。",
+    "email": "メールアドレスを入力",
+    "message": "ここに入力",
+    "submit": "送信",
+    "imageAlt": "アダムの創造 — つながりを求めて手を伸ばす"
+  }
+}
