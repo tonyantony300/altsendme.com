@@ -47,17 +47,9 @@ const cellBorderClasses = (index, total) => {
   ].join(' ');
 };
 
-const ACCENT_CARD_INDICES = new Set([0, 2, 5, 7]);
-
 const getCardClasses = (index, total) => {
   const borders = cellBorderClasses(index, total);
-  const isAccent = ACCENT_CARD_INDICES.has(index);
-
-  if (isAccent) {
-    return `flex h-full flex-col bg-accent p-6 transition-[filter] hover:brightness-[0.97] md:p-8 ${borders}`;
-  }
-
-  return `home-card ${borders}`;
+  return `home-card transition-colors hover:!bg-accent ${borders}`;
 };
 
 export default function FeaturesSection() {
@@ -66,7 +58,7 @@ export default function FeaturesSection() {
   return (
     <section
       id="features-section"
-      className="relative w-full scroll-mt-24 py-12 px-5 font-funnel-sans md:px-10 lg:px-[60px] text-zinc-100 overflow-hidden"
+      className="relative w-full scroll-mt-24 py-16 px-5 font-funnel-sans md:px-10 md:py-20 lg:px-[60px] lg:py-24 text-zinc-100 overflow-hidden"
     >
       <div className="absolute inset-0 pointer-events-none isolate" aria-hidden="true">
         <div className="absolute inset-0 bg-dark" />
@@ -76,15 +68,15 @@ export default function FeaturesSection() {
       </div>
 
       <div className="relative z-10 w-full max-w-[1200px] mx-auto">
-        <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-accent font-bold mb-8 whitespace-pre-line md:text-[40px] md:mb-10 lg:mb-12">
-          {t('title')}
+        <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-accent font-bold mb-8 md:text-[40px] md:mb-10 lg:mb-12">
+          <span className="block">{t('titleLine1')}</span>
+          <span className="block">{t('titleLine2')}</span>
         </h2>
 
         <div className="border border-zinc-700/60">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {FEATURE_KEYS.map((key, index) => {
               const Icon = FEATURE_ICONS[key];
-              const isAccent = ACCENT_CARD_INDICES.has(index);
 
               return (
                 <div
@@ -100,7 +92,7 @@ export default function FeaturesSection() {
                   <h3 className="font-funnel-sans text-lg font-semibold leading-snug text-foreground mb-2 md:text-xl">
                     {t(`items.${key}.title`)}
                   </h3>
-                  <p className={`font-funnel-sans text-sm font-normal leading-relaxed md:text-base ${isAccent ? 'text-foreground/70' : 'text-foreground/55'}`}>
+                  <p className="font-funnel-sans text-sm font-normal leading-relaxed text-foreground/55 md:text-base">
                     {t(`items.${key}.description`)}
                   </p>
                 </div>

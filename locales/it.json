@@ -33,7 +33,8 @@
     }
   },
   "features": {
-    "title": "Perché le persone amano AltSendme",
+    "titleLine1": "Perché le persone amano AltSendme",
+    "titleLine2": "Per la condivisione quotidiana di file",
     "items": {
       "directSend": {
         "title": "Invia file direttamente. Nessun intermediario.",
@@ -111,7 +112,8 @@
     "discordButton": "Unisciti a noi su Discord"
   },
   "availableAs": {
-    "title": "Un'esperienza. Più piattaforme.",
+    "titleLine1": "Un'esperienza.",
+    "titleLine2": "Più piattaforme.",
     "download": "Scarica",
     "comingSoon": "In arrivo",
     "desktop": {

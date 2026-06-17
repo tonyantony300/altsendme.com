@@ -33,7 +33,8 @@
     }
   },
   "features": {
-    "title": "人们喜爱 AltSendme 的原因",
+    "titleLine1": "人们喜爱 AltSendme 的原因",
+    "titleLine2": "用于日常文件共享",
     "items": {
       "directSend": {
         "title": "直接发送文件。没有中间人。",
@@ -111,7 +112,8 @@
     "discordButton": "在 Discord 上加入我们"
   },
   "availableAs": {
-    "title": "一种体验。多个平台。",
+    "titleLine1": "一种体验。",
+    "titleLine2": "多个平台。",
     "download": "下载",
     "comingSoon": "即将推出",
     "desktop": {

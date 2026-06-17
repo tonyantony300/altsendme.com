@@ -14,12 +14,12 @@ export default function PartnerSection() {
         </h2>
 
         <div className="border border-foreground/15">
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-none">
             <a
               href="https://www.lambdatest.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center border-b border-foreground/15 home-card px-6 py-14 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background md:border-b-0 md:border-r md:px-8 md:py-16"
+              className="group flex h-full min-h-0 items-center justify-center border-b border-foreground/15 home-card px-6 py-14 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background md:border-b-0 md:border-r md:px-8 md:py-16"
             >
               <Image
                 src="/testMUlogo.svg"
@@ -30,7 +30,7 @@ export default function PartnerSection() {
               />
             </a>
 
-            <div className="flex h-full flex-col bg-accent px-6 py-12 text-foreground md:px-8 md:py-14">
+            <div className="flex h-full min-h-0 flex-col bg-accent px-6 py-12 text-foreground md:px-8 md:py-14">
               <h3 className="font-funnel-sans text-lg font-semibold leading-snug md:text-xl">
                 {t('ctaTitle')}
               </h3>

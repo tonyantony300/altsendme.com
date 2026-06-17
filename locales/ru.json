@@ -33,7 +33,8 @@
     }
   },
   "features": {
-    "title": "Почему люди любят AltSendme",
+    "titleLine1": "Почему люди любят AltSendme",
+    "titleLine2": "Для повседневного обмена файлами",
     "items": {
       "directSend": {
         "title": "Отправляйте файлы напрямую. Без посредников.",
@@ -111,7 +112,8 @@
     "discordButton": "Присоединиться в Discord"
   },
   "availableAs": {
-    "title": "Один опыт. Несколько платформ.",
+    "titleLine1": "Один опыт.",
+    "titleLine2": "Несколько платформ.",
     "download": "Скачать",
     "comingSoon": "Скоро",
     "desktop": {

@@ -33,7 +33,8 @@
     }
   },
   "features": {
-    "title": "AltSendmeが愛される理由",
+    "titleLine1": "AltSendmeが愛される理由",
+    "titleLine2": "日常のファイル共有のために",
     "items": {
       "directSend": {
         "title": "ファイルを直接送信。仲介者なし。",
@@ -111,7 +112,8 @@
     "discordButton": "Discordで参加する"
   },
   "availableAs": {
-    "title": "ひとつの体験。複数のプラットフォーム。",
+    "titleLine1": "ひとつの体験。",
+    "titleLine2": "複数のプラットフォーム。",
     "download": "ダウンロード",
     "comingSoon": "近日公開",
     "desktop": {

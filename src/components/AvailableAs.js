@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
+import { ArrowUpRight } from '@phosphor-icons/react';
 import { Link } from '@/i18n/routing';
 
 const PLATFORMS = [
@@ -54,7 +55,8 @@ export default function AvailableAs() {
       <div className="home-section__container">
         <div className="px-5 pt-10">
           <h2 className="home-section__heading">
-            {t('title')}
+            <span className="block">{t('titleLine1')}</span>
+            <span className="block">{t('titleLine2')}</span>
           </h2>
         </div>
 
@@ -65,7 +67,7 @@ export default function AvailableAs() {
               const cardClasses = `home-card ${cardBorderClasses(index, PLATFORMS.length)}`;
               const cardContent = (
                 <>
-                  <div className="mb-5 aspect-[3/2] w-full overflow-hidden">
+                  <div className="mb-5 w-full overflow-hidden">
                     <img
                       src={platform.image}
                       alt={platform.imageAlt}
@@ -73,7 +75,7 @@ export default function AvailableAs() {
                       height={platform.height}
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full object-contain object-center"
+                      className="block h-auto w-full"
                     />
                   </div>
                   <h3 className="font-funnel-sans text-lg text-foreground font-semibold mb-2 md:text-xl">
@@ -87,8 +89,9 @@ export default function AvailableAs() {
                       {t('comingSoon')}
                     </span>
                   ) : (
-                    <span className="home-card__link-text">
+                    <span className="home-card__link-text inline-flex items-center gap-1">
                       {t('download')}
+                      <ArrowUpRight size={16} weight="bold" aria-hidden="true" />
                     </span>
                   )}
                 </>

@@ -33,7 +33,8 @@
     }
   },
   "features": {
-    "title": "사람들이 AltSendme를 사랑하는 이유",
+    "titleLine1": "사람들이 AltSendme를 사랑하는 이유",
+    "titleLine2": "일상적인 파일 공유를 위해",
     "items": {
       "directSend": {
         "title": "파일을 직접 전송. 중개자 없음.",
@@ -111,7 +112,8 @@
     "discordButton": "Discord에서 참여하기"
   },
   "availableAs": {
-    "title": "하나의 경험. 여러 플랫폼.",
+    "titleLine1": "하나의 경험.",
+    "titleLine2": "여러 플랫폼.",
     "download": "다운로드",
     "comingSoon": "출시 예정",
     "desktop": {

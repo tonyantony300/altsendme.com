@@ -37,7 +37,7 @@ export default function HowItWorks() {
         <div className="md:flex sm:gap-5">
           {steps.map((step, index) => (
             <div key={step.title} className="md:w-1/3 p-5 pb-10">
-              <h3 className="font-funnel-sans text-3xl font-bold text-accent">
+              <h3 className="font-funnel-sans text-2xl font-bold text-accent">
               {index + 1}. {step.title}
               </h3>
               <p className="mt-1 text-sm/6 text-zinc-400 font-funnel-sans">{step.description}</p>
