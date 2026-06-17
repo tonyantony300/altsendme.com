@@ -108,7 +108,9 @@
     "description": "AltSendme 由全球贡献者公开构建。每一行代码都是公开的。每一项改进都会共享。我们一起正在构建一种更快、更私密的文件直传方式。",
     "githubStars": "8.2k stars",
     "cardTitle": "加入我们的社区",
+    "othersCount": "+ 65 其他人",
     "cardDescription": "开源是我们回馈社区的方式，也是确保我们所构建的东西能够超越我们的方式。",
+    "cardDescription2": "直接与我们互动，提出功能建议，报告错误，提前获取更新，并帮助塑造文件分享的未来。",
     "discordButton": "在 Discord 上加入我们"
   },
   "availableAs": {

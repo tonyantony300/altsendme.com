@@ -108,7 +108,9 @@
     "description": "AltSendme est développé en public par des contributeurs du monde entier. Chaque ligne de code est publique. Chaque amélioration est partagée. Ensemble, nous construisons un moyen plus rapide et plus privé d'envoyer des fichiers directement entre les personnes.",
     "githubStars": "8,2k étoiles",
     "cardTitle": "Rejoignez notre communauté",
+    "othersCount": "+ 65 autres",
     "cardDescription": "L'open source est notre façon de redonner à la communauté et de garantir que ce que nous construisons nous survivra.",
+    "cardDescription2": "Interagissez directement avec nous, proposez des fonctionnalités, signalez des bugs, recevez les mises à jour en avance et aidez à façonner l'avenir du partage de fichiers.",
     "discordButton": "Rejoignez-nous sur Discord"
   },
   "availableAs": {
