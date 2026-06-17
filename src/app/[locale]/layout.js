@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/next';
 import { routing } from '@/i18n/routing';
 import StructuredData from './StructuredData';
 import '../globals.css';
+import '../../styles/home-sections.css';
 
 const funnelSans = Funnel_Sans({
   variable: "--font-funnel-sans",

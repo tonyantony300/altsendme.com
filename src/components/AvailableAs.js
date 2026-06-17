@@ -46,17 +46,14 @@ const cardBorderClasses = (index, total) =>
     index < total - 1 ? 'lg:border-r lg:border-b-0' : '',
   ].join(' ');
 
-const cardBaseClasses =
-  'group flex h-full flex-col bg-[#FBF8F2] p-6 md:p-8 transition-colors hover:bg-[#F6F2EA]';
-
 export default function AvailableAs() {
   const t = useTranslations('availableAs');
 
   return (
-    <section className="w-full py-12 px-5 md:px-10 lg:px-[60px]">
-      <div className="w-full max-w-[1200px] mx-auto">
+    <section className="home-section">
+      <div className="home-section__container">
         <div className="px-5 pt-10">
-          <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-center text-foreground font-bold mb-8 whitespace-pre-line md:text-[40px] md:mb-10 lg:mb-12">
+          <h2 className="home-section__heading">
             {t('title')}
           </h2>
         </div>
@@ -65,7 +62,7 @@ export default function AvailableAs() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {PLATFORMS.map((platform, index) => {
               const isWeb = platform.key === 'web';
-              const cardClasses = `${cardBaseClasses} ${cardBorderClasses(index, PLATFORMS.length)}`;
+              const cardClasses = `home-card ${cardBorderClasses(index, PLATFORMS.length)}`;
               const cardContent = (
                 <>
                   <div className="mb-5 aspect-[3/2] w-full overflow-hidden">
@@ -90,7 +87,7 @@ export default function AvailableAs() {
                       {t('comingSoon')}
                     </span>
                   ) : (
-                    <span className="font-funnel-sans text-sm font-semibold text-[#73411F] underline underline-offset-[3px] md:text-base">
+                    <span className="home-card__link-text">
                       {t('download')}
                     </span>
                   )}

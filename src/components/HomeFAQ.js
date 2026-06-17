@@ -35,11 +35,11 @@ function ChevronDownIcon({ expanded }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
-      className={`transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`}
+      className={`text-section-text transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`}
     >
       <path
         d="M1 1L7 7L13 1"
-        stroke="#121212"
+        stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -86,17 +86,17 @@ export default function HomeFAQ() {
   const hasHiddenItems = FAQ_KEYS.length > INITIAL_VISIBLE_COUNT;
 
   return (
-    <section className="w-full py-12 px-5 md:px-10 lg:px-[60px] font-funnel-sans">
-      <div className="w-full max-w-[1200px] mx-auto">
-        <div className="bg-[#F5F4F0] grid grid-cols-1 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] border border-[#D3D2CD]">
-          <div className="border-b border-[#D3D2CD] lg:border-b-0 lg:border-r p-8 md:p-12 lg:p-16">
-            <h2 className="font-funnel-sans text-[32px] leading-[1.2] text-foreground font-bold whitespace-pre-line md:text-[40px]">
+    <section className="home-section">
+      <div className="home-section__container">
+        <div className="home-faq__panel">
+          <div className="home-faq__title-col">
+            <h2 className="home-faq__title">
               {t('title')}
             </h2>
           </div>
 
-          <div className="bg-[#F5F4F0]">
-            <div className="hidden lg:block h-[70px] border-b border-[#D3D2CD]" />
+          <div className="home-faq__content">
+            <div className="home-faq__spacer" />
 
             {FAQ_KEYS.map((key, index) => {
               const questionId = `home-faq-question-${index}`;
@@ -107,7 +107,7 @@ export default function HomeFAQ() {
               return (
                 <div
                   key={key}
-                  className={`border-b border-[#D3D2CD] ${isHidden ? 'hidden' : ''}`}
+                  className={`home-faq__item ${isHidden ? 'hidden' : ''}`}
                 >
                   <h3 className="m-0">
                     <button
@@ -116,15 +116,13 @@ export default function HomeFAQ() {
                       aria-expanded={isOpen}
                       aria-controls={answerId}
                       onClick={() => toggleItem(questionId)}
-                      className="w-full flex items-center justify-between text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#121212] focus-visible:ring-offset-white p-6 md:p-6 hover:bg-[#E7E6DF] transition-colors"
+                      className="home-faq__toggle"
                     >
-                      <span className="text-base md:text-[18px] font-normal text-[#121212] leading-[22px] md:leading-[26px] tracking-[-0.5px] pr-4">
+                      <span className="home-faq__question">
                         {t(`items.${key}.question`)}
                       </span>
                       <span
-                        className={`ml-4 flex-shrink-0 flex h-5 w-5 items-center justify-center text-[#121212] transition-transform duration-200 ${
-                          isOpen ? 'rotate-45' : ''
-                        }`}
+                        className={`home-faq__icon ${isOpen ? 'rotate-45' : ''}`}
                       >
                         <PlusIcon />
                       </span>
@@ -135,7 +133,7 @@ export default function HomeFAQ() {
                     role="region"
                     aria-labelledby={questionId}
                     hidden={!isOpen}
-                    className="text-sm md:text-base leading-6 text-[#4D4D4D] px-6 pb-6 font-light"
+                    className="home-faq__answer"
                   >
                     {renderAnswer(key)}
                   </div>
@@ -147,7 +145,7 @@ export default function HomeFAQ() {
               <button
                 type="button"
                 onClick={() => setShowAll((prev) => !prev)}
-                className="w-full flex items-center justify-center gap-2 py-5 text-sm md:text-base font-normal text-[#121212] hover:bg-[#E7E6DF] transition-colors"
+                className="home-faq__more"
               >
                 <span>{showAll ? 'View fewer questions' : 'View more questions'}</span>
                 <ChevronDownIcon expanded={showAll} />
