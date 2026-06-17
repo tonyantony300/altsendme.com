@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations } from 'next-intl';
-import { getDownloadOptions } from '@/constants/downloadOptions';
-import GithubIcon from '@/components/GithubIcon';
+import { getDownloadOptions } from '@/constants/downloads';
 
 export default function HeroSection() {
   const t = useTranslations();

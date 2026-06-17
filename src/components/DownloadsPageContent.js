@@ -11,7 +11,7 @@ import {
   getPrimaryDownloadUrl,
   mobilePlatformGroups,
   primaryDownloadsByOs,
-} from "@/constants/downloadsPage";
+} from "@/constants/downloads";
 
 function AppleIcon({ className = "" }) {
   return (

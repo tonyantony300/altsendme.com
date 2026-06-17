@@ -1,8 +1,9 @@
 const RELEASE_BASE = "https://github.com/tonyantony300/alt-sendme/releases/download";
+
 export const DESKTOP_VERSION = "0.3.5";
 export const ANDROID_VERSION = "v0.3.6-beta";
 
-function releaseUrl(tag, filename) {
+export function releaseUrl(tag, filename) {
   return `${RELEASE_BASE}/${tag}/${filename}`;
 }
 
@@ -13,6 +14,8 @@ export const primaryDownloadsByOs = {
     file: `AltSendme_${DESKTOP_VERSION}_universal.dmg`,
     tag: `v${DESKTOP_VERSION}`,
     translationKey: "getAppForMac",
+    heroTranslationKey: "hero.downloadForMac",
+    size: "26 MB",
   },
   windows: {
     id: "windows",
@@ -20,13 +23,17 @@ export const primaryDownloadsByOs = {
     file: `AltSendme_${DESKTOP_VERSION}_x64-setup.exe`,
     tag: `v${DESKTOP_VERSION}`,
     translationKey: "getAppForWindows",
+    heroTranslationKey: "hero.downloadForWindows",
+    size: "8 MB",
   },
   linux: {
-    id: "linux",
+    id: "linux-appimage",
     icon: "/linuxlogo.svg",
     file: `AltSendme_${DESKTOP_VERSION}_amd64.AppImage`,
     tag: `v${DESKTOP_VERSION}`,
     translationKey: "getAppForLinux",
+    heroTranslationKey: "hero.downloadForLinux",
+    size: "87 MB",
   },
 };
 
@@ -89,12 +96,14 @@ export const mobilePlatformGroups = [
     links: [
       {
         key: "universalApk",
-        file: "AltSendme-v0.3.6-beta-universal.apk",
+        file: `AltSendme-${ANDROID_VERSION}-universal.apk`,
         tag: ANDROID_VERSION,
       },
     ],
   },
 ];
+
+const HERO_DOWNLOAD_ORDER = ["windows", "mac", "linux"];
 
 export function getDownloadHref(link) {
   return releaseUrl(link.tag, link.file);
@@ -115,4 +124,17 @@ export function getAlternateDownloadsForOs(osKey) {
       ...link,
       href: getDownloadHref(link),
     }));
+}
+
+export function getDownloadOptions(t) {
+  return HERO_DOWNLOAD_ORDER.map((osKey) => {
+    const download = primaryDownloadsByOs[osKey];
+    return {
+      id: download.id,
+      size: download.size,
+      icon: download.icon,
+      url: releaseUrl(download.tag, download.file),
+      label: t(download.heroTranslationKey),
+    };
+  });
 }
