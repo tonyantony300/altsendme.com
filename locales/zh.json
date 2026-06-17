@@ -45,7 +45,7 @@
       },
       "noSizeLimits": {
         "title": "无大小限制。真正无限。",
-        "description": "从千字节到 99 千兆字节。AltSendme 帮助您分享无限大小的文件。"
+        "description": "从 KB's 到 99GB's。AltSendme 帮助您分享无限大小的文件。"
       },
       "blazingFast": {
         "title": "极速且可靠",

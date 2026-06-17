@@ -27,7 +27,7 @@
       },
       "noSizeLimits": {
         "title": "크기 제한 없음. 진정한 무제한.",
-        "description": "킬로바이트부터 99기가바이트까지. AltSendme는 무제한 크기의 파일 공유를 돕습니다."
+        "description": "KB's부터 99GB's까지. AltSendme는 무제한 크기의 파일 공유를 돕습니다."
       },
       "blazingFast": {
         "title": "초고속 & 안정적",

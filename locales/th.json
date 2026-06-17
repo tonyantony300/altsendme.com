@@ -45,7 +45,7 @@
       },
       "noSizeLimits": {
         "title": "ไม่จำกัดขนาด ไม่จำกัดจริงๆ",
-        "description": "ตั้งแต่ kilobyte ถึง 99 gigabyte AltSendme ช่วยให้คุณแชร์ไฟล์ขนาดไม่จำกัด"
+        "description": "ตั้งแต่ KB's ถึง 99GB's AltSendme ช่วยให้คุณแชร์ไฟล์ขนาดไม่จำกัด"
       },
       "blazingFast": {
         "title": "เร็วทันใจและเชื่อถือได้",

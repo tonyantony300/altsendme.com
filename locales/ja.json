@@ -45,7 +45,7 @@
       },
       "noSizeLimits": {
         "title": "サイズ制限なし。真に無制限。",
-        "description": "キロバイトから99ギガバイトまで。AltSendmeは無制限サイズのファイル共有を支援します。"
+        "description": "KB'sから99GB'sまで。AltSendmeは無制限サイズのファイル共有を支援します。"
       },
       "blazingFast": {
         "title": "超高速＆信頼性",
