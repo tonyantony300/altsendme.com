@@ -27,7 +27,7 @@ export default function Header() {
         "tny_antny",
         "#f1ece6",
         "",
-        "Arial",
+        "Inter",
         "#452815",
         "#000000",
         "#452815",
@@ -81,7 +81,7 @@ export default function Header() {
         
           <div
             ref={bmcButtonRef}
-            className="shrink-0 hidden md:block [&_.bmc-btn]:!h-8 [&_.bmc-btn]:!min-w-0 [&_.bmc-btn]:!rounded-md [&_.bmc-btn]:!px-2.5 [&_.bmc-btn]:!text-xs [&_.bmc-btn-text]:!text-xs [&_.bmc-btn_svg]:!h-4"
+            className="shrink-0 hidden md:block [&_.bmc-btn]:!h-9 [&_.bmc-btn]:!min-w-0 [&_.bmc-btn]:!rounded-md [&_.bmc-btn]:!px-3 [&_.bmc-btn]:!text-sm [&_.bmc-btn-text]:!text-sm [&_.bmc-btn_svg]:!h-4"
           />
           <a href="https://github.com/tonyantony300/alt-sendme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-funnel-sans text-sm font-semibold text-[#452815] px-1.5 py-1.5 rounded-md ">
             <GithubIcon size={14} className="shrink-0" />
