@@ -24,7 +24,7 @@ export default function PartnerSection() {
               className="group flex h-full min-h-0 items-center justify-center border-b border-foreground/15 home-card px-6 py-14 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background md:border-b-0 md:border-r md:px-8 md:py-16"
             >
               <Image
-                src="/testMUlogo.svg"
+                src="/assets/sponsors/testMUlogo.svg"
                 alt={t('testmuAlt')}
                 width={200}
                 height={63}
