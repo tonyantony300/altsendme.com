@@ -35,7 +35,7 @@ const TIERS = [
       {
         type: 'logo',
         href: 'https://www.lambdatest.com/',
-        src: '/testMUlogo.svg',
+        src: '/assets/sponsors/testMUlogo.svg',
         altKey: 'testmuAlt',
       },
       { type: 'text', name: 'Company 6' },
