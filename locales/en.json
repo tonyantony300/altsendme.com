@@ -8,7 +8,7 @@
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "Fastest file transfer experience on this planet",
+    "title": "Fastest file transfer experience on the planet",
     "description": "Direct, encrypted file transfers from your devices to anyone, anywhere - no accounts, no cloud storage in between.",
     "airdropQuote": "Think of it like AirDrop for any device, any network.",
     "downloadForMac": "Download for Mac",
@@ -265,8 +265,8 @@
     "contactUs": "Contact Us",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
-    "github": "GitHub",
-    "contributors": "Contributors",
+    "sourceCode": "Source Code",
+    "githubSponsors": "GitHub Sponsors",
     "websiteBy": "Website designed by",
     "designer": "ShravanKumar PS",
     "license": "©GNU Affero General Public License v3.0"

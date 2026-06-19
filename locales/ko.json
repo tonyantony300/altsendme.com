@@ -8,7 +8,7 @@
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "이 행성에서 가장 빠른 파일 전송 경험",
+    "title": "행성에서 가장 빠른 파일 전송 경험",
     "description": "기기에서 누구에게나, 어디로든 직접 암호화된 파일 전송 — 계정 불필요, 중간 클라우드 저장소 없음.",
     "airdropQuote": "모든 기기, 모든 네트워크를 위한 AirDrop이라고 생각하세요.",
     "downloadForMac": "Mac용 다운로드",
@@ -264,8 +264,8 @@
     "contactUs": "문의하기",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
-    "github": "GitHub",
-    "contributors": "기여자",
+    "sourceCode": "소스 코드",
+    "githubSponsors": "GitHub Sponsors",
     "websiteBy": "웹사이트 디자인",
     "designer": "ShravanKumar PS",
     "license": "©GNU Affero General Public License v3.0"

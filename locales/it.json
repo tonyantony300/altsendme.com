@@ -8,7 +8,7 @@
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "L'esperienza di trasferimento file più veloce su questo pianeta",
+    "title": "L'esperienza di trasferimento file più veloce sul pianeta",
     "description": "Trasferimenti diretti e crittografati dai tuoi dispositivi a chiunque, ovunque — nessun account, nessun cloud storage in mezzo.",
     "airdropQuote": "Pensalo come AirDrop per qualsiasi dispositivo, qualsiasi rete.",
     "downloadForMac": "Scarica per Mac",
@@ -264,8 +264,8 @@
     "contactUs": "Contattaci",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
-    "github": "GitHub",
-    "contributors": "Contributori",
+    "sourceCode": "Codice sorgente",
+    "githubSponsors": "GitHub Sponsors",
     "websiteBy": "Sito web progettato da",
     "designer": "ShravanKumar PS",
     "license": "©GNU Affero General Public License v3.0"

@@ -8,7 +8,7 @@
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "ประสบการณ์ถ่ายโอนไฟล์ที่เร็วที่สุดบนโลกใบนี้",
+    "title": "ประสบการณ์ถ่ายโอนไฟล์ที่เร็วที่สุดบนโลก",
     "description": "ถ่ายโอนไฟล์ที่เข้ารหัสโดยตรงจากอุปกรณ์ของคุณไปยังใครก็ได้ ที่ไหนก็ได้ — ไม่ต้องมีบัญชี ไม่มีคลาวด์ส토เรจคั่นกลาง",
     "airdropQuote": "คิดว่าเหมือน AirDrop สำหรับทุกอุปกรณ์ ทุกเครือข่าย",
     "downloadForMac": "ดาวน์โหลดสำหรับ Mac",
@@ -264,8 +264,8 @@
     "contactUs": "ติดต่อเรา",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
-    "github": "GitHub",
-    "contributors": "ผู้มีส่วนร่วม",
+    "sourceCode": "ซอร์สโค้ด",
+    "githubSponsors": "GitHub Sponsors",
     "websiteBy": "ออกแบบเว็บไซต์โดย",
     "designer": "ShravanKumar PS",
     "license": "©GNU Affero General Public License v3.0"

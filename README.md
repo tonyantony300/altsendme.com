@@ -8,9 +8,9 @@
 ![AltSendme](public/shots.jpg)
 
 
-<h2 align="center">
+<h4 align="center">
   Design contribution by <a href="https://www.linkedin.com/in/shravankumarps/">Sharavan Kumar PS</a>
-</h2>
+</h4>
 
 ## Getting Started
 

@@ -8,7 +8,7 @@
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "この地球上で最速のファイル転送体験",
+    "title": "地球上で最速のファイル転送体験",
     "description": "デバイスから誰にでも、どこにでも直接暗号化されたファイル転送 — アカウント不要、クラウドストレージを介しません。",
     "airdropQuote": "あらゆるデバイス、あらゆるネットワーク向けのAirDropのようなものと考えてください。",
     "downloadForMac": "Mac用をダウンロード",
@@ -264,8 +264,8 @@
     "contactUs": "お問い合わせ",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
-    "github": "GitHub",
-    "contributors": "コントリビューター",
+    "sourceCode": "ソースコード",
+    "githubSponsors": "GitHub Sponsors",
     "websiteBy": "Website designed by",
     "designer": "ShravanKumar PS",
     "license": "©GNU Affero General Public License v3.0"

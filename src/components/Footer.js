@@ -5,16 +5,16 @@ import { useTranslations } from "next-intl";
 
 const FOOTER_NAV_GRID = [
   [
+    { key: "sourceCode", href: "https://github.com/tonyantony300/alt-sendme", external: true },
     { key: "howItWorks", href: "/under-the-hood" },
-    { key: "reportIssue", href: "https://github.com/tonyantony300/alt-sendme/issues", external: true },
     { key: "downloads", href: "/downloads" },
     { key: "contactUs", href: "/contact" },
   ],
   [
+    { key: "githubSponsors", href: "https://github.com/sponsors/tonyantony300", external: true },
     { key: "buyMeACoffee", href: "https://buymeacoffee.com/tny_antny", external: true },
-    { key: "github", href: "https://github.com/tonyantony300/alt-sendme", external: true },
-    { key: "contributors", href: "https://github.com/tonyantony300/alt-sendme/graphs/contributors", external: true },
     { key: "discord", href: "https://discord.gg/xwb7z22Eve", external: true },
+    { key: "reportIssue", href: "https://github.com/tonyantony300/alt-sendme/issues", external: true },
   ],
 ];
 

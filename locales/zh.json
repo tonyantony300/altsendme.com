@@ -8,7 +8,7 @@
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "这个星球上最快的文件传输体验",
+    "title": "星球上最快的文件传输体验",
     "description": "从您的设备直接、加密传输文件给任何人、任何地方 — 无需账户，中间没有云存储。",
     "airdropQuote": "把它想象成适用于任何设备、任何网络的 AirDrop。",
     "downloadForMac": "下载 Mac 版",
@@ -264,8 +264,8 @@
     "contactUs": "联系我们",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
-    "github": "GitHub",
-    "contributors": "贡献者",
+    "sourceCode": "源代码",
+    "githubSponsors": "GitHub Sponsors",
     "websiteBy": "网站设计",
     "designer": "ShravanKumar PS",
     "license": "©GNU Affero General Public License v3.0"

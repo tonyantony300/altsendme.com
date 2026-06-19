@@ -8,7 +8,7 @@
     "license": "© GNU Affero General Public License v3.0"
   },
   "hero": {
-    "title": "Самый быстрый опыт передачи файлов на этой планете",
+    "title": "Самый быстрый опыт передачи файлов на планете",
     "description": "Прямая зашифрованная передача файлов с ваших устройств кому угодно и куда угодно — без аккаунтов и облачного хранилища посередине.",
     "airdropQuote": "Думайте об этом как об AirDrop для любого устройства и любой сети.",
     "downloadForMac": "Скачать для Mac",
@@ -264,8 +264,8 @@
     "contactUs": "Связаться с нами",
     "buyMeACoffee": "Buy Me a Coffee",
     "discord": "Discord",
-    "github": "GitHub",
-    "contributors": "Участники",
+    "sourceCode": "Исходный код",
+    "githubSponsors": "GitHub Sponsors",
     "websiteBy": "Сайт разработан",
     "designer": "ShravanKumar PS",
     "license": "©GNU Affero General Public License v3.0"

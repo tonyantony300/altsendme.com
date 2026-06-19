@@ -66,7 +66,7 @@ export default function CommunitySection() {
           </div>
 
           <div className="w-full max-w-[440px] lg:ml-auto lg:mr-0 lg:mb-2">
-            <div className="rounded-[2rem] bg-white p-6 text-center shadow-[0_8px_32px_rgba(69,40,21,0.08)] md:p-10">
+            <div className="rounded-lg bg-white p-6 text-center shadow-[0_8px_32px_rgba(69,40,21,0.08)] md:p-10">
               <h3 className="text-[28px] font-bold leading-snug tracking-tight text-[#452815] md:text-[40px] md:tracking-[-0.06em]">
                 {t('cardTitle')}
               </h3>
@@ -114,7 +114,7 @@ export default function CommunitySection() {
                 href={DISCORD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-10 flex w-full items-center justify-center gap-2.5 rounded-full bg-[#452815] px-8 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#452815] focus-visible:ring-offset-2 md:text-base"
+                className="mt-10 flex w-full items-center justify-center gap-2.5 rounded-md bg-[#452815] px-8 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#452815] focus-visible:ring-offset-2 md:text-base"
               >
                 <DiscordIcon className="h-[18px] w-[18px] shrink-0" />
                 {t('discordButton')}
