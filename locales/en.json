@@ -239,12 +239,17 @@
     },
     "links": {
       "universalDmg": "Universal (DMG)",
-      "universalTarGz": "Universal (.app.tar.gz)",
-      "standardExe": "Standard (Setup)",
+      "x64Dmg": "Intel (DMG)",
+      "aarch64Dmg": "Apple Silicon (DMG)",
+      "standardExe": "x64 (Setup)",
+      "arm64Exe": "ARM64 (Setup)",
       "msi": "MSI Installer",
-      "appImage": "AppImage",
-      "debian": "Debian",
-      "rpm": "RPM",
+      "appImage": "AppImage (x86_64)",
+      "aarch64AppImage": "AppImage (ARM64)",
+      "debian": "Debian (x86_64)",
+      "arm64Debian": "Debian (ARM64)",
+      "rpm": "RPM (x86_64)",
+      "aarch64Rpm": "RPM (ARM64)",
       "universalApk": "Universal (APK)"
     }
   },

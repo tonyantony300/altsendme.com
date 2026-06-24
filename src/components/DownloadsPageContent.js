@@ -5,11 +5,12 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import {
   desktopPlatformGroups,
+  detectPlatform,
   getAlternateDownloadsForOs,
   getDownloadHref,
+  getPrimaryDownload,
   getPrimaryDownloadUrl,
   mobilePlatformGroups,
-  primaryDownloadsByOs,
 } from "@/constants/downloads";
 
 function DownloadIcon({ className = "", fill = "currentColor" }) {
@@ -136,19 +137,12 @@ function CliNotesRow({ copyNote, runNote }) {
 export default function DownloadsPageContent() {
   const t = useTranslations("downloadsPage");
   const tHero = useTranslations("hero");
-  const [detectedOS, setDetectedOS] = useState("mac");
+  const [platform, setPlatform] = useState({ os: "mac", arch: "x64" });
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   useEffect(() => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    if (userAgent.includes("win")) {
-      setDetectedOS("windows");
-    } else if (userAgent.includes("mac")) {
-      setDetectedOS("mac");
-    } else if (userAgent.includes("linux")) {
-      setDetectedOS("linux");
-    }
+    setPlatform(detectPlatform());
   }, []);
 
   useEffect(() => {
@@ -164,9 +158,9 @@ export default function DownloadsPageContent() {
     }
   }, [isDropdownOpen]);
 
-  const primary = primaryDownloadsByOs[detectedOS] || primaryDownloadsByOs.mac;
-  const alternateDownloads = getAlternateDownloadsForOs(detectedOS);
-  const primaryUrl = getPrimaryDownloadUrl(detectedOS);
+  const primary = getPrimaryDownload(platform.os, platform.arch);
+  const alternateDownloads = getAlternateDownloadsForOs(platform.os, platform.arch);
+  const primaryUrl = getPrimaryDownloadUrl(platform.os, platform.arch);
 
   const scrollToPlatforms = () => {
     document.getElementById("other-platforms")?.scrollIntoView({ behavior: "smooth" });

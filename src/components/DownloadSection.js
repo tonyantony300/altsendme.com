@@ -3,23 +3,19 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations } from 'next-intl';
-import { getDownloadOptions } from '@/constants/downloads';
+import {
+  detectPlatform,
+  getDownloadOptions,
+  getPrimaryDownloadOption,
+} from '@/constants/downloads';
 
 export default function DownloadSection() {
   const t = useTranslations();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [detectedOS, setDetectedOS] = useState("mac");
+  const [platform, setPlatform] = useState({ os: "mac", arch: "x64" });
 
   useEffect(() => {
-    // Detect OS
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    if (userAgent.indexOf("win") !== -1) {
-      setDetectedOS("windows");
-    } else if (userAgent.indexOf("mac") !== -1) {
-      setDetectedOS("mac");
-    } else if (userAgent.indexOf("linux") !== -1) {
-      setDetectedOS("linux");
-    }
+    setPlatform(detectPlatform());
   }, []);
 
   // Close dropdown when clicking outside
@@ -39,12 +35,7 @@ export default function DownloadSection() {
   }, [isDropdownOpen]);
 
   const downloadOptions = getDownloadOptions(t);
-
-  const primaryDownload = downloadOptions.find((opt) => 
-    (detectedOS === "mac" && opt.id === "mac") ||
-    (detectedOS === "windows" && opt.id === "windows") ||
-    (detectedOS === "linux" && opt.id === "linux-appimage")
-  ) || downloadOptions[0];
+  const primaryDownload = getPrimaryDownloadOption(t, platform.os, platform.arch);
 
   return (
     <section id="download-section" className="flex flex-col items-center pt-10 pb-20 px-5 w-full scroll-mt-24 sm:pb-24 md:px-10 md:pb-28 lg:px-[60px] lg:pb-32">

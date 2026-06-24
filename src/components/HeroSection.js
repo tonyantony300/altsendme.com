@@ -3,22 +3,19 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations } from 'next-intl';
-import { getDownloadOptions } from '@/constants/downloads';
+import {
+  detectPlatform,
+  getDownloadOptions,
+  getPrimaryDownloadOption,
+} from '@/constants/downloads';
 
 export default function HeroSection() {
   const t = useTranslations();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [detectedOS, setDetectedOS] = useState("mac");
+  const [platform, setPlatform] = useState({ os: "mac", arch: "x64" });
 
   useEffect(() => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    if (userAgent.indexOf("win") !== -1) {
-      setDetectedOS("windows");
-    } else if (userAgent.indexOf("mac") !== -1) {
-      setDetectedOS("mac");
-    } else if (userAgent.indexOf("linux") !== -1) {
-      setDetectedOS("linux");
-    }
+    setPlatform(detectPlatform());
   }, []);
 
   useEffect(() => {
@@ -37,12 +34,7 @@ export default function HeroSection() {
   }, [isDropdownOpen]);
 
   const downloadOptions = getDownloadOptions(t);
-
-  const primaryDownload = downloadOptions.find((opt) => 
-    (detectedOS === "mac" && opt.id === "mac") ||
-    (detectedOS === "windows" && opt.id === "windows") ||
-    (detectedOS === "linux" && opt.id === "linux-appimage")
-  ) || downloadOptions[0];
+  const primaryDownload = getPrimaryDownloadOption(t, platform.os, platform.arch);
 
   const heroFeatures = [
     {

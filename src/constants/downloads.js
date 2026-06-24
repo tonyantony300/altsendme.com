@@ -1,10 +1,30 @@
 const RELEASE_BASE = "https://github.com/tonyantony300/alt-sendme/releases/download";
 
-export const DESKTOP_VERSION = "0.3.5";
+export const DESKTOP_VERSION = "0.4.0";
 export const ANDROID_VERSION = "v0.3.6-beta";
+const DESKTOP_TAG = `v${DESKTOP_VERSION}`;
 
 export function releaseUrl(tag, filename) {
   return `${RELEASE_BASE}/${tag}/${filename}`;
+}
+
+export function detectPlatform() {
+  if (typeof navigator === "undefined") {
+    return { os: "mac", arch: "x64" };
+  }
+
+  const ua = navigator.userAgent.toLowerCase();
+  let os = "mac";
+  if (ua.includes("win")) os = "windows";
+  else if (ua.includes("mac")) os = "mac";
+  else if (ua.includes("linux")) os = "linux";
+
+  const arm64 =
+    ua.includes("aarch64") ||
+    ua.includes("arm64") ||
+    (os === "windows" && /\barm\b/.test(ua));
+
+  return { os, arch: arm64 ? "arm64" : "x64" };
 }
 
 export const primaryDownloadsByOs = {
@@ -12,7 +32,7 @@ export const primaryDownloadsByOs = {
     id: "mac",
     icon: "/applelogo.svg",
     file: `AltSendme_${DESKTOP_VERSION}_universal.dmg`,
-    tag: `v${DESKTOP_VERSION}`,
+    tag: DESKTOP_TAG,
     translationKey: "getAppForMac",
     heroTranslationKey: "hero.downloadForMac",
     size: "26 MB",
@@ -21,7 +41,16 @@ export const primaryDownloadsByOs = {
     id: "windows",
     icon: "/windows.svg",
     file: `AltSendme_${DESKTOP_VERSION}_x64-setup.exe`,
-    tag: `v${DESKTOP_VERSION}`,
+    tag: DESKTOP_TAG,
+    translationKey: "getAppForWindows",
+    heroTranslationKey: "hero.downloadForWindows",
+    size: "8 MB",
+  },
+  "windows-arm64": {
+    id: "windows-arm64",
+    icon: "/windows.svg",
+    file: `AltSendme_${DESKTOP_VERSION}_arm64-setup.exe`,
+    tag: DESKTOP_TAG,
     translationKey: "getAppForWindows",
     heroTranslationKey: "hero.downloadForWindows",
     size: "8 MB",
@@ -30,7 +59,16 @@ export const primaryDownloadsByOs = {
     id: "linux-appimage",
     icon: "/linuxlogo.svg",
     file: `AltSendme_${DESKTOP_VERSION}_amd64.AppImage`,
-    tag: `v${DESKTOP_VERSION}`,
+    tag: DESKTOP_TAG,
+    translationKey: "getAppForLinux",
+    heroTranslationKey: "hero.downloadForLinux",
+    size: "87 MB",
+  },
+  "linux-arm64": {
+    id: "linux-appimage-arm64",
+    icon: "/linuxlogo.svg",
+    file: `AltSendme_${DESKTOP_VERSION}_aarch64.AppImage`,
+    tag: DESKTOP_TAG,
     translationKey: "getAppForLinux",
     heroTranslationKey: "hero.downloadForLinux",
     size: "87 MB",
@@ -44,7 +82,17 @@ export const desktopPlatformGroups = [
       {
         key: "universalDmg",
         file: `AltSendme_${DESKTOP_VERSION}_universal.dmg`,
-        tag: `v${DESKTOP_VERSION}`,
+        tag: DESKTOP_TAG,
+      },
+      {
+        key: "x64Dmg",
+        file: `AltSendme_${DESKTOP_VERSION}_x64.dmg`,
+        tag: DESKTOP_TAG,
+      },
+      {
+        key: "aarch64Dmg",
+        file: `AltSendme_${DESKTOP_VERSION}_aarch64.dmg`,
+        tag: DESKTOP_TAG,
       },
     ],
   },
@@ -54,12 +102,17 @@ export const desktopPlatformGroups = [
       {
         key: "standardExe",
         file: `AltSendme_${DESKTOP_VERSION}_x64-setup.exe`,
-        tag: `v${DESKTOP_VERSION}`,
+        tag: DESKTOP_TAG,
       },
       {
         key: "msi",
         file: `AltSendme_${DESKTOP_VERSION}_x64_en-US.msi`,
-        tag: `v${DESKTOP_VERSION}`,
+        tag: DESKTOP_TAG,
+      },
+      {
+        key: "arm64Exe",
+        file: `AltSendme_${DESKTOP_VERSION}_arm64-setup.exe`,
+        tag: DESKTOP_TAG,
       },
     ],
   },
@@ -69,17 +122,32 @@ export const desktopPlatformGroups = [
       {
         key: "appImage",
         file: `AltSendme_${DESKTOP_VERSION}_amd64.AppImage`,
-        tag: `v${DESKTOP_VERSION}`,
+        tag: DESKTOP_TAG,
       },
       {
         key: "debian",
         file: `AltSendme_${DESKTOP_VERSION}_amd64.deb`,
-        tag: `v${DESKTOP_VERSION}`,
+        tag: DESKTOP_TAG,
       },
       {
         key: "rpm",
         file: `AltSendme-${DESKTOP_VERSION}-1.x86_64.rpm`,
-        tag: `v${DESKTOP_VERSION}`,
+        tag: DESKTOP_TAG,
+      },
+      {
+        key: "aarch64AppImage",
+        file: `AltSendme_${DESKTOP_VERSION}_aarch64.AppImage`,
+        tag: DESKTOP_TAG,
+      },
+      {
+        key: "arm64Debian",
+        file: `AltSendme_${DESKTOP_VERSION}_arm64.deb`,
+        tag: DESKTOP_TAG,
+      },
+      {
+        key: "aarch64Rpm",
+        file: `AltSendme-${DESKTOP_VERSION}-1.aarch64.rpm`,
+        tag: DESKTOP_TAG,
       },
     ],
   },
@@ -104,21 +172,42 @@ export function getDownloadHref(link) {
   return releaseUrl(link.tag, link.file);
 }
 
-export function getPrimaryDownloadUrl(osKey) {
-  const primary = primaryDownloadsByOs[osKey] || primaryDownloadsByOs.mac;
+export function getPrimaryDownload(os, arch = "x64") {
+  if (os === "windows" && arch === "arm64") {
+    return primaryDownloadsByOs["windows-arm64"];
+  }
+  if (os === "linux" && arch === "arm64") {
+    return primaryDownloadsByOs["linux-arm64"];
+  }
+  return primaryDownloadsByOs[os] || primaryDownloadsByOs.mac;
+}
+
+export function getPrimaryDownloadUrl(os, arch = "x64") {
+  const primary = getPrimaryDownload(os, arch);
   return releaseUrl(primary.tag, primary.file);
 }
 
-export function getAlternateDownloadsForOs(osKey) {
+export function getAlternateDownloadsForOs(osKey, arch = "x64") {
   const group = desktopPlatformGroups.find((g) => g.key === osKey);
   if (!group) return [];
-  const primary = primaryDownloadsByOs[osKey];
+  const primary = getPrimaryDownload(osKey, arch);
   return group.links
     .filter((link) => link.file !== primary?.file)
     .map((link) => ({
       ...link,
       href: getDownloadHref(link),
     }));
+}
+
+export function getPrimaryDownloadOption(t, os, arch = "x64") {
+  const download = getPrimaryDownload(os, arch);
+  return {
+    id: download.id,
+    size: download.size,
+    icon: download.icon,
+    url: releaseUrl(download.tag, download.file),
+    label: t(download.heroTranslationKey),
+  };
 }
 
 export function getDownloadOptions(t) {
