@@ -14,6 +14,7 @@
     "downloadForMac": "Скачать для Mac",
     "downloadForWindows": "Скачать для Windows",
     "downloadForLinux": "Скачать для Linux",
+    "downloadForAndroid": "Скачать для Android",
     "downloadForLinuxAppImage": "Скачать для Linux (AppImage)",
     "donationMessage": "Ваши пожертвования делают этот проект лучше"
   },
@@ -250,7 +251,16 @@
       "arm64Debian": "Debian (ARM64)",
       "rpm": "RPM (x86_64)",
       "aarch64Rpm": "RPM (ARM64)",
+      "arm64Apk": "ARM64 (APK)",
+      "armv7Apk": "ARMv7 (APK)",
       "universalApk": "Universal (APK)"
+    },
+    "donate": {
+      "title": "Поддержите свободное ПО с открытым исходным кодом",
+      "description": "AltSendme полностью бесплатен, с открытым исходным кодом и без рекламы или платных ограничений. Если он вам полезен, рассмотрите возможность поддержать его разработку. Каждое пожертвование помогает сохранить проект бесплатным, независимым и активно поддерживаемым.",
+      "badge": "AGPL 3.0 · Без рекламы · Без отслеживания",
+      "buyMeACoffee": "Buy Me a Coffee",
+      "githubSponsors": "GitHub Sponsors"
     }
   },
   "pressReviews": {

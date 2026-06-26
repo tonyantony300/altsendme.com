@@ -14,6 +14,7 @@
     "downloadForMac": "下载 Mac 版",
     "downloadForWindows": "下载 Windows 版",
     "downloadForLinux": "下载 Linux 版",
+    "downloadForAndroid": "下载 Android 版",
     "downloadForLinuxAppImage": "下载 Linux 版 (AppImage)",
     "donationMessage": "您的捐赠让这个项目变得更好"
   },
@@ -250,7 +251,16 @@
       "arm64Debian": "Debian (ARM64)",
       "rpm": "RPM (x86_64)",
       "aarch64Rpm": "RPM (ARM64)",
+      "arm64Apk": "ARM64 (APK)",
+      "armv7Apk": "ARMv7 (APK)",
       "universalApk": "Universal (APK)"
+    },
+    "donate": {
+      "title": "支持自由开源软件",
+      "description": "AltSendme 完全免费、开源，且无广告或付费墙。如果您觉得它有用，请考虑支持其开发。每一份捐赠都有助于让这个项目保持免费、独立并持续维护。",
+      "badge": "AGPL 3.0 · 无广告 · 无追踪",
+      "buyMeACoffee": "Buy Me a Coffee",
+      "githubSponsors": "GitHub Sponsors"
     }
   },
   "pressReviews": {

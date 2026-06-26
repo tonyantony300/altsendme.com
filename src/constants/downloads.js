@@ -1,7 +1,12 @@
 const RELEASE_BASE = "https://github.com/tonyantony300/alt-sendme/releases/download";
 
-export const DESKTOP_VERSION = "0.4.0";
-export const ANDROID_VERSION = "v0.3.6-beta";
+export const DONATE_LINKS = {
+  buyMeACoffee: "https://buymeacoffee.com/tny_antny",
+  githubSponsors: "https://github.com/sponsors/tonyantony300",
+};
+
+export const DESKTOP_VERSION = "0.4.1";
+export const ANDROID_VERSION = "v0.4.1";
 const DESKTOP_TAG = `v${DESKTOP_VERSION}`;
 
 export function releaseUrl(tag, filename) {
@@ -35,7 +40,7 @@ export const primaryDownloadsByOs = {
     tag: DESKTOP_TAG,
     translationKey: "getAppForMac",
     heroTranslationKey: "hero.downloadForMac",
-    size: "26 MB",
+    size: "32 MB",
   },
   windows: {
     id: "windows",
@@ -44,7 +49,7 @@ export const primaryDownloadsByOs = {
     tag: DESKTOP_TAG,
     translationKey: "getAppForWindows",
     heroTranslationKey: "hero.downloadForWindows",
-    size: "8 MB",
+    size: "10 MB",
   },
   "windows-arm64": {
     id: "windows-arm64",
@@ -53,7 +58,7 @@ export const primaryDownloadsByOs = {
     tag: DESKTOP_TAG,
     translationKey: "getAppForWindows",
     heroTranslationKey: "hero.downloadForWindows",
-    size: "8 MB",
+    size: "9 MB",
   },
   linux: {
     id: "linux-appimage",
@@ -62,7 +67,7 @@ export const primaryDownloadsByOs = {
     tag: DESKTOP_TAG,
     translationKey: "getAppForLinux",
     heroTranslationKey: "hero.downloadForLinux",
-    size: "87 MB",
+    size: "92 MB",
   },
   "linux-arm64": {
     id: "linux-appimage-arm64",
@@ -71,7 +76,16 @@ export const primaryDownloadsByOs = {
     tag: DESKTOP_TAG,
     translationKey: "getAppForLinux",
     heroTranslationKey: "hero.downloadForLinux",
-    size: "87 MB",
+    size: "90 MB",
+  },
+  android: {
+    id: "android",
+    icon: "/androidlogo.svg",
+    file: `AltSendme-${ANDROID_VERSION}-arm64.apk`,
+    tag: ANDROID_VERSION,
+    translationKey: "getAppForAndroid",
+    heroTranslationKey: "hero.downloadForAndroid",
+    size: "50 MB",
   },
 };
 
@@ -83,16 +97,19 @@ export const desktopPlatformGroups = [
         key: "universalDmg",
         file: `AltSendme_${DESKTOP_VERSION}_universal.dmg`,
         tag: DESKTOP_TAG,
+        size: "32 MB",
       },
       {
         key: "x64Dmg",
         file: `AltSendme_${DESKTOP_VERSION}_x64.dmg`,
         tag: DESKTOP_TAG,
+        size: "17 MB",
       },
       {
         key: "aarch64Dmg",
         file: `AltSendme_${DESKTOP_VERSION}_aarch64.dmg`,
         tag: DESKTOP_TAG,
+        size: "16 MB",
       },
     ],
   },
@@ -103,16 +120,19 @@ export const desktopPlatformGroups = [
         key: "standardExe",
         file: `AltSendme_${DESKTOP_VERSION}_x64-setup.exe`,
         tag: DESKTOP_TAG,
+        size: "10 MB",
       },
       {
         key: "msi",
         file: `AltSendme_${DESKTOP_VERSION}_x64_en-US.msi`,
         tag: DESKTOP_TAG,
+        size: "15 MB",
       },
       {
         key: "arm64Exe",
         file: `AltSendme_${DESKTOP_VERSION}_arm64-setup.exe`,
         tag: DESKTOP_TAG,
+        size: "9 MB",
       },
     ],
   },
@@ -123,31 +143,37 @@ export const desktopPlatformGroups = [
         key: "appImage",
         file: `AltSendme_${DESKTOP_VERSION}_amd64.AppImage`,
         tag: DESKTOP_TAG,
+        size: "92 MB",
       },
       {
         key: "debian",
         file: `AltSendme_${DESKTOP_VERSION}_amd64.deb`,
         tag: DESKTOP_TAG,
+        size: "19 MB",
       },
       {
         key: "rpm",
         file: `AltSendme-${DESKTOP_VERSION}-1.x86_64.rpm`,
         tag: DESKTOP_TAG,
+        size: "19 MB",
       },
       {
         key: "aarch64AppImage",
         file: `AltSendme_${DESKTOP_VERSION}_aarch64.AppImage`,
         tag: DESKTOP_TAG,
+        size: "90 MB",
       },
       {
         key: "arm64Debian",
         file: `AltSendme_${DESKTOP_VERSION}_arm64.deb`,
         tag: DESKTOP_TAG,
+        size: "19 MB",
       },
       {
         key: "aarch64Rpm",
         file: `AltSendme-${DESKTOP_VERSION}-1.aarch64.rpm`,
         tag: DESKTOP_TAG,
+        size: "19 MB",
       },
     ],
   },
@@ -158,15 +184,28 @@ export const mobilePlatformGroups = [
     key: "android",
     links: [
       {
+        key: "arm64Apk",
+        file: `AltSendme-${ANDROID_VERSION}-arm64.apk`,
+        tag: ANDROID_VERSION,
+        size: "50 MB",
+      },
+      {
+        key: "armv7Apk",
+        file: `AltSendme-${ANDROID_VERSION}-armv7.apk`,
+        tag: ANDROID_VERSION,
+        size: "35 MB",
+      },
+      {
         key: "universalApk",
         file: `AltSendme-${ANDROID_VERSION}-universal.apk`,
         tag: ANDROID_VERSION,
+        size: "177 MB",
       },
     ],
   },
 ];
 
-const HERO_DOWNLOAD_ORDER = ["windows", "mac", "linux"];
+const HERO_DOWNLOAD_ORDER = ["windows", "mac", "linux", "android"];
 
 export function getDownloadHref(link) {
   return releaseUrl(link.tag, link.file);

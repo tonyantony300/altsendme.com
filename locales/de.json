@@ -14,6 +14,7 @@
     "downloadForMac": "Für Mac herunterladen",
     "downloadForWindows": "Für Windows herunterladen",
     "downloadForLinux": "Für Linux herunterladen",
+    "downloadForAndroid": "Für Android herunterladen",
     "downloadForLinuxAppImage": "Für Linux herunterladen (AppImage)",
     "donationMessage": "Ihre Spenden machen dieses Projekt besser"
   },
@@ -250,7 +251,16 @@
       "arm64Debian": "Debian (ARM64)",
       "rpm": "RPM (x86_64)",
       "aarch64Rpm": "RPM (ARM64)",
+      "arm64Apk": "ARM64 (APK)",
+      "armv7Apk": "ARMv7 (APK)",
       "universalApk": "Universal (APK)"
+    },
+    "donate": {
+      "title": "Unterstütze freie & Open-Source-Software",
+      "description": "AltSendme ist zu 100 % kostenlos, Open Source und ohne Werbung oder Paywalls. Wenn Sie es nützlich finden, unterstützen Sie gern seine Entwicklung. Jede Spende hilft, das Projekt kostenlos, unabhängig und aktiv gepflegt zu halten.",
+      "badge": "AGPL 3.0 · Keine Werbung · Kein Tracking",
+      "buyMeACoffee": "Buy Me a Coffee",
+      "githubSponsors": "GitHub Sponsors"
     }
   },
   "pressReviews": {

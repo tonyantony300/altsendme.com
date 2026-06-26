@@ -14,6 +14,7 @@
     "downloadForMac": "ดาวน์โหลดสำหรับ Mac",
     "downloadForWindows": "ดาวน์โหลดสำหรับ Windows",
     "downloadForLinux": "ดาวน์โหลดสำหรับ Linux",
+    "downloadForAndroid": "ดาวน์โหลดสำหรับ Android",
     "downloadForLinuxAppImage": "ดาวน์โหลดสำหรับ Linux (AppImage)",
     "donationMessage": "การบริจาคของคุณทำให้โปรเจกต์นี้ดีขึ้น"
   },
@@ -250,7 +251,16 @@
       "arm64Debian": "Debian (ARM64)",
       "rpm": "RPM (x86_64)",
       "aarch64Rpm": "RPM (ARM64)",
+      "arm64Apk": "ARM64 (APK)",
+      "armv7Apk": "ARMv7 (APK)",
       "universalApk": "Universal (APK)"
+    },
+    "donate": {
+      "title": "สนับสนุนซอฟต์แวร์โอเพนซอร์สฟรี",
+      "description": "AltSendme ฟรี 100% เป็นโอเพนซอร์ส และไม่มีโฆษณาหรือ paywall หากคุณพบว่ามีประโยชน์ ลองพิจารณาสนับสนุนการพัฒนา ทุกการบริจาคช่วยให้โปรเจกต์ยังคงฟรี เป็นอิสระ และได้รับการดูแลอย่างต่อเนื่อง",
+      "badge": "AGPL 3.0 · ไม่มีโฆษณา · ไม่มีการติดตาม",
+      "buyMeACoffee": "Buy Me a Coffee",
+      "githubSponsors": "GitHub Sponsors"
     }
   },
   "pressReviews": {
