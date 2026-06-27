@@ -5,8 +5,8 @@ export const DONATE_LINKS = {
   githubSponsors: "https://github.com/sponsors/tonyantony300",
 };
 
-export const DESKTOP_VERSION = "0.4.1";
-export const ANDROID_VERSION = "v0.4.1";
+export const DESKTOP_VERSION = "0.4.2";
+export const ANDROID_VERSION = "v0.4.2";
 const DESKTOP_TAG = `v${DESKTOP_VERSION}`;
 
 export function releaseUrl(tag, filename) {
